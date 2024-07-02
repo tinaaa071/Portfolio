@@ -1,5 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './styles/style.css'
+import './styles/index.css'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from '~pages'
+import i18n from './i18n';
 
-createApp(App).mount('#app')
+// router
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+})
+
+createApp(App)
+// 使用 .use 匯入 plugin
+.use(router)
+.use(i18n)
+.mount('#app')
