@@ -1,6 +1,6 @@
 <template>
   <div class="sticky z-20 pt-6 px-28 ">
-    <div class="rounded-full shadow-md bg-white/40 bg-blur-lg">
+    <div class="bg-blue-100 rounded-full shadow-md bg-blur-lg">
       <div class="container relative flex flex-col items-center justify-between w-full px-4 py-3.5 mx-auto text-white sm:flex-row sm:px-6">
           <!-- Logo -->
           <div class="flex items-center justify-between w-full ">
@@ -34,7 +34,7 @@
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
                   class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
-                  :class="isActive(item.to) ? 'text-white' : 'text-blue-500  hover:text-white'">
+                  :class="isActive(item.to) ? 'text-black' : 'text-blue-500  hover:text-white'">
                   {{ $t(item.text) }}
                   </RouterLink>
                 </li>
