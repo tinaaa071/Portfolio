@@ -1,7 +1,8 @@
 {
     "menu": {
-      "item1": "Table One",
-      "item2": "Table Two",
-      "item3": "Table Three"
+      "item1": "Works",
+      "item2": "About Me",
+      "item3": "Blog",
+      "item4": "Others"
     }
   }

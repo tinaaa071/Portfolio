@@ -10,7 +10,13 @@ export default {
       fontFamily: {
         sans: ['Noto Sans TC', ...fontFamily.sans],
       },
-    },
+      colors: {
+        'Primary': '#A2866D',
+        'Secondary': '#E0DCCA',
+        'Tertiary': '#EFECE5',
+        'Quaternary': '#F8F7F2'
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
