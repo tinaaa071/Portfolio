@@ -40,10 +40,12 @@
         <!-- 第三格 -->
         <RouterLink to="/" class="row-span-2 overflow-hidden rounded-3xl">
           <div class="relative w-full h-full">
-            <div class="absolute bottom-0 z-10 ">
+            <div class="absolute bottom-0 z-20 ">
               <ArrowButton  />
             </div>
-            <p class="absolute">
+            <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
+            style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
+            >
               線上
             </p>
             <div class="w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover -z-10 rounded-3xl hover:scale-110"
