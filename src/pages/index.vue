@@ -53,7 +53,10 @@
             </div>
           </div>
         </RouterLink>
-        <div>04</div>
+        <!-- 第四格 -->
+        <div>
+          <CodeTyping />
+        </div>
         <div>05</div>
         <div>06</div>
       </div>
