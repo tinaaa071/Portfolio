@@ -66,7 +66,7 @@
   <style>
   pre {
     overflow: hidden; /* Enable scrollbars if needed */
-    max-height: 80px; /* Set a fixed height for the code block */
+    max-height: 240px; /* Set a fixed height for the code block */
     white-space: pre-wrap; /* Preserve whitespace and line breaks */
     margin: 0; /* Remove default margin */
     position: relative;
