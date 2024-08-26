@@ -5,5 +5,12 @@
       "item3": "Blog",
       "item4": "Others",
       "item5": "Resume"
+    },
+    "hero": {
+      "item1": "Hello! I'm Simon 👋",
+      "item2": "I'm a",
+      "item3": "UI/UX Designer",
+      "item4": "Product Designer",
+      "item5": "Researcher"
     }
   }
