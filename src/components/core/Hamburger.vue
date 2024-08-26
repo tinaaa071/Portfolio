@@ -1,8 +1,11 @@
 <template>
-    <div class="px-4 py-3 border-2 border-white rounded-full xl:hidden">
+    <div 
+    class="px-4 py-3 border-2 rounded-full xl:hidden"
+    :class="isOpen ? 'border-white' : 'border-stone-900'"
+    >
         <div @click="toggleMenu" :class="{'open': isOpen}" class="hamburger">
-      <span></span>
-      <span></span>
+      <span :class="isOpen ? 'bg-white' : 'bg-stone-900'"></span>
+      <span :class="isOpen ? 'bg-white' : 'bg-stone-900'"></span>
     </div>
     </div>
   </template>
@@ -36,7 +39,7 @@
   .hamburger span {
     display: block;
     height: 3px; /* Height of each bar */
-    background-color: #fff;
+
     transition: transform 0.3s ease, width 0.3s ease, top 0.3s ease;
     position: absolute;
     left: 0;

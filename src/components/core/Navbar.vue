@@ -1,45 +1,55 @@
 <template>
-  <div class="sticky z-20 pt-6 px-28">
-    <div class="bg-blue-100 shadow-md rounded-3xl xl:rounded-full bg-blur-lg">
-      <div class="container relative flex flex-row items-center justify-between w-full p-5 py-3.5 mx-auto text-white sm:flex-row sm:px-6 ">
+  <div class="fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10">
+    <!-- Navbar -->
+    <div 
+    :class="[
+        showMenu ? 'bg-stone-900 text-white' : 'bg-white  bg-opacity-70 backdrop-blur-lg',
+        showMenu ? 'rounded-3xl' : 'rounded-full',
+        'shadow-md',
+        'bg-blur-lg',
+        'transition-colors ease-in-out duration-500'  // Add transition classes here
+    ]"
+    >
+      <div class="relative flex flex-row items-center justify-between w-full p-5 py-3.5 xl:text-stone-900 sm:flex-row">
         <!-- Logo -->
         <div class="flex items-center justify-between w-full">
           <div class="inline-flex items-center space-x-3.5 group">
-            <RouterLink to="/" class="inline-flex items-center justify-center transition-colors duration-300 rounded-full h-11 w-11 bg-stone-900 group-hover:bg-Secondary">
+            
+            <RouterLink to="/" class="flex items-center gap-3 group">
               <!-- Your SVG Logo -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22" class="transition-colors duration-300 stroke-white group-hover:stroke-stone-900">
-                <path stroke-width="2" d="M1 4.778s2.907-2.573 6.51-2.573c6.076 0 11.343 2.4 13.279 1.432s.538-3.334-1.396-2.438c-3.645 1.689-4.688 7.173-7.2 12.198-2.513 5.026-6.168 7.31-8.452 6.853-1.161-.232-1.719-1.413-1.028-2.284 1.63-2.055 4.468 1.504 8.094 2.76 1.783.617 3.566 0 3.566 0"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" fill="currentColor" viewBox="0 0 32 40">
+                <path class="transition-colors duration-300 group-hover:text-stone-500" fill="currentColor" fill-rule="evenodd" d="M17.868 2.984c6.627 0 11.438 5.343 10.745 11.934h.02a33.237 33.237 0 0 1-.462 3.475c-.433 2.289-1.172 4.704-2.323 6.12-2.314 2.846-5.925 2.903-7.625 2.903a7.42 7.42 0 0 1-1.471-.136c.524-.918.989-1.985 1.374-3.218a95.84 95.84 0 0 0 .954-3.368c.237-.877.473-1.75.706-2.545.434-1.484.891-2.836 1.417-3.958.314.085.627.155.93.2.721.106 1.59.098 2.422-.376 1.647-.94 2-2.704 1.394-3.987A2.737 2.737 0 0 0 24.38 8.6c-.766-.268-1.614-.176-2.396.24-.817.432-1.491 1.056-2.055 1.767-1.595-.52-3.67-1.096-6.199-1.096-1.976 0-3.754.844-4.956 1.588a14.26 14.26 0 0 0-1.89 1.404l-.117.107-.035.032-.011.011-.004.004-.002.002s-.001.001 1.023 1.058c1.025 1.056 1.024 1.057 1.024 1.057l-.001.001.013-.012.071-.065a11.11 11.11 0 0 1 1.45-1.074c.986-.611 2.177-1.122 3.33-1.122 1.834 0 3.373.361 4.737.78-.58 1.295-1.048 2.725-1.457 4.122-.28.955-.523 1.859-.757 2.728-.293 1.087-.57 2.12-.887 3.132-.378 1.21-.826 2.169-1.3 2.927-.693-.323-1.421-.645-2.086-.843-1.066-.317-2.52-.487-3.769.569-1.42 1.2-1.819 2.897-1.154 4.288.632 1.326 2.123 2.104 3.78 1.781 1.28-.248 2.71-.885 4.03-2.134.913.324 1.971.554 3.355.554h.065c1.667 0 6.667.003 9.971-4.06 1.68-2.067 2.523-5.157 2.966-7.501a36.26 36.26 0 0 0 .523-4.045l.017-.264.003-.072.001-.02v-.01h-.008C32.242 6.419 26.303 0 18.181 0 9.897 0 2.48 6.679 1.613 14.918L.568 24.863C-.298 33.102 5.716 39.781 14 39.781c5.993 0 11.533-3.496 14.466-8.549h-3.418c-2.477 3.345-6.462 5.565-10.734 5.565-6.628 0-11.439-5.343-10.746-11.934l1.045-9.945C5.306 8.327 11.24 2.984 17.868 2.984Zm-6.942 25.234c.249.074.504.17.775.282a4.611 4.611 0 0 1-1.443.552c-.36.07-.533-.094-.586-.206a.294.294 0 0 1-.017-.209c.02-.08.091-.25.347-.467l.003-.003c.038-.032.192-.166.921.05Z" clip-rule="evenodd"/>
               </svg>
-            </RouterLink>
-            <h1 class="text-xl font-medium cursor-default">
+              <h1 :class="showMenu ? 'text-white' : 'text-black'" class="hidden text-xl font-medium transition-colors duration-300 group-hover:text-stone-500 md:block">
               Tina Chen
             </h1>
+            </RouterLink>
           </div>
-
         </div>
 
         <div class="flex items-center justify-center gap-10">
           <!-- Web Menu -->
           <div class="hidden xl:block">
             <div class="sm:flex sm:flex-row sm:justify-between whitespace-nowrap">
-            <ul class="flex flex-col text-sm font-semibold sm:flex-row">
-              <li v-for="item in menuItems" :key="item.to">
-                <RouterLink :to="item.to" 
-                class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
-                :class="isActive(item.to) ? 'text-black' : 'text-blue-500  hover:text-white'">
-                  {{ $t(item.text) }}
-                </RouterLink>
-              </li>
-              <li>
-                <button type="button" class="px-4 py-2.5">
-                  下載履歷
-                </button>
-              </li>
-            </ul>
-            <LanguageSwitcher />
+              <ul class="flex flex-col gap-2 text-sm font-semibold sm:flex-row">
+                <li v-for="item in menuItems" :key="item.to">
+                  <RouterLink :to="item.to" 
+                    class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
+                    :class="isActive(item.to) ? 'text-stone-900' : 'text-stone-400 hover:text-white'">
+                    {{ $t(item.text) }}
+                  </RouterLink>
+                </li>
+                <li>
+                  <button type="button" class="px-4 py-2.5 border-2 border-stone-900 rounded-full">
+                    {{ $t('menu.item5') }}
+                  </button>
+                </li>
+                <li>
+                  <LanguageSwitcher />
+                </li>
+              </ul>
+            </div>
           </div>
-          </div>
-          
         </div>
         <!-- Pass the toggleMenu method and isOpen state -->
         <Hamburger :toggleMenu="toggleMenu" :isOpen="showMenu" />
@@ -48,22 +58,21 @@
       <div class="xl:hidden">
         <div v-if="showMenu" class="fixed inset-0 bg-black bg-opacity-10 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
         <div v-if="showMenu" class="z-20 flex flex-col justify-between p-5 whitespace-nowrap">
-          <ul class="flex flex-col text-sm font-semibold ">
+          <ul class="flex flex-col gap-2 text-sm font-semibold">
             <li v-for="item in menuItems" :key="item.to">
               <RouterLink :to="item.to" 
-              class="flex items-center px-4 py-2.5 transition-colors duration-200  whitespace-nowrap"
-              :class="isActive(item.to) ? 'text-black' : 'text-blue-500  hover:text-white'">
+                class="flex items-center px-4 py-2.5 transition-colors duration-200 whitespace-nowrap"
+                :class="isActive(item.to) ? 'text-white' : 'text-stone-500 hover:text-white'">
                 {{ $t(item.text) }}
               </RouterLink>
             </li>
-            <li>
-              <button type="button" class="px-4 py-2.5">
-                下載履歷
+            <li class="flex gap-2">
+              <button type="button" class="px-4 py-2.5 bg-stone-50 text-stone-800 rounded-full w-full">
+                {{ $t('menu.item5') }}
               </button>
-              <LanguageSwitcher />
+              <LanguageSwitcher class="border-2 rounded-full border-stone-50" />
             </li>
           </ul>
-          
         </div>
       </div>
     </div>

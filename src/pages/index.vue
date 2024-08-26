@@ -1,7 +1,8 @@
 <template>
-  <Layout title="過勞量表">
+  <div class="bg-Quaternary">
+    <Layout title="過勞量表" >
     <template #content>
-      <div class="flex flex-col gap-6 md:gap-10">
+      <div class="flex flex-col gap-6 md:gap-10 ">
         <Spline />
         <!-- 說明 -->
         <div class="p-4 tracking-wider text-gray-500 bg-gray-200 md:px-8 rounded-xl">
@@ -50,6 +51,7 @@
       </div>
     </template>
   </Layout>
+  </div>
 </template>
 
 <script>
