@@ -10,7 +10,7 @@
           <button type="button" class="inline-flex" @click="selectTab(1)">
             <p class="whitespace-nowrap">01 -&nbsp;</p>
             {{ $t('work.project1.title') }}
-          </button>
+            </button>
           <!-- Project 2 -->
           <button type="button" class="inline-flex" @click="selectTab(2)">
             <p class="whitespace-nowrap">02 -&nbsp;</p>
@@ -30,31 +30,23 @@
       </div>
       <!-- Right Section -->
       <div class="w-1/2 ">
-        <div v-if="activeTab === 1" class="relative w-full h-full imgsection1"
+        <!-- 專案一 -->
+        <WorkDetail 
+        :activeTab="activeTab" 
+        @selectTab="selectTab"
+        year="2024"
+        :title="$t('work.project1.title')"
+        :desc="$t('work.project1.desc')"
+        linkTo="/list_1"
+        backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
-          <div class="absolute top-0 left-0 z-10 flex flex-col justify-between w-full h-full p-10 text-white transition-all duration-300 ease-in-out opacity-0 bg-stone-900/20 hover:opacity-100 backdrop-blur-lg">
-            <div class="space-y-4 cursor-default">
-                <p class="font-medium">
-                    2024
-                </p>
-                <p class="text-2xl font-bold">
-                    {{ $t('work.project1.title') }}
-                </p>
-                <p class="text-xl font-medium">
-                    {{ $t('work.project1.desc') }}
-                </p>
-                <div class="flex gap-3">
-                    <Tag text="123" />
-                    <Tag text="123" />
-                    <Tag text="123" />
-                </div>
-            </div>
-            <WaveButton />
-          </div>
-          <div class="w-full h-full bg-center bg-cover" 
-          style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
-          </div>
-        </div>
+            <template #tag>
+                <Tag text="123" />
+                <Tag text="123" />
+                <Tag text="123" />
+            </template>
+        </WorkDetail>
+        <!-- 專案二 -->
         <div v-if="activeTab === 2" class="imgsection2">
           <div>
             <p>aaaa</p>

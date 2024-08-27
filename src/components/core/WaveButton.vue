@@ -1,5 +1,5 @@
 <template>
-    <RouterLink to="/" class="">
+    <RouterLink :to="linkTo" class="">
         <div class="relative flex items-center justify-center overflow-hidden border-2 border-white rounded-full group w-fit" @mouseover="toggleHover(true)" @mouseleave="toggleHover(false)">
         <div 
         :class="['text-white z-10 relative transition-colors ease-in-out duration-300 group-hover:text-stone-900', { 'hovered': isHovered }]"
@@ -21,19 +21,25 @@
   </template>
   
   <script>
-  export default {
-    data() {
-      return {
-        isHovered: false,
-      };
+export default {
+  props: {
+    linkTo: {
+      type: String,
+      required: true,
     },
-    methods: {
-      toggleHover(status) {
-        this.isHovered = status;
-      },
+  },
+  data() {
+    return {
+      isHovered: false,
+    };
+  },
+  methods: {
+    toggleHover(status) {
+      this.isHovered = status;
     },
-  };
-  </script>
+  },
+};
+</script>
   
   <style scoped>
   @keyframes shake {
