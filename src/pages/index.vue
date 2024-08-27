@@ -61,11 +61,11 @@
           </div>
           <!-- 第五格 -->
           <RouterLink to="/" class="inline-flex items-center justify-center transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
-            <entypo-social-linkedin class="text-white transition-all duration-200 ease-in-out dark:text-stone-900 text-7xl group-hover:text-8xl" />
+            <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl" />
           </RouterLink>
           <!-- 第六格 -->
           <div class="p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
-            <p class="mb-4 text-lg font-bold">
+            <p class="mb-4 text-lg font-bold ">
               {{ $t('hero.item10') }}
             </p>
             <p class="text-3xl font-extrabold leading-relaxed">

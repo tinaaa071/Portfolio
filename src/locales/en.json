@@ -25,6 +25,14 @@
       "project1": {
         "title": "Health Academy",
         "desc": "Taiwan International Medical Education"
+      },
+      "project2": {
+        "title": "Chiayi City Resource Platform",
+        "desc": "Display Chiayi City Government resources and information"
+      },
+      "project3": {
+        "title": "海外醫事人員培訓平台",
+        "desc": "提供世界各地醫護人員來台培訓課程"
       }
     }
   }
