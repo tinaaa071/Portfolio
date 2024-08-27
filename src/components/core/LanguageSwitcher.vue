@@ -1,6 +1,6 @@
 <!-- src/components/LanguageSwitcher.vue -->
 <template>
-    <button class="whitespace-nowrap px-4 py-2.5 rounded-full bg-stone-900 text-stone-50 rounded-full" @click="toggleLocale">{{ buttonText }}</button>
+    <button class="whitespace-nowrap px-4 py-2.5 rounded-full bg-stone-900 text-stone-50" @click="toggleLocale">{{ buttonText }}</button>
   </template>
   
   <script>
@@ -9,7 +9,7 @@
   export default {
     computed: {
       buttonText() {
-        return this.$i18n.locale === 'en' ? 'English' : '中文';
+        return this.$i18n.locale === 'en' ? 'EN' : '中文';
       }
     },
     methods: {

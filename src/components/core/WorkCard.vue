@@ -1,15 +1,15 @@
 <template>
-    <div class="flex overflow-hidden rounded-3xl h-fit">
+    <div class="flex overflow-hidden bg-white text-stone-900 dark:text-white rounded-3xl h-fit dark:bg-stone-800 dark:border dark:border-white">
       <!-- Left Section -->
-      <div class="w-1/2 p-8 bg-white">
+      <div class="w-1/2 p-8 ">
         <p class="tracking-[.25em] mb-10">
           {{ $t('work.item1') }}
         </p>
-        <div class="space-y-5 text-4xl font-extrabold text-stone-400">
+        <div class="space-y-5 text-4xl font-extrabold text-stone-400 dark:text-stone-400 ">
           <!-- Project 1 -->
           <button 
           type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900" 
+          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
           @click="selectTab(1)"
           >
             <p class="whitespace-nowrap">01 -&nbsp;</p>
@@ -18,7 +18,7 @@
           <!-- Project 2 -->
           <button 
           type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900" 
+          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
           @click="selectTab(2)"
           >
             <p class="whitespace-nowrap">02 -&nbsp;</p>
@@ -27,7 +27,7 @@
           <!-- Project 3 -->
           <button 
           type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900" 
+          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
           @click="selectTab(3)"
           >
             <p class="whitespace-nowrap">03 -&nbsp;</p>
@@ -36,7 +36,7 @@
           <!-- Project 4 -->
           <button 
           type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900" 
+          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
           @click="selectTab(4)"
           >
             <p class="whitespace-nowrap">04 -&nbsp;</p>
