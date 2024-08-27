@@ -4,7 +4,7 @@
     <template #content>
       <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
         <!-- 第一格 -->
-        <div class="col-span-2 p-8 bg-white rounded-3xl ">
+        <div class="col-span-2 p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
           <div class="flex items-center gap-6 mb-10 ">
             <!-- 照片 -->
             <div class="hidden w-32 h-32 bg-center bg-cover rounded-full lg:block"
@@ -46,9 +46,9 @@
             <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
             style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
             >
-              線上
+            {{ $t('hero.item9') }}
             </p>
-            <div class="w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover -z-10 rounded-3xl hover:scale-110"
+            <div class="w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover -z-10 rounded-3xl hover:scale-110 brightness-75"
             style="background-image: url(https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
             </div>
           </div>
@@ -62,12 +62,12 @@
           <entypo-social-linkedin class="text-white transition-all duration-200 ease-in-out text-7xl group-hover:text-8xl" />
         </RouterLink>
         <!-- 第六格 -->
-        <div class="p-8 bg-white rounded-3xl">
+        <div class="p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
           <p class="mb-4 text-lg font-bold">
-            {{ $t('hero.item9') }}
+            {{ $t('hero.item10') }}
           </p>
           <p class="text-3xl font-extrabold leading-relaxed">
-            {{ $t('hero.item10') }}
+            {{ $t('hero.item11') }}
           </p>
         </div>
       </div>

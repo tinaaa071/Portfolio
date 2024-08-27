@@ -1,11 +1,11 @@
 <template>
     <div 
     class="px-4 py-3 border-2 rounded-full xl:hidden"
-    :class="isOpen ? 'border-white' : 'border-stone-900'"
+    :class="isOpen ? 'border-white dark:border-stone-900' : 'border-stone-900 dark:border-white'"
     >
         <div @click="toggleMenu" :class="{'open': isOpen}" class="hamburger">
-      <span :class="isOpen ? 'bg-white' : 'bg-stone-900'"></span>
-      <span :class="isOpen ? 'bg-white' : 'bg-stone-900'"></span>
+      <span :class="isOpen ? 'bg-white dark:bg-stone-900' : 'bg-stone-900 dark:bg-white'"></span>
+      <span :class="isOpen ? 'bg-white dark:bg-stone-900' : 'bg-stone-900 dark:bg-white'"></span>
     </div>
     </div>
   </template>
