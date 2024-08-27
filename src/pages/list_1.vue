@@ -1,7 +1,7 @@
 <template>
   <Layout title="肌肉骨骼症狀調查表">
     <template #content>
-      <div class="flex flex-col gap-6 md:gap-10">
+      <div class="flex flex-col gap-6 md:gap-10 dark:bg-black">
         <!-- 問題 -->
         <div class="flex flex-col gap-6">
             <div v-for="(question, index) in question" :key="index" >
