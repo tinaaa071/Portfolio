@@ -70,11 +70,12 @@
             {{ $t('hero.item11') }}
           </p>
         </div>
+        <!-- 第七格 -->
+         <div class="col-span-4">
+          <Marquee />
+         </div>
       </div>
-      <div class="flex flex-col gap-6 md:gap-10 ">
-        <Spline />
-        
-      </div>
+      
     </template>
   </Layout>
 </div>
