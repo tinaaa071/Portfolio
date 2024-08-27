@@ -1,5 +1,5 @@
 <template>
-    <pre ref="codeContainer"><code ref="code" class="language-javascript" :style="{ fontSize: fontSize + 'px' }">{{ displayedText }}</code></pre>
+    <pre ref="codeContainer" class="whitespace-pre-wrap max-h-60 aspect-square rounded-3xl"><code ref="code" class="block overflow-hidden language-javascript" :style="{ fontSize: fontSize + 'px' }">{{ displayedText }}</code></pre>
   </template>
   
   <script>
@@ -64,19 +64,7 @@
   </script>
   
   <style>
-  pre {
-    overflow: hidden; /* Enable scrollbars if needed */
-    max-height: 240px; /* Set a fixed height for the code block */
-    white-space: pre-wrap; /* Preserve whitespace and line breaks */
-    margin: 0; /* Remove default margin */
-    position: relative;
-    border-radius: 24px;
-  }
   
-  code {
-    display: block; /* Ensure the code takes up the full width of the container */
-    overflow: hidden;
-  }
   /* Hide scrollbars for WebKit browsers (e.g., Chrome, Safari) */
   pre::-webkit-scrollbar {
     display: none; /* Hide scrollbar */

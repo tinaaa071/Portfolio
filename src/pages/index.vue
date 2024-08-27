@@ -4,8 +4,8 @@
     <template #content>
       <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
         <!-- 第一格 -->
-        <div class="col-span-2 p-8 bg-white rounded-3xl">
-          <div class="flex items-center gap-6 mb-10">
+        <div class="col-span-2 p-8 bg-white rounded-3xl ">
+          <div class="flex items-center gap-6 mb-10 ">
             <!-- 照片 -->
             <div class="hidden w-32 h-32 bg-center bg-cover rounded-full lg:block"
             style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
@@ -40,7 +40,7 @@
         <!-- 第三格 -->
         <RouterLink to="/" class="row-span-2 overflow-hidden rounded-3xl">
           <div class="relative w-full h-full">
-            <div class="absolute bottom-0 z-20 ">
+            <div class="absolute bottom-0 z-10 ">
               <ArrowButton  />
             </div>
             <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
@@ -57,8 +57,19 @@
         <div>
           <CodeTyping />
         </div>
-        <div>05</div>
-        <div>06</div>
+        <!-- 第五格 -->
+        <RouterLink to="/" class="inline-flex items-center justify-center transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
+          <entypo-social-linkedin class="text-white transition-all duration-200 ease-in-out text-7xl group-hover:text-8xl" />
+        </RouterLink>
+        <!-- 第六格 -->
+        <div class="p-8 bg-white rounded-3xl">
+          <p class="mb-4 text-lg font-bold">
+            {{ $t('hero.item9') }}
+          </p>
+          <p class="text-3xl font-extrabold leading-relaxed">
+            {{ $t('hero.item10') }}
+          </p>
+        </div>
       </div>
       <div class="flex flex-col gap-6 md:gap-10 ">
         <Spline />
