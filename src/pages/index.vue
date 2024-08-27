@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-Quaternary dark:bg-stone-900 text-stone-900">
+  <div class="pb-5 bg-Quaternary dark:bg-stone-900 text-stone-900">
     <Layout>
     <template #content>
       <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
@@ -59,7 +59,7 @@
         </div>
         <!-- 第五格 -->
         <RouterLink to="/" class="inline-flex items-center justify-center transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
-          <entypo-social-linkedin class="text-white transition-all duration-200 ease-in-out text-7xl group-hover:text-8xl" />
+          <entypo-social-linkedin class="text-white transition-all duration-200 ease-in-out dark:text-stone-900 text-7xl group-hover:text-8xl" />
         </RouterLink>
         <!-- 第六格 -->
         <div class="p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
@@ -77,7 +77,7 @@
       </div>
     </template>
   </Layout>
-  </div>
+</div>
 </template>
 
 <script>
