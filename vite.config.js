@@ -25,6 +25,8 @@ export default defineConfig({
         HeadlessUiResolver(),
       ]
     }),
-    Icons()
+    Icons({
+      autoInstall: true, // Automatically install missing icon packages
+    }),
   ],
 })

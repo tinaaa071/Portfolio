@@ -16,7 +16,7 @@ declare module 'vue' {
     Fa6SolidXmark: typeof import('~icons/fa6-solid/xmark')['default']
     HeroiconsOutlineMenu: typeof import('~icons/heroicons-outline/menu')['default']
     Input: typeof import('./src/components/Input.vue')['default']
-    LanguageSwitcher: typeof import('./src/components/LanguageSwitcher.vue')['default']
+    LanguageSwitcher: typeof import('./src/components/core/LanguageSwitcher.vue')['default']
     Layout: typeof import('./src/components/Layout.vue')['default']
     LikertScale: typeof import('./src/components/LikertScale.vue')['default']
     Modal: typeof import('./src/components/Modal.vue')['default']

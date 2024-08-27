@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-Quaternary text-stone-900">
+  <div class="bg-Quaternary dark:bg-stone-900 text-stone-900">
     <Layout>
     <template #content>
       <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
@@ -38,7 +38,7 @@
           </div>
         </RouterLink>
         <!-- 第三格 -->
-        <RouterLink to="/" class="row-span-2 overflow-hidden rounded-3xl">
+        <RouterLink to="/" class="hidden row-span-2 overflow-hidden rounded-3xl lg:block">
           <div class="relative w-full h-full">
             <div class="absolute bottom-0 z-10 ">
               <ArrowButton  />

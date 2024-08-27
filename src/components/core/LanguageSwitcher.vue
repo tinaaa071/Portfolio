@@ -4,7 +4,7 @@
   </template>
   
   <script>
-  import { setLocale } from '../utils/locale';
+  import { setLocale } from '../../utils/locale';
   
   export default {
     computed: {

@@ -31,7 +31,7 @@
           <!-- Web Menu -->
           <div class="hidden xl:block">
             <div class="sm:flex sm:flex-row sm:justify-between whitespace-nowrap">
-              <ul class="flex flex-col gap-2 text-sm font-semibold sm:flex-row">
+              <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
                     class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
@@ -44,9 +44,8 @@
                     {{ $t('menu.item5') }}
                   </button>
                 </li>
-                <li>
-                  <LanguageSwitcher />
-                </li>
+                <LanguageSwitcher />
+                <DarkModeToggle />
               </ul>
             </div>
           </div>
@@ -71,6 +70,7 @@
                 {{ $t('menu.item5') }}
               </button>
               <LanguageSwitcher class="border-2 rounded-full border-stone-50" />
+              <DarkModeToggle />
             </li>
           </ul>
         </div>
