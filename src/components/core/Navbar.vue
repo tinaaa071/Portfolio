@@ -3,7 +3,7 @@
     <!-- Navbar -->
     <div 
     :class="[
-        showMenu ? 'bg-stone-900 text-white dark:bg-white dark:text-stone-900' : 'bg-white/20 dark:bg-stone-500/40 backdrop-blur-md',
+        showMenu ? 'bg-stone-900 text-white dark:bg-white dark:text-stone-900' : 'bg-white/20 dark:bg-stone-500/30 backdrop-blur-md',
         showMenu ? 'rounded-3xl' : 'rounded-full',
         'shadow-md',
         'bg-blur-lg',
