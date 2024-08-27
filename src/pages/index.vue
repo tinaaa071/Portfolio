@@ -32,7 +32,7 @@
           <RouterLink to="/" class="overflow-hidden rounded-3xl">
             <div class="relative w-full h-full ">
               <div class="absolute bottom-0 z-10 ">
-                <ArrowButton  />
+                <ArrowButton link-to="/" />
               </div>
               <div class="w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover -z-10 rounded-3xl hover:scale-110"
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
@@ -43,7 +43,7 @@
           <RouterLink to="/" class="hidden row-span-2 overflow-hidden rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10 ">
-                <ArrowButton  />
+                <ArrowButton link-to="/" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
               style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
@@ -78,16 +78,7 @@
           </div>
         </div>
         <!-- Works 區塊 -->
-         <div>
-          <!-- 左 -->
-           <div>
-            
-           </div>
-          <!-- 右 -->
-           <div>
-            
-           </div>
-         </div>
+         <WorkCard />
       </div>
       
     </template>

@@ -18,5 +18,13 @@
       "item9": "RESUME",
       "item10": "Personality",
       "item11": "Creativity, Positivity, Curiosity"
+    },
+    "work": {
+      "item1": "WORKS",
+      "item2": "View Project",
+      "project1": {
+        "title": "Health Academy",
+        "desc": "Taiwan International Medical Education"
+      }
     }
   }

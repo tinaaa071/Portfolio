@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/">
+  <RouterLink :to="linkTo">
     <div class="inline-block m-2 text-lg text-center bg-white border border-white rounded-full bg-opacity-20 hover backdrop-blur-md arrow" :data-hover="hoverIcon">
     </div>
   </RouterLink>
@@ -7,6 +7,12 @@
   
 <script>
 export default {
+  props: {
+    linkTo: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       hoverIcon: '↑'
