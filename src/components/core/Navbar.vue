@@ -46,9 +46,9 @@
                 </li>
                 <!-- Resume -->
                 <li>
-                  <button type="button" class="px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50">
+                  <RouterLink to="/" class="text-center px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50">
                     {{ $t('nav.item5') }}
-                  </button>
+                  </RouterLink>
                 </li>
                 <!-- Language -->
                 <LanguageSwitcher />
@@ -74,11 +74,13 @@
                 {{ $t(item.text) }}
               </RouterLink>
             </li>
-            <!-- Resume -->
+            
             <li class="flex gap-2">
-              <button type="button" class="px-4 py-2.5 bg-stone-50 border-2 border-white dark:border-stone-900 text-stone-800 rounded-full w-full hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50 dark:hover:text-white">
+              <!-- Resume -->
+              <RouterLink to="/" 
+              class="px-4 py-2.5 bg-stone-50 border-2 border-white dark:border-stone-900 text-stone-800 rounded-full w-full hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50 dark:hover:text-white text-center">
                 {{ $t('nav.item5') }}
-              </button>
+              </RouterLink>
               <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />
               <!-- Dark Toggle -->

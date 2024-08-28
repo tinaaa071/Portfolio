@@ -19,7 +19,7 @@
       
       <!-- Bottom Bar -->
       <span 
-        class="absolute left-0 block w-full h-0.5 transition-all duration-300 ease-[ease] origin-center"
+        class="absolute left-0 block w-1/2 h-0.5 transition-all duration-300 ease-[ease] origin-center"
         :class="{
           'transform -rotate-45 top-1/2 w-full bg-white dark:bg-stone-900': isOpen,
           'top-4 w-[70%] bg-stone-900 dark:bg-white': !isOpen
