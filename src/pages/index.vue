@@ -6,14 +6,14 @@
         <!-- Hero 區塊 -->
         <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
           <!-- 第一格 -->
-          <div class="col-span-2 p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
+          <div class="col-span-4 p-8 bg-white sm:col-span-2 rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
             <div class="flex items-center gap-6 mb-10 ">
               <!-- 照片 -->
               <div class="hidden w-32 h-32 bg-center bg-cover rounded-full lg:block"
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
               </div>
               <div>
-                <p class="mb-2 text-3xl font-bold">
+                <p class="mb-2 text-3xl font-bold leading-normal text-balance">
                   {{ $t('hero.item1') }}
                 </p>
                 <p class="inline-flex text-3xl font-bold">
@@ -29,7 +29,7 @@
             </div>
           </div>
           <!-- 第二格 -->
-          <RouterLink to="/" class="overflow-hidden rounded-3xl">
+          <RouterLink to="/" class="col-span-2 overflow-hidden rounded-3xl md:col-span-1">
             <div class="relative w-full h-full ">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
@@ -40,7 +40,7 @@
             </div>
           </RouterLink>
           <!-- 第三格 -->
-          <RouterLink to="/" class="hidden row-span-2 overflow-hidden rounded-3xl lg:block">
+          <RouterLink to="/" class="hidden row-span-2 overflow-hidden rounded-3xl md:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
@@ -56,15 +56,17 @@
             </div>
           </RouterLink>
           <!-- 第四格 -->
-          <div>
+          <div class="col-span-4 md:col-span-1 sm:col-span-2">
             <CodeTyping />
           </div>
           <!-- 第五格 -->
-          <RouterLink to="/" class="inline-flex items-center justify-center transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
-            <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl" />
+          <RouterLink to="/" class="hidden md:block">
+            <div class="inline-flex items-center justify-center w-full h-full transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
+              <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl" />
+            </div>
           </RouterLink>
           <!-- 第六格 -->
-          <div class="p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
+          <div class="col-span-2 p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white md:col-span-1">
             <p class="mb-4 text-lg font-bold ">
               {{ $t('hero.item10') }}
             </p>
