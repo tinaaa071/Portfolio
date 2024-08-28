@@ -1,5 +1,5 @@
 <template>
-    <div v-if="activeTab === 1" class="relative w-full h-full imgsection1">
+    <div  class="relative w-full h-full ">
       <div class="absolute top-0 left-0 z-10 flex flex-col justify-between w-full h-full p-10 text-white transition-all duration-300 ease-in-out opacity-0 bg-stone-900/20 hover:opacity-100 backdrop-blur-lg">
         <div class="space-y-4 cursor-default">
           <p class="font-medium">{{ year }}</p>
