@@ -4,19 +4,19 @@
     <template #content>
       <div class="space-y-10">
         <!-- Hero 區塊 -->
-        <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4">
+        <div class="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-3 xs:gap-4 ">
           <!-- 第一格 -->
-          <div class="col-span-4 p-8 bg-white sm:col-span-2 rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
-            <div class="flex items-center gap-6 mb-10 ">
+          <div class="inline-flex flex-col justify-between col-span-4 gap-10 p-5 bg-white sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white rounded-2xl">
+            <div class="flex items-center gap-6">
               <!-- 照片 -->
               <div class="hidden w-32 h-32 bg-center bg-cover rounded-full lg:block"
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
               </div>
               <div>
-                <p class="mb-2 text-3xl font-bold leading-normal text-balance">
+                <p class="mb-2 text-lg font-bold leading-normal sm:text-4xl xs:text-2xl text-balance">
                   {{ $t('hero.item1') }}
                 </p>
-                <p class="inline-flex text-3xl font-bold">
+                <p class="inline-flex text-lg font-bold sm:text-4x xs:text-2xl">
                   {{ $t('hero.item2') }}
                   <Typewriter class="ml-2" />
                 </p>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <!-- 第二格 -->
-          <RouterLink to="/" class="col-span-2 overflow-hidden rounded-3xl md:col-span-1">
+          <RouterLink to="/" class="col-span-2 overflow-hidden sm:rounded-3xl lg:col-span-1 rounded-2xl">
             <div class="relative w-full h-full ">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
@@ -40,7 +40,7 @@
             </div>
           </RouterLink>
           <!-- 第三格 -->
-          <RouterLink to="/" class="hidden row-span-2 overflow-hidden rounded-3xl md:block">
+          <RouterLink to="/" class="hidden row-span-2 overflow-hidden sm:rounded-3xl lg:block rounded-2xl">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
@@ -56,25 +56,25 @@
             </div>
           </RouterLink>
           <!-- 第四格 -->
-          <div class="col-span-4 md:col-span-1 sm:col-span-2">
+          <div class="col-span-4 lg:col-span-1 sm:col-span-2">
             <CodeTyping />
           </div>
           <!-- 第五格 -->
-          <RouterLink to="/" class="hidden md:block">
-            <div class="inline-flex items-center justify-center w-full h-full transition-colors duration-200 ease-in-out bg-blue-200 aspect-square rounded-3xl hover:bg-blue-200/75 group">
+          <RouterLink to="/" class="hidden lg:block">
+            <div class="inline-flex items-center justify-center w-full h-full transition-colors duration-200 ease-in-out bg-blue-200 aspect-square sm:rounded-3xl rounded-2xl hover:bg-blue-200/75 group">
               <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl" />
             </div>
           </RouterLink>
           <!-- 第六格 -->
-          <div class="col-span-2 p-8 bg-white rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white md:col-span-1">
-            <p class="mb-4 text-lg font-bold ">
+          <div class="col-span-2 p-5 bg-white md:p-8 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white lg:col-span-1 rounded-2xl">
+            <p class="mb-4 text-xs font-bold xs:text-base sm:text-lg">
               {{ $t('hero.item10') }}
             </p>
-            <p class="text-3xl font-extrabold leading-relaxed">
+            <p class="text-lg font-extrabold leading-normal sm:leading-normal xs:text-2xl sm:text-4xl ">
               {{ $t('hero.item11') }}
             </p>
           </div>
-          <!-- 第七格 -->
+          <!-- Marquee -->
           <div class="col-span-4">
             <Marquee />
           </div>

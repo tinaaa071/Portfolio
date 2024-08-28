@@ -16,8 +16,11 @@ export default {
         'Secondary': '#E0DCCA',
         'Tertiary': '#EFECE5',
         'Quaternary': '#F8F7F2'
-      }
-    }
+      },
+      screens: {
+        xs: '375px'
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
