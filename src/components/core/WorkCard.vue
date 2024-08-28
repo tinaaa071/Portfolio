@@ -5,39 +5,58 @@
         <p class="tracking-[.25em] mb-10">
           {{ $t('work.item1') }}
         </p>
-        <div class="space-y-5 text-4xl font-extrabold text-stone-400 dark:text-stone-400 ">
-          <!-- Project 1 -->
-          <button 
-          type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
-          @click="selectTab(1)"
+        <div class="space-y-5 text-4xl font-extrabold text-stone-400 dark:text-stone-400">
+          <!-- Project 1 BTN -->
+          <button
+            type="button"
+            class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out"
+            :class="{
+              'text-stone-900 dark:text-white': activeTab === 1,
+              'focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white': activeTab !== 1
+            }"
+            @click="selectTab(1)"
           >
             <p class="whitespace-nowrap">01 -&nbsp;</p>
             {{ $t('work.project1.title') }}
           </button>
-          <!-- Project 2 -->
-          <button 
-          type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
-          @click="selectTab(2)"
+
+          <!-- Project 2 BTN -->
+          <button
+            type="button"
+            class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out"
+            :class="{
+              'text-stone-900 dark:text-white': activeTab === 2,
+              'focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white': activeTab !== 2
+            }"
+            @click="selectTab(2)"
           >
             <p class="whitespace-nowrap">02 -&nbsp;</p>
             {{ $t('work.project2.title') }}
           </button>
-          <!-- Project 3 -->
-          <button 
-          type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
-          @click="selectTab(3)"
+
+          <!-- Project 3 BTN -->
+          <button
+            type="button"
+            class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out"
+            :class="{
+              'text-stone-900 dark:text-white': activeTab === 3,
+              'focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white': activeTab !== 3
+            }"
+            @click="selectTab(3)"
           >
             <p class="whitespace-nowrap">03 -&nbsp;</p>
             {{ $t('work.item4') }}
           </button>
-          <!-- Project 4 -->
-          <button 
-          type="button" 
-          class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white" 
-          @click="selectTab(4)"
+
+          <!-- Project 4 BTN -->
+          <button
+            type="button"
+            class="inline-flex leading-normal text-left transition-colors duration-300 ease-in-out"
+            :class="{
+              'text-stone-900 dark:text-white': activeTab === 4,
+              'focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white': activeTab !== 4
+            }"
+            @click="selectTab(4)"
           >
             <p class="whitespace-nowrap">04 -&nbsp;</p>
             {{ $t('work.item5') }}

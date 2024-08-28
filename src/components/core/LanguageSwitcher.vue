@@ -1,6 +1,6 @@
 <!-- src/components/LanguageSwitcher.vue -->
 <template>
-    <button class="whitespace-nowrap px-4 py-2.5 rounded-full bg-stone-900 text-stone-50" @click="toggleLocale">{{ buttonText }}</button>
+    <button class="whitespace-nowrap px-4 py-2.5 rounded-full bg-stone-900 text-stone-50 hover:bg-stone-700 transition-colors ease-in-out duration-300 " @click="toggleLocale">{{ buttonText }}</button>
   </template>
   
   <script>

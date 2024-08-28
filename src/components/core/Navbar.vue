@@ -10,7 +10,7 @@
         'transition-colors ease-in-out duration-500'  // Add transition classes here
     ]"
     >
-      <div class="relative flex flex-row items-center justify-between w-full p-5 py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
+      <div class="relative flex flex-row items-center justify-between w-full p-2.5 md:px-5 md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
         <!-- Logo -->
         <div class="flex items-center justify-between w-full">
           <div class="inline-flex items-center space-x-3.5 group">
@@ -20,11 +20,11 @@
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
                 <div class="transition-colors duration-300 md:block group-hover:text-stone-500">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" fill="currentColor" viewBox="0 0 32 40">
-                <path class="transition-colors duration-300 group-hover:text-stone-500 " fill="currentColor" fill-rule="evenodd" d="M17.868 2.984c6.627 0 11.438 5.343 10.745 11.934h.02a33.237 33.237 0 0 1-.462 3.475c-.433 2.289-1.172 4.704-2.323 6.12-2.314 2.846-5.925 2.903-7.625 2.903a7.42 7.42 0 0 1-1.471-.136c.524-.918.989-1.985 1.374-3.218a95.84 95.84 0 0 0 .954-3.368c.237-.877.473-1.75.706-2.545.434-1.484.891-2.836 1.417-3.958.314.085.627.155.93.2.721.106 1.59.098 2.422-.376 1.647-.94 2-2.704 1.394-3.987A2.737 2.737 0 0 0 24.38 8.6c-.766-.268-1.614-.176-2.396.24-.817.432-1.491 1.056-2.055 1.767-1.595-.52-3.67-1.096-6.199-1.096-1.976 0-3.754.844-4.956 1.588a14.26 14.26 0 0 0-1.89 1.404l-.117.107-.035.032-.011.011-.004.004-.002.002s-.001.001 1.023 1.058c1.025 1.056 1.024 1.057 1.024 1.057l-.001.001.013-.012.071-.065a11.11 11.11 0 0 1 1.45-1.074c.986-.611 2.177-1.122 3.33-1.122 1.834 0 3.373.361 4.737.78-.58 1.295-1.048 2.725-1.457 4.122-.28.955-.523 1.859-.757 2.728-.293 1.087-.57 2.12-.887 3.132-.378 1.21-.826 2.169-1.3 2.927-.693-.323-1.421-.645-2.086-.843-1.066-.317-2.52-.487-3.769.569-1.42 1.2-1.819 2.897-1.154 4.288.632 1.326 2.123 2.104 3.78 1.781 1.28-.248 2.71-.885 4.03-2.134.913.324 1.971.554 3.355.554h.065c1.667 0 6.667.003 9.971-4.06 1.68-2.067 2.523-5.157 2.966-7.501a36.26 36.26 0 0 0 .523-4.045l.017-.264.003-.072.001-.02v-.01h-.008C32.242 6.419 26.303 0 18.181 0 9.897 0 2.48 6.679 1.613 14.918L.568 24.863C-.298 33.102 5.716 39.781 14 39.781c5.993 0 11.533-3.496 14.466-8.549h-3.418c-2.477 3.345-6.462 5.565-10.734 5.565-6.628 0-11.439-5.343-10.746-11.934l1.045-9.945C5.306 8.327 11.24 2.984 17.868 2.984Zm-6.942 25.234c.249.074.504.17.775.282a4.611 4.611 0 0 1-1.443.552c-.36.07-.533-.094-.586-.206a.294.294 0 0 1-.017-.209c.02-.08.091-.25.347-.467l.003-.003c.038-.032.192-.166.921.05Z" clip-rule="evenodd"/>
+                <path class="" fill="currentColor" fill-rule="evenodd" d="M17.868 2.984c6.627 0 11.438 5.343 10.745 11.934h.02a33.237 33.237 0 0 1-.462 3.475c-.433 2.289-1.172 4.704-2.323 6.12-2.314 2.846-5.925 2.903-7.625 2.903a7.42 7.42 0 0 1-1.471-.136c.524-.918.989-1.985 1.374-3.218a95.84 95.84 0 0 0 .954-3.368c.237-.877.473-1.75.706-2.545.434-1.484.891-2.836 1.417-3.958.314.085.627.155.93.2.721.106 1.59.098 2.422-.376 1.647-.94 2-2.704 1.394-3.987A2.737 2.737 0 0 0 24.38 8.6c-.766-.268-1.614-.176-2.396.24-.817.432-1.491 1.056-2.055 1.767-1.595-.52-3.67-1.096-6.199-1.096-1.976 0-3.754.844-4.956 1.588a14.26 14.26 0 0 0-1.89 1.404l-.117.107-.035.032-.011.011-.004.004-.002.002s-.001.001 1.023 1.058c1.025 1.056 1.024 1.057 1.024 1.057l-.001.001.013-.012.071-.065a11.11 11.11 0 0 1 1.45-1.074c.986-.611 2.177-1.122 3.33-1.122 1.834 0 3.373.361 4.737.78-.58 1.295-1.048 2.725-1.457 4.122-.28.955-.523 1.859-.757 2.728-.293 1.087-.57 2.12-.887 3.132-.378 1.21-.826 2.169-1.3 2.927-.693-.323-1.421-.645-2.086-.843-1.066-.317-2.52-.487-3.769.569-1.42 1.2-1.819 2.897-1.154 4.288.632 1.326 2.123 2.104 3.78 1.781 1.28-.248 2.71-.885 4.03-2.134.913.324 1.971.554 3.355.554h.065c1.667 0 6.667.003 9.971-4.06 1.68-2.067 2.523-5.157 2.966-7.501a36.26 36.26 0 0 0 .523-4.045l.017-.264.003-.072.001-.02v-.01h-.008C32.242 6.419 26.303 0 18.181 0 9.897 0 2.48 6.679 1.613 14.918L.568 24.863C-.298 33.102 5.716 39.781 14 39.781c5.993 0 11.533-3.496 14.466-8.549h-3.418c-2.477 3.345-6.462 5.565-10.734 5.565-6.628 0-11.439-5.343-10.746-11.934l1.045-9.945C5.306 8.327 11.24 2.984 17.868 2.984Zm-6.942 25.234c.249.074.504.17.775.282a4.611 4.611 0 0 1-1.443.552c-.36.07-.533-.094-.586-.206a.294.294 0 0 1-.017-.209c.02-.08.091-.25.347-.467l.003-.003c.038-.032.192-.166.921.05Z" clip-rule="evenodd"/>
                 </svg>
                 </div>
                 <h1 :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="hidden text-xl font-medium transition-colors duration-300 md:block group-hover:text-stone-500">
-                  Tina Chen
+                  AAA
                 </h1>
               </div>
             </RouterLink>
@@ -36,19 +36,23 @@
           <div class="hidden xl:block">
             <div class="sm:flex sm:flex-row sm:justify-between whitespace-nowrap">
               <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
+                <!-- Menu -->
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
                     class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
-                    :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-white'">
+                    :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-stone-900'">
                     {{ $t(item.text) }}
                   </RouterLink>
                 </li>
+                <!-- Resume -->
                 <li>
-                  <button type="button" class="px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white">
+                  <button type="button" class="px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50">
                     {{ $t('menu.item5') }}
                   </button>
                 </li>
+                <!-- Language -->
                 <LanguageSwitcher />
+                <!-- Dark Toggle -->
                 <DarkModeToggle />
               </ul>
             </div>
@@ -62,6 +66,7 @@
         <div v-if="showMenu" class="fixed inset-0 bg-black bg-opacity-10 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
         <div v-if="showMenu" class="z-20 flex flex-col justify-between p-5 whitespace-nowrap">
           <ul class="flex flex-col gap-2 text-sm font-semibold">
+            <!-- Menu -->
             <li v-for="item in menuItems" :key="item.to">
               <RouterLink :to="item.to" 
                 class="flex items-center px-4 py-2.5 transition-colors duration-200 whitespace-nowrap"
@@ -69,11 +74,14 @@
                 {{ $t(item.text) }}
               </RouterLink>
             </li>
+            <!-- Resume -->
             <li class="flex gap-2">
-              <button type="button" class="px-4 py-2.5 bg-stone-50 border-2 border-white dark:border-stone-900 text-stone-800 rounded-full w-full">
+              <button type="button" class="px-4 py-2.5 bg-stone-50 border-2 border-white dark:border-stone-900 text-stone-800 rounded-full w-full hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50 dark:hover:text-white">
                 {{ $t('menu.item5') }}
               </button>
+              <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />
+              <!-- Dark Toggle -->
               <DarkModeToggle class="border-2 border-stone-50" />
             </li>
           </ul>
