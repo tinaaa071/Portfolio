@@ -1,6 +1,6 @@
 <template>
     <div class="w-full overflow-hidden bg-white rounded-full dark:bg-transparent dark:border dark:border-stone-50">
-        <div class="flex items-center px-1 py-2 whitespace-nowrap marquee-content w-[200%] text-xl font-semibold text-stone-900 dark:text-white">
+        <div class="flex items-center p-1 sm:py-2 whitespace-nowrap marquee-content w-[200%] sm:text-xl font-semibold text-stone-900 dark:text-white text-base">
             <span class="inline-block">
                 {{ text }}{{ text }}{{ text }}{{ text }}{{ text }}{{ text }}{{ text }}{{ text }}{{ text }}{{ text }}
             </span>

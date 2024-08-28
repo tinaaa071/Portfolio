@@ -13,10 +13,10 @@
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
               </div>
               <div>
-                <p class="mb-2 text-lg font-bold leading-normal sm:text-4xl xs:text-2xl text-balance">
+                <p class="mb-2 text-3xl font-bold leading-normal sm:text-4xl text-balance">
                   {{ $t('hero.item1') }}
                 </p>
-                <p class="inline-flex text-lg font-bold sm:text-4x xs:text-2xl">
+                <p class="inline-flex text-3xl font-bold sm:text-4xl">
                   {{ $t('hero.item2') }}
                   <Typewriter class="ml-2" />
                 </p>
@@ -70,7 +70,7 @@
             <p class="mb-4 text-xs font-bold xs:text-base sm:text-lg">
               {{ $t('hero.item10') }}
             </p>
-            <p class="text-lg font-extrabold leading-normal sm:leading-normal xs:text-2xl sm:text-4xl ">
+            <p class="text-base font-extrabold leading-normal sm:leading-normal xs:text-2xl sm:text-4xl ">
               {{ $t('hero.item11') }}
             </p>
           </div>
