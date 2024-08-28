@@ -17,7 +17,7 @@
             @click="selectTab(1)"
           >
             <p class="whitespace-nowrap">01 -&nbsp;</p>
-            {{ $t('work.project1.title') }}
+            {{ $t('project1.title') }}
           </button>
 
           <!-- Project 2 BTN -->
@@ -31,7 +31,7 @@
             @click="selectTab(2)"
           >
             <p class="whitespace-nowrap">02 -&nbsp;</p>
-            {{ $t('work.project2.title') }}
+            {{ $t('project2.title') }}
           </button>
 
           <!-- Project 3 BTN -->
@@ -45,7 +45,7 @@
             @click="selectTab(3)"
           >
             <p class="whitespace-nowrap">03 -&nbsp;</p>
-            {{ $t('work.item4') }}
+            {{ $t('project3.title') }}
           </button>
 
           <!-- Project 4 BTN -->
@@ -58,8 +58,8 @@
             }"
             @click="selectTab(4)"
           >
-            <p class="whitespace-nowrap">04 -&nbsp;</p>
-            {{ $t('work.item5') }}
+            <p class="whitespace-nowrap">02 -&nbsp;</p>
+            {{ $t('project4.title') }}
           </button>
         </div>
       </div>
@@ -70,15 +70,15 @@
         :activeTab="activeTab" 
         @selectTab="selectTab"
         year="2024"
-        :title="$t('work.project1.title')"
-        :desc="$t('work.project1.desc')"
+        :title="$t('project1.title')"
+        :desc="$t('project1.desc')"
         linkTo="/list_1"
         backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
             <template #tag>
-                <Tag text="123" />
-                <Tag text="123" />
-                <Tag text="123" />
+                <Tag :text="$t('work.item3')" />
+                <Tag :text="$t('work.item4')" />
+                <Tag :text="$t('work.item3')" />
             </template>
         </WorkDetail>
         <!-- 專案二 -->

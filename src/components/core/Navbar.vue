@@ -47,7 +47,7 @@
                 <!-- Resume -->
                 <li>
                   <button type="button" class="px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50">
-                    {{ $t('menu.item5') }}
+                    {{ $t('nav.item5') }}
                   </button>
                 </li>
                 <!-- Language -->
@@ -77,7 +77,7 @@
             <!-- Resume -->
             <li class="flex gap-2">
               <button type="button" class="px-4 py-2.5 bg-stone-50 border-2 border-white dark:border-stone-900 text-stone-800 rounded-full w-full hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50 dark:hover:text-white">
-                {{ $t('menu.item5') }}
+                {{ $t('nav.item5') }}
               </button>
               <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />
@@ -105,10 +105,10 @@ export default {
 
     // Main menu items
     const menuItems = [
-      { to: '/', text: 'menu.item1' },
-      { to: '/list_1', text: 'menu.item2' },
-      { to: '/list_2', text: 'menu.item3' },
-      { to: '/list_3', text: 'menu.item4' }
+      { to: '/', text: 'nav.item1' },
+      { to: '/list_1', text: 'nav.item2' },
+      { to: '/list_2', text: 'nav.item3' },
+      { to: '/list_3', text: 'nav.item4' }
     ];
 
     const activeItem = computed(() => 
