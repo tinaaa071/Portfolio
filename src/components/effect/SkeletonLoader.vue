@@ -1,20 +1,20 @@
 <template>
     <div 
-    class="h-full"
-    :class="['relative', animationClass]"
+      class="relative h-full"
+      :class="animationClass"
     >
       <!-- Skeleton Loader Container -->
-      <div :class="['bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden', sizeClass]">
-        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-300 animate-shimmer"></div>
+      <div :class="[' rounded-md overflow-hidden', sizeClass]">
+        <div class="absolute top-0 left-0 w-full h-full animate-shimmer"></div>
       </div>
   
       <!-- Text Placeholder Skeletons -->
       <div v-if="!isCircle && size !== 'full'" class="mt-4 space-y-3">
         <div :class="['bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden', textSizeClass]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-300 animate-shimmer"></div>
+          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-200 dark:from-gray-700 to-gray-300 dark:to-gray-600 animate-shimmer"></div>
         </div>
         <div :class="['bg-gray-200 dark:bg-gray-700 rounded-md overflow-hidden', textSizeClass]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-200 to-gray-300 animate-shimmer"></div>
+          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-200 dark:from-gray-700 to-gray-300 dark:to-gray-600 animate-shimmer"></div>
         </div>
       </div>
     </div>
@@ -43,21 +43,21 @@
           medium: 'h-32 w-full',
           large: 'h-48 w-full',
           circle: 'h-20 w-20 rounded-full',
-          full: 'h-full w-full' // New full size option
-        }[this.size]
+          full: 'h-full w-full'
+        }[this.size];
       },
       textSizeClass() {
         return {
           small: 'h-6 w-3/4',
           medium: 'h-8 w-1/2',
           large: 'h-10 w-full'
-        }[this.textSize]
+        }[this.textSize];
       },
       animationClass() {
-        return this.isCircle ? 'animate-pulse' : 'animate-shimmer'
+        return this.isCircle ? 'animate-pulse' : 'animate-shimmer';
       }
     }
-  }
+  };
   </script>
   
   <style scoped>
@@ -72,7 +72,7 @@
   }
   
   .animate-shimmer {
-    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+    background: linear-gradient(to right, #f3f4f6 0%, #e5e7eb 50%, #f3f4f6 100%);
     background-size: 2000px 100%;
     animation: shimmer 1.5s infinite;
   }

@@ -10,6 +10,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { setThemeCookie, applyThemeFromCookie } from '@/utils/themeCookieUtil.js';
 
 const isDarkMode = ref(false);
 
@@ -17,16 +18,23 @@ const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
   if (isDarkMode.value) {
     document.documentElement.classList.add('dark');
+    setThemeCookie('dark');
   } else {
     document.documentElement.classList.remove('dark');
+    setThemeCookie('light');
   }
 };
 
 onMounted(() => {
-  // Initialize based on system preference
-  isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (isDarkMode.value) {
-    document.documentElement.classList.add('dark');
+  const theme = applyThemeFromCookie();
+  if (theme) {
+    isDarkMode.value = theme === 'dark';
+  } else {
+    // Initialize based on system preference
+    isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode.value) {
+      document.documentElement.classList.add('dark');
+    }
   }
 });
 </script>
