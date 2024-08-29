@@ -1,5 +1,5 @@
 <template>
-    <pre ref="codeContainer" class="whitespace-pre-wrap xs:max-h-40 sm:max-h-64 aspect-square sm:rounded-3xl rounded-2xl max-h-32"><code ref="code" class="block overflow-hidden language-javascript" :style="{ fontSize: fontSize + 'px' }">{{ displayedText }}</code></pre>
+    <pre ref="codeContainer" class="whitespace-pre-wrap xs:max-h-40 sm:max-h-64 aspect-square sm:rounded-3xl rounded-2xl max-h-32"><code ref="code" class="block overflow-hidden language-javascript" :style="{ fontSize: fontSize }">{{ displayedText }}</code></pre>
   </template>
   
   <script>
@@ -28,7 +28,7 @@
   })`,
         displayedText: '',
         currentIndex: 0,
-        fontSize: 16,
+        fontSize: '16px'
       };
     },
     mounted() {
