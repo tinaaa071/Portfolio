@@ -2,7 +2,6 @@
   <div class="pb-5 bg-Quaternary dark:bg-stone-900 text-stone-900">
     <Layout>
     <template #content>
-      
       <div class="space-y-5 sm:space-y-8">
         <BackToTop class="z-[200]" />
         <!-- Hero 區塊 -->
@@ -84,10 +83,10 @@
         <!-- Works 區塊 -->
          <WorkCard />
       </div>
-      
     </template>
   </Layout>
-</div>
+  </div>
+  <Footer />
 </template>
 
 <script>
