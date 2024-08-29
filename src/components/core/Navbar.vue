@@ -20,7 +20,7 @@
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
                 <div class="transition-colors duration-300 md:block group-hover:text-stone-500">
                   <svg 
-                  class="h-9 sm:h-10" 
+                  class="h-9 sm:h-11" 
                   xmlns="http://www.w3.org/2000/svg"  fill="currentColor" 
                   viewBox="0 0 32 40"
                   >

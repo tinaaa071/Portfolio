@@ -1,6 +1,6 @@
 <template>
   <RouterLink :to="linkTo">
-    <div class="inline-block m-2 text-lg text-center bg-white border border-white rounded-full bg-opacity-20 hover backdrop-blur-md arrow" :data-hover="hoverIcon">
+    <div class="relative inline-block m-2 text-lg font-bold text-center bg-white border border-white rounded-full bg-opacity-20 hover sm:w-14 sm:h-14 w-10 h-10 backdrop-blur-md arrow sm:leading-[56px] leading-10 rotate-45" :data-hover="hoverIcon">
     </div>
   </RouterLink>
 </template>
@@ -22,18 +22,6 @@ export default {
 </script>
 
 <style scoped>
-
-.arrow.hover {
-  font-weight: bold;
-  color: transparent;
-  position: relative;
-  backface-visibility: hidden;
-  width: 60px; /* Set a fixed width */
-  height: 60px; /* Set a fixed height */
-  line-height: 60px; /* Center the text vertically */
-  transform: rotate(45deg); /* Rotate the button by 45° */
-}
-
 .arrow.hover::before,
 .arrow.hover::after {
   content: attr(data-hover);
