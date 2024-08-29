@@ -9,7 +9,7 @@
             <p class="text-2xl font-bold">
               {{ title }}
             </p>
-            <p class="hidden text-xl font-medium md:block">
+            <p class="hidden text-xl font-light md:block">
               {{ desc }}
             </p>
           </div>
