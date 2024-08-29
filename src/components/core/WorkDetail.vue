@@ -1,16 +1,18 @@
 <template>
     <div  class="relative w-full h-full ">
-      <div class="absolute top-0 left-0 z-10 flex flex-col justify-between w-full h-full p-5 text-white transition-all duration-300 ease-in-out md:opacity-0 sm:p-8 bg-stone-900/20 md:hover:opacity-100 backdrop-blur-lg">
-        <div class="space-y-4 cursor-default">
-          <p class="font-medium">
+      <div class="absolute top-0 left-0 z-10 flex flex-col justify-between w-full h-full p-5 text-white transition-all duration-300 ease-in-out lg:opacity-0 sm:p-8 bg-stone-900/20 lg:hover:opacity-100 backdrop-blur-lg">
+        <div class="space-y-6 cursor-default">
+          <div class="space-y-3">
+            <p class="font-medium">
             {{ year }}
-          </p>
-          <p class="text-2xl font-bold">
-            {{ title }}
-          </p>
-          <p class="hidden text-xl font-medium sm:block">
-            {{ desc }}
-          </p>
+            </p>
+            <p class="text-2xl font-bold">
+              {{ title }}
+            </p>
+            <p class="hidden text-xl font-medium md:block">
+              {{ desc }}
+            </p>
+          </div>
           <div class="flex gap-3">
             <slot name="tag"></slot>
           </div>

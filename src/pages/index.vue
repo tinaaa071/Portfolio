@@ -70,7 +70,7 @@
             <p class="mb-4 text-xs font-bold sm:text-sm md:text-lg">
               {{ $t('hero.item10') }}
             </p>
-            <p class="text-base font-extrabold leading-normal sm:leading-normal xs:leading-normal xs:text-xl sm:text-3xl lg:text-4xl lg:leading-normal">
+            <p class="text-lg font-extrabold leading-normal sm:leading-normal xs:leading-normal xs:text-2xl sm:text-3xl lg:text-4xl lg:leading-normal">
               {{ $t('hero.item11') }}
             </p>
           </div>

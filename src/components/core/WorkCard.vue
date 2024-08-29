@@ -1,11 +1,11 @@
 <template>
-    <div class="grid grid-cols-1 overflow-hidden bg-white md:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-stone-800 dark:border dark:border-white rounded-2xl">
+    <div class="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-stone-800 dark:border dark:border-white rounded-2xl">
       <!-- Left Section -->
       <div class="p-5 sm:p-8">
         <p class="tracking-[.25em] sm:mb-10 mb-8 text-xs xs:text-base sm:text-lg font-bold">
           {{ $t('work.item1') }}
         </p>
-        <div class="space-y-5 text-xl font-extrabold xs:text-2xl sm:text-4xl text-stone-400 dark:text-stone-400">
+        <div class="space-y-3 text-xl font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl lg:sm:text-4xl text-stone-400 dark:text-stone-400">
           <!-- Project 1 BTN -->
           <button
             type="button"
@@ -44,7 +44,7 @@
             }"
             @click="selectTab(3)"
           >
-            <p class="whitespace-nowrap">03 -&nbsp;</p>
+            <p class="whitespace-nowrap">02 -&nbsp;</p>
             {{ $t('project3.title') }}
           </button>
 
@@ -64,7 +64,7 @@
         </div>
       </div>
       <!-- Right Section -->
-      <div class="h-80 sm:h-96 md:h-auto">
+      <div class="h-80 md:h-96 lg:h-auto">
         <!-- 專案一 -->
         <WorkDetail 
         v-if="activeTab === 1"
