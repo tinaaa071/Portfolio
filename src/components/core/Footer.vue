@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between px-20 py-10 text-white bg-stone-900">
+  <div class="flex items-center justify-between px-20 py-10 text-white dark:text-stone-900 bg-stone-900 dark:bg-Tertiary">
     <!-- Icon Group -->
     <ul class="flex">
         <li v-for="item in menuItems" :key="item.to">
