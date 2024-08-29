@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-stone-800 dark:border dark:border-white rounded-2xl">
+  <div class="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white rounded-2xl">
     <!-- Left Section -->
     <div class="p-5 sm:p-8">
       <p class="tracking-[.25em] sm:mb-10 mb-8 text-xs xs:text-base sm:text-lg font-bold">
@@ -26,7 +26,8 @@
 
     <!-- Right Section -->
     <div class="h-80 md:h-96 lg:h-auto">
-      <TabTransition>
+      <SkeletonLoader v-if="loading" size="full" />
+      <TabTransition v-else >
         <WorkDetail
           v-if="activeTab === 1"
           :key="1"
@@ -103,21 +104,32 @@
   </div>
 </template>
   
-  <script>
-  import { ref } from 'vue'
-
+<script>
+import { ref, onMounted } from 'vue'
 
 export default {
   setup() {
+    const loading = ref(true)
+    const data = ref(null)
     const activeTab = ref(1)
 
     const selectTab = (tab) => {
       activeTab.value = tab
     }
 
+    onMounted(async () => {
+      // Simulate a delay for loading data
+      setTimeout(async () => {
+        data.value = 'Loaded content here'
+        loading.value = false
+      }, 2000)
+    })
+
     return {
       activeTab,
-      selectTab
+      selectTab,
+      loading,
+      data
     }
   }
 }
