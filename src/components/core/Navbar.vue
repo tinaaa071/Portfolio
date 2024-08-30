@@ -10,7 +10,7 @@
         'transition-colors ease-in-out duration-500'  // Add transition classes here
     ]"
     >
-      <div class="relative flex flex-row items-center justify-between w-full p-2.5 md:px-5 md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
+      <div class="relative flex flex-row items-center justify-between w-full px-4 py-2.5 md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
         <!-- Logo -->
         <div class="flex items-center justify-between w-full">
           <div class="inline-flex items-center space-x-3.5 group">

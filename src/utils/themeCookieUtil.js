@@ -2,7 +2,7 @@
 import Cookies from 'js-cookie';
 
 const THEME_COOKIE_NAME = 'theme';
-const THEME_COOKIE_EXPIRATION_DAYS = 7;
+const THEME_COOKIE_EXPIRATION_DAYS = 1;
 
 export const setThemeCookie = (theme) => {
   Cookies.set(THEME_COOKIE_NAME, theme, { expires: THEME_COOKIE_EXPIRATION_DAYS });

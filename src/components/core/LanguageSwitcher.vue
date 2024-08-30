@@ -9,7 +9,7 @@
   export default {
     computed: {
       buttonText() {
-        return this.$i18n.locale === 'en' ? 'EN' : '中文';
+        return this.$i18n.locale === 'en' ? '中文' : 'EN';
       }
     },
     methods: {
