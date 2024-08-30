@@ -1,16 +1,16 @@
 <template>
-  <div class="flex items-center justify-between px-20 py-10 text-white dark:text-stone-900 bg-stone-900 dark:bg-Tertiary">
+  <div class="flex flex-col items-center justify-between gap-6 px-6 py-8 sm:py-10 sm:flex-row sm:px-10 xl:px-28 bg-stone-900 dark:bg-Tertiary">
     <!-- Icon Group -->
     <ul class="flex">
         <li v-for="item in menuItems" :key="item.to">
             <RouterLink :to="item.to" 
-            class="flex items-center gap-6 p-3 text-xl rounded-full sm:p-5 bg-stone-800"
+            class="flex items-center p-3.5 text-sm text-white rounded-full sm:text-xl sm:p-5 bg-stone-800 hover:bg-stone-700 transition-colors ease-in-out duration-300"
             >
                 <component :is="item.icon" />
             </RouterLink>
         </li>
     </ul>
-     <p class="text-sm font-normal">
+     <p class="text-sm font-normal text-white dark:text-stone-900">
         Copyright © 2024 Tina Chen
      </p>
   </div>
