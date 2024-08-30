@@ -28,6 +28,7 @@
     <div class="h-80 md:h-96 lg:h-auto">
       <SkeletonLoader v-if="loading" size="full" />
       <TabTransition v-else >
+        <!-- Project 1 -->
         <WorkDetail
           v-if="activeTab === 1"
           :key="1"
@@ -45,7 +46,7 @@
             <Tag :text="$t('work.item3')" />
           </template>
         </WorkDetail>
-
+        <!-- Project 2 -->
         <WorkDetail
           v-if="activeTab === 2"
           :key="2"
@@ -63,7 +64,7 @@
             <Tag :text="$t('work.item3')" />
           </template>
         </WorkDetail>
-
+        <!-- Project 3 -->
         <WorkDetail
           v-if="activeTab === 3"
           :key="3"
@@ -81,7 +82,7 @@
             <Tag :text="$t('work.item3')" />
           </template>
         </WorkDetail>
-
+        <!-- Project 4 -->
         <WorkDetail
           v-if="activeTab === 4"
           :key="4"
@@ -134,4 +135,3 @@ export default {
   }
 }
   </script>
-  

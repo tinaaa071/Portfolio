@@ -50,7 +50,7 @@
                 </li>
                 <!-- Resume -->
                 <li>
-                  <RouterLink to="/" class="text-center px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50">
+                  <RouterLink to="/" class="text-center px-4 py-2.5 border-2 border-stone-900 rounded-full dark:border-white hover:bg-Tertiary/80 transition-colors ease-in-out duration-300 dark:hover:bg-stone-800/50 dark:text-white">
                     {{ $t('nav.item5') }}
                   </RouterLink>
                 </li>
@@ -67,7 +67,7 @@
       </div>
       <!-- Mobile Menu -->
       <div class="lg:hidden">
-        <div v-if="showMenu" class="fixed inset-0 bg-black bg-opacity-10 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
+        <div v-if="showMenu" class="fixed inset-0 bg-black/20 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
         <div v-if="showMenu" class="z-20 flex flex-col justify-between p-2.5 md:p-5 whitespace-nowrap">
           <ul class="flex flex-col gap-2 text-sm font-semibold">
             <!-- Menu -->

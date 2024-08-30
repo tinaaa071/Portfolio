@@ -3,7 +3,7 @@
     <Layout>
     <template #content>
       <div class="space-y-5 sm:space-y-8">
-        <BackToTop class="z-[200]" />
+        <BackToTop class="z-20" />
         <!-- Hero 區塊 -->
         <div class="grid grid-flow-row-dense grid-cols-4 gap-2.5 sm:gap-4 ">
           <!-- 第一格 -->
@@ -30,23 +30,25 @@
             </div>
           </div>
           <!-- 第二格 -->
-          <RouterLink to="/" class="col-span-2 overflow-hidden sm:rounded-3xl lg:col-span-1 rounded-2xl">
+          <div class="col-span-2 overflow-hidden cursor-pointer sm:rounded-3xl lg:col-span-1 rounded-2xl"
+          @click="isModalOpen = true"
+          >
             <div class="relative w-full h-full ">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
               </div>
-              <div class="w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover -z-10 rounded-3xl hover:scale-110"
+              <div class="z-0 w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover rounded-3xl hover:scale-110"
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
               </div>
             </div>
-          </RouterLink>
+          </div>
           <!-- 第三格 -->
           <RouterLink to="/" class="hidden row-span-2 overflow-hidden sm:rounded-3xl lg:block rounded-2xl">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
               </div>
-              <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
+              <p class="absolute w-fit h-fit inset-0 z-0 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
               style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
               >
               {{ $t('hero.item9') }}
@@ -87,12 +89,19 @@
   </Layout>
   </div>
   <Footer />
+  <Modal1 :show="isModalOpen" @close="isModalOpen = false">
+    <Spline />
+  </Modal1>
 </template>
 
 <script>
 import { ref } from 'vue';
 
 export default {
-
+  setup(props) {
+      const isModalOpen = ref(false)
+      
+      return { isModalOpen }
+    }
 };
 </script>
