@@ -89,6 +89,7 @@
   </Layout>
   </div>
   <Footer />
+  <CardTilt />
   <Modal :show="isModalOpen" @close="isModalOpen = false">
     <Spline />
   </Modal>
