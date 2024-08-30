@@ -5,7 +5,7 @@
       frameborder="0"
       allowfullscreen
       loading="lazy"
-      class="w-full h-[600px]" 
+      class="w-full h-[500px] rounded-3xl" 
     ></iframe>
   </div>
 </template>

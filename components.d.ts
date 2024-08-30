@@ -27,7 +27,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SecondaryButton: typeof import('./src/components/SecondaryButton.vue')['default']
-    Spline: typeof import('./src/components/Spline.vue')['default']
+    Spline: typeof import('./src/components/effect/Spline.vue')['default']
     Table: typeof import('./src/components/Table.vue')['default']
     TransitionChild: typeof import('@headlessui/vue')['TransitionChild']
     TransitionRoot: typeof import('@headlessui/vue')['TransitionRoot']

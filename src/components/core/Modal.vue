@@ -2,18 +2,22 @@
     <TransitionFade name="fade">
       <div
         v-if="show"
-        class="fixed inset-0 z-50 flex items-center justify-center w-full p-6 bg-black/30 backdrop-blur-lg "
+        class="fixed inset-0 z-50 flex items-center justify-center w-full p-6 text-right bg-black/30 backdrop-blur-lg"
         @click="handleOverlayClick"
       >
         <div
-          class="relative w-full p-6 bg-white rounded-lg shadow-lg sm:max-w-5xl"
+          class="relative w-full shadow-lg sm:max-w-5xl"
           @click.stop
         >
-          <button @click="$emit('close')" class="absolute text-gray-500 top-3 right-3 hover:text-gray-800">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+        <button
+            type="button"
+            class="p-3 mb-4 text-white transition-colors border-2 border-white rounded-xl bg-white/10 group hover:bg-white/15"
+            @click="$emit('close')"
+          >
+            <span class="sr-only">Close</span>
+            <fa6-solid-xmark class="transition-all duration-200 ease-in-out group-hover:rotate-90" />
           </button>
+          
           <slot></slot>
         </div>
       </div>
