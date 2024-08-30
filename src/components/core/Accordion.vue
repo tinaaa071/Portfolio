@@ -1,9 +1,9 @@
 <template>
-    <div class="accordion">
+    <div class="overflow-hidden accordion rounded-2xl sm:rounded-3xl">
       <button
         @click="toggle"
         :class="{
-          'bg-Quaternary text-Primary': isOpen, // Change this to your desired active color
+          'bg-Quaternary text-Primary shadow': isOpen, // Change this to your desired active color
           'bg-white': !isOpen
         }"
         class="flex items-center justify-between w-full px-4 py-2 text-left transition-colors duration-300 ease-in-out hover:bg-Quaternary"
