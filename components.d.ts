@@ -19,7 +19,7 @@ declare module 'vue' {
     LanguageSwitcher: typeof import('./src/components/core/LanguageSwitcher.vue')['default']
     Layout: typeof import('./src/components/core/Layout.vue')['default']
     LikertScale: typeof import('./src/components/LikertScale.vue')['default']
-    Modal: typeof import('./src/components/core/Modal.vue')['default']
+    Modal: typeof import('./src/components/core/Modal(old).vue')['default']
     Navbar: typeof import('./src/components/core/Navbar.vue')['default']
     PrimaryButton: typeof import('./src/components/PrimaryButton.vue')['default']
     Question: typeof import('./src/components/Question.vue')['default']

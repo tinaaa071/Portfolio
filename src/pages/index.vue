@@ -89,9 +89,9 @@
   </Layout>
   </div>
   <Footer />
-  <Modal1 :show="isModalOpen" @close="isModalOpen = false">
+  <Modal :show="isModalOpen" @close="isModalOpen = false">
     <Spline />
-  </Modal1>
+  </Modal>
 </template>
 
 <script>
