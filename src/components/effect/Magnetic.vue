@@ -1,8 +1,8 @@
 <template>
-    <div class="magnetic-container" @mousemove="onMouseMove" @mouseleave="onMouseLeave">
-      <button class="magnetic-button" :style="buttonStyle" :class="{ sway: isSwaying, 'hover-effect': isHovering }" @mouseenter="onMouseEnter">
-        <span class="magnetic-text" :style="textStyle">
-          Hover Me
+    <div class="relative flex items-center px-8 py-6 overflow-hidden h-fit w-fit" @mousemove="onMouseMove" @mouseleave="onMouseLeave">
+      <button class="relative flex items-center justify-center text-sm font-bold px-6 py-3.5 overflow-hidden text-white rounded-full magnetic-button bg-stone-900 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-stone-100 w-fit h-fit" :style="buttonStyle" :class="{ sway: isSwaying, 'hover-effect ': isHovering }" @mouseenter="onMouseEnter">
+        <span class="inline-block transition-transform duration-200 ease-out " :style="textStyle">
+          {{ $t('work.item2') }}
         </span>
       </button>
     </div>
@@ -79,40 +79,16 @@
   </script>
   
   <style scoped>
-  .magnetic-container {
-    position: relative;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+
   
   .magnetic-button {
-    position: relative;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
     transition: color 0.4s ease-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+
     z-index: 1;
   }
   
   .magnetic-button::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background-color: #ffffff;
     border-radius: 50% 50% 0 0;
     transform: translate(-50%, 100%);
     transition: transform 0.4s ease-out;
@@ -124,13 +100,9 @@
   }
   
   .magnetic-button.hover-effect {
-    color: #007bff; /* Text color changes when hovered */
+    color: #1c1917; /* Text color changes when hovered */
   }
-  
-  .magnetic-text {
-    display: inline-block;
-    transition: transform 0.2s ease-out;
-  }
+
   
   .magnetic-button.sway {
     animation: sway 1s ease-out;

@@ -13,7 +13,7 @@
               {{ desc }}
             </p>
           </div>
-          <div class="flex gap-3">
+          <div class="flex gap-2 sm:gap-3">
             <slot name="tag"></slot>
           </div>
         </div>

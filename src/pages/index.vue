@@ -89,10 +89,12 @@
   </Layout>
   </div>
   <Footer />
-  <CardTilt />
   <Modal :show="isModalOpen" @close="isModalOpen = false">
     <Spline />
   </Modal>
+  <Accordion title="Section 1">
+      <p>This is the content of section 1.</p>
+    </Accordion>
 </template>
 
 <script>

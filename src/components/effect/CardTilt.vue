@@ -1,13 +1,7 @@
 <template>
-    <div class="card" ref="card" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" @mouseenter="handleMouseEnter">
-        <div class="content">
-          <img class="icon" src="https://safe.flatypus.me/8lhc6n6cecf2.png" />
-          <div class="text">
-            <h3>Magic Mouse Card Tilt Effect</h3>
-            <p>Try hovering over this card to see what it does!</p>
-          </div>
-        </div>
-      </div>
+    <div ref="card" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" @mouseenter="handleMouseEnter">
+        <slot></slot>
+    </div>
   </template>
   
   <script>
@@ -59,44 +53,4 @@
   };
   </script>
   
-  <style scoped>
-  .card {
-    width: 300px;
-    height: 800px;
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    transition: transform 0.3s ease-out;
-    cursor: pointer;
-  }
-  
-  .card .content {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(16px);
-    border-radius: 1.5rem;
-    padding: 2rem;
-  }
-  
-  .card .content .icon {
-    width: 4rem;
-    border-radius: 1rem;
-  }
-  
-  .card .content .text {
-    margin-top: 1.5rem;
-  }
-  
-  .card .content h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .card .content p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #718096;
-  }
-  </style>
   
