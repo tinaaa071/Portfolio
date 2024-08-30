@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="px-3 py-2.5 border-2 rounded-full sm:py-3 sm:px-4 xl:hidden"
+    class="px-3 py-2.5 border-2 rounded-full sm:py-3 sm:px-4 lg:hidden"
     :class="isOpen ? 'border-white dark:border-stone-900' : 'border-stone-900 dark:border-white'"
   >
     <div 

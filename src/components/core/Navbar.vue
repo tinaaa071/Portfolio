@@ -37,7 +37,7 @@
 
         <!-- Web Menu -->
         <div class="flex items-center justify-center gap-10">
-          <div class="hidden xl:block">
+          <div class="hidden lg:block">
             <div class="sm:flex sm:flex-row sm:justify-between whitespace-nowrap">
               <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
                 <!-- Menu -->
@@ -66,7 +66,7 @@
         <Hamburger :toggleMenu="toggleMenu" :isOpen="showMenu" />
       </div>
       <!-- Mobile Menu -->
-      <div class="xl:hidden">
+      <div class="lg:hidden">
         <div v-if="showMenu" class="fixed inset-0 bg-black bg-opacity-10 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
         <div v-if="showMenu" class="z-20 flex flex-col justify-between p-2.5 md:p-5 whitespace-nowrap">
           <ul class="flex flex-col gap-2 text-sm font-semibold">
