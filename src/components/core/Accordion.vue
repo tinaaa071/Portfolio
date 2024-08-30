@@ -3,10 +3,10 @@
       <button
         @click="toggle"
         :class="{
-          'bg-blue-500': isOpen, // Change this to your desired active color
+          'bg-Quaternary text-Primary': isOpen, // Change this to your desired active color
           'bg-white': !isOpen
         }"
-        class="flex items-center justify-between w-full px-4 py-2 text-left transition-colors duration-300 ease-in-out hover:bg-gray-200"
+        class="flex items-center justify-between w-full px-4 py-2 text-left transition-colors duration-300 ease-in-out hover:bg-Quaternary"
       >
         <span>{{ title }}</span>
         <PlusButton :isPlus="!isOpen" @toggle="toggle" />
