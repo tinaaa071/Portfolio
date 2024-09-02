@@ -1,6 +1,6 @@
 <template>
-    <div class="fixed top-0 left-0 w-full h-1.5 bg-stone-200/90 dark:bg-stone-100/10 z-50">
-      <div class="h-full transition-all duration-300 ease-in-out bg-stone-400 dark:bg-stone-300/70" :style="{ width: progress + '%' }"></div>
+    <div class="fixed top-0 left-0 w-full h-1.5 bg-stone-100/50  z-50">
+      <div class="h-full transition-all duration-300 ease-in-out bg-stone-800 " :style="{ width: progress + '%' }"></div>
     </div>
   </template>
   

@@ -1,5 +1,8 @@
 <template>
-  <div class="fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10">
+  <div :class="[
+      'fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10 transition-transform duration-300 h-full',
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    ]" >
     <!-- Navbar -->
     <div 
     :class="[
@@ -18,7 +21,7 @@
             <RouterLink to="/" class="">
               <!-- Your SVG Logo -->
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
-                <div class="transition-colors duration-300 md:block group-hover:text-stone-500">
+                <div class="transition-colors duration-300 md:block group-hover:text-stone-500 flex items-center">
                   <svg 
                   class="h-9 sm:h-11" 
                   xmlns="http://www.w3.org/2000/svg"  fill="currentColor" 
@@ -98,15 +101,15 @@
 </template>
 
 <script>
-import { computed, ref } from "vue";
-import { useRoute, useRouter } from 'vue-router';
+import { computed, ref, onMounted, onBeforeUnmount } from "vue";
+import { useRoute } from 'vue-router';
 
 export default {
   setup() {
     const route = useRoute();
-    const router = useRouter();
-
     const showMenu = ref(false);
+    const isVisible = ref(true);
+    const lastScrollY = ref(window.scrollY);
     const toggleMenu = () => showMenu.value = !showMenu.value;
 
     // Main menu items
@@ -125,7 +128,27 @@ export default {
 
     const isActive = to => to === activeItem.value.to;
 
-    return { showMenu, toggleMenu, menuItems, isActive };
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      isVisible.value = currentScrollY < lastScrollY.value || currentScrollY <= 0; // Show navbar when scrolling up or at the top
+      lastScrollY.value = currentScrollY;
+    };
+
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('scroll', handleScroll);
+    });
+
+    return { showMenu, toggleMenu, menuItems, isActive, isVisible };
   }
 }
 </script>
+
+<style scoped>
+.fixed {
+  transition: transform 0.3s ease-in-out;
+}
+</style>

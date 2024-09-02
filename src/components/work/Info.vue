@@ -25,7 +25,7 @@
           </div>
           <!-- BTN -->
           <MagneticButton 
-            :to="linkTo" 
+            :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.item5')"
             class="hidden sm:block"
@@ -56,7 +56,7 @@
         </div>
         <!-- BTN -->
         <MagneticButton 
-            :to="linkTo" 
+            :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.item5')"
             class="sm:hidden"
@@ -125,10 +125,7 @@
         type: [Object, Function],
         required: true,
         },
-      text: {
-        type: String,
-        required: true,
-      },
+      
       showIcon: {
         type: Boolean,
         default: true,

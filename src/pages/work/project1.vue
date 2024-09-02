@@ -1,8 +1,7 @@
 <template> 
-     <div class="h-screen pb-6 sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900">
-      <Layout>
-        <template #content>
-          
+     <div class="relative pb-6 sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900">
+      <Navbar />
+      <ProgressBar />
           <!-- Banner -->
           <Banner 
             title="123"
@@ -24,12 +23,12 @@
             :tagVisible="[true, false, true, true, false]"
             :iconsVisible="[true, false, true, true, false]"
             :linkTo="'/'"
-            :icon="icon"  
+            :icon="icon" 
+            :text="$t('work.item5')" 
             />
             <Footer />
           </div>
-        </template>
-      </Layout>
+
     </div>
   </template>
   
