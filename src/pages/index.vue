@@ -92,9 +92,13 @@
   <Modal :show="isModalOpen" @close="isModalOpen = false">
     <Spline />
   </Modal>
-  <Accordion title="Section 1">
-      <p>This is the content of section 1.</p>
-    </Accordion>
+  <Accordion
+    title="Accordion Title"
+    :showAvatar="true"
+    avatarSrc="https://images.unsplash.com/photo-1688298094518-eb16cfbda0bc?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+  >
+    <p>Accordion content goes here.</p>
+  </Accordion>
 </template>
 
 <script>

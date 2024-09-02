@@ -3,12 +3,20 @@
       <button
         @click="toggle"
         :class="{
-          'bg-Quaternary text-Primary shadow': isOpen, // Change this to your desired active color
-          'bg-white': !isOpen
+          'bg-Quaternary text-Primary shadow': isOpen,
+          'bg-white text-stone-900': !isOpen
         }"
         class="flex items-center justify-between w-full px-4 py-2 text-left transition-colors duration-300 ease-in-out hover:bg-Quaternary"
       >
-        <span>{{ title }}</span>
+        <div class="flex items-center gap-4">
+          <img
+          v-if="showAvatar"
+          :src="avatarSrc"
+          alt="Avatar"
+          class="object-cover w-10 h-10 rounded-full"
+          />
+          <span>{{ title }}</span>
+        </div>
         <PlusButton :isPlus="!isOpen" @toggle="toggle" />
       </button>
       <TransitionFade>
@@ -20,30 +28,41 @@
   </template>
   
   <script>
-import { ref } from 'vue';
-
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
+  import { ref } from 'vue';
+  import PlusButton from './PlusButton.vue'; // Adjust the path as needed
+  
+  export default {
+    components: {
+      PlusButton,
     },
-  },
-  setup(props) {
-    const isOpen = ref(false);
-
-    const toggle = () => {
-      isOpen.value = !isOpen.value;
-    };
-
-    return {
-      props,
-      isOpen,
-      toggle,
-    };
-  },
-};
-</script>
+    props: {
+      title: {
+        type: String,
+        required: true,
+      },
+      showAvatar: {
+        type: Boolean,
+        default: false,
+      },
+      avatarSrc: {
+        type: String,
+        default: '', // Default can be set to a placeholder or left blank
+      },
+    },
+    setup(props) {
+      const isOpen = ref(false);
+  
+      const toggle = () => {
+        isOpen.value = !isOpen.value;
+      };
+  
+      return {
+        isOpen,
+        toggle,
+      };
+    },
+  };
+  </script>
   
   <style scoped>
   /* Assuming TransitionFade is a defined transition */
