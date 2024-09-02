@@ -7,7 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Banner: typeof import('./src/components/core/Banner.vue')['default']
+    Banner: typeof import('./src/components/core/Banner1.vue')['default']
     CheckButton: typeof import('./src/components/CheckButton.vue')['default']
     Confirm: typeof import('./src/components/Confirm.vue')['default']
     Date: typeof import('./src/components/Date.vue')['default']

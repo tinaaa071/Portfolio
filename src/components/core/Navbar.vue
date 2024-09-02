@@ -112,9 +112,9 @@ export default {
     // Main menu items
     const menuItems = [
       { to: '/', text: 'nav.item1' },
-      { to: '/list_1', text: 'nav.item2' },
-      { to: '/list_2', text: 'nav.item3' },
-      { to: '/list_3', text: 'nav.item4' }
+      { to: '/about', text: 'nav.item2' },
+      { to: '/blog', text: 'nav.item3' },
+      { to: '/others', text: 'nav.item4' }
     ];
 
     const activeItem = computed(() => 
