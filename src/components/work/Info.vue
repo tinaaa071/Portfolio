@@ -2,9 +2,26 @@
   <div class="w-full px-6 py-8 xs:p-10 bg-Quaternary text-stone-900 fixed left-0 sm:top-[560px] top-[480px]">
     <!-- Tag -->
     <div class="flex gap-2 sm:gap-3">
-        <Tag :text="$t('work.item3')" />
-        <Tag :text="$t('work.item4')" />
-        <Tag :text="$t('work.item3')" />
+        <Tag 
+        :text="tagText1"
+        v-if="tagVisible[0]" aria-hidden="true"
+         />
+        <Tag 
+        :text="tagText2"
+        v-if="tagVisible[1]" aria-hidden="true"
+         />
+        <Tag 
+        :text="tagText3"
+        v-if="tagVisible[2]" aria-hidden="true"
+         />
+        <Tag 
+        :text="tagText4"
+        v-if="tagVisible[3]" aria-hidden="true"
+         />
+        <Tag 
+        :text="tagText5"
+        v-if="tagVisible[4]" aria-hidden="true"
+         />
     </div>
     <!-- Title -->
      <h2 class="text-5xl font-bold">
@@ -75,6 +92,31 @@ props: {
         type: String,
         required: true,
     },
+    tagText1: { 
+      type: String,
+      required: true,
+    },
+    tagText2: { 
+      type: String,
+      required: true,
+    },
+    tagText3: { 
+      type: String,
+      required: true,
+    },
+    tagText4: { 
+      type: String,
+      required: true,
+    },
+    tagText5: { 
+      type: String,
+      required: true,
+    },
+    tagVisible: {
+        type: Array,
+        default: () => [false, false, false, false, false], // Default to all hidden
+        validator: (value) => value.length === 5 && value.every((item) => typeof item === 'boolean'),
+      },
 }
 };
 </script>

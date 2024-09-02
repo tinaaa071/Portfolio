@@ -12,6 +12,12 @@
         :info2="$t('work.item3')"
         :info3="$t('work.item3')"
         :info4="$t('work.item3')"
+        :tagText1="$t('work.item1')"
+        :tagText2="$t('work.item2')"
+        :tagText3="$t('work.item3')"
+        :tagText4="$t('work.item4')"
+        :tagText5="$t('work.item5')"
+        :tagVisible="[true, false, true, true, false]"
         />
     </template>
   </Layout>
