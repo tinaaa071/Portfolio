@@ -2,6 +2,7 @@
      <div class="relative pb-6 sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900">
       <Navbar />
       <ProgressBar />
+      <BackToTop class="z-20" />
           <!-- Banner -->
           <Banner 
             title="123"

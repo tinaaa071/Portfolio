@@ -1,7 +1,7 @@
 <template>
     <div 
-    class="relative inline-block overflow-hidden align-bottom"
-    style="height: 1.25em;"
+    class="relative inline-block overflow-hidden align-bottom h-7"
+    
     >
         <span 
         class="block vslide" 
