@@ -1,9 +1,8 @@
 <template>
   <div class="pb-6 sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900">
-    <Layout>
+    <Layout :showProgress="false">
     <template #content>
       <div class="space-y-5 sm:space-y-8">
-        <BackToTop class="z-20" />
         <!-- Hero 區塊 -->
         <div class="grid grid-flow-row-dense grid-cols-4 gap-2.5 sm:gap-4 ">
           <!-- 第一格 -->

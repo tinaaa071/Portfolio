@@ -1,8 +1,8 @@
 <template>
-    <div class="">
+    <div class="cursor-default">
       <!-- title -->
       <div class="relative z-10 mb-5 sm:mb-8">
-        <h1 class="text-2xl font-semibold text-center text-white lg:text-5xl sm:text-4xl">
+        <h1 class="text-2xl font-semibold text-center text-white lg:text-5xl sm:text-4xl ">
           {{ title }}
         </h1>
         <!-- tools -->
@@ -23,11 +23,12 @@
             <Tag :text="tagText4" v-if="tagVisible[3]" aria-hidden="true" />
             <Tag :text="tagText5" v-if="tagVisible[4]" aria-hidden="true" />
           </div>
-          <!-- Pass the icon directly to the MagneticButton -->
+          <!-- BTN -->
           <MagneticButton 
             :to="linkTo" 
             :icon="icon" 
             :text="$t('work.item5')"
+            class="hidden sm:block"
             />
         </div>
         <!-- Title -->
@@ -53,6 +54,13 @@
             <p>{{ info4 }}</p>
           </div>
         </div>
+        <!-- BTN -->
+        <MagneticButton 
+            :to="linkTo" 
+            :icon="icon" 
+            :text="$t('work.item5')"
+            class="sm:hidden"
+            />
       </div>
     </div>
   </template>
@@ -120,7 +128,11 @@
       text: {
         type: String,
         required: true,
-      }
+      },
+      showIcon: {
+        type: Boolean,
+        default: true,
+       },
     },
   };
   </script>

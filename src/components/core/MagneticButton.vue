@@ -1,12 +1,12 @@
 <template>
   <RouterLink :to="linkTo">
     <div
-      class="relative flex items-center px-8 py-6 overflow-hidden h-fit w-fit"
+      class="relative flex items-center w-full overflow-hidden sm:py-2.5 sm:px-8 h-fit"
       @mousemove="onMouseMove"
       @mouseleave="onMouseLeave"
     >
       <button
-        class="relative flex items-center justify-center text-sm font-bold px-6 py-3.5 overflow-hidden text-white rounded-full magnetic-button bg-stone-900 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white w-fit h-fit border-2 border-stone-900"
+        class="relative flex items-center justify-center text-sm font-bold px-6 py-3.5 overflow-hidden text-white rounded-full magnetic-button bg-stone-900 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white w-full h-fit border-2 border-stone-900 sm:w-fit"
         :style="buttonStyle"
         :class="{ sway: isSwaying, 'hover-effect ': isHovering }"
         @mouseenter="onMouseEnter"
@@ -28,7 +28,6 @@
 
 
 export default {
-
   props: {
     linkTo: {
       type: String,

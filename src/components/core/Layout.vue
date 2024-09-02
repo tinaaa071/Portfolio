@@ -1,6 +1,7 @@
 <template>
+    <ProgressBar v-if="showProgress" />
     <Navbar class="z-10" />
-  
+    <BackToTop class="z-20" />
     <!-- 內容區塊 -->
     <section class="h-full">
       <div class="px-6 pt-24 mx-auto sm:pt-28 sm:px-10 xl:px-28 md:pt-32">
@@ -13,7 +14,10 @@
   <script>
   export default {
     props: {
-        title: String
+      showProgress: {
+        type: Boolean,
+        default: false
+      },
     }
   };
   </script>
