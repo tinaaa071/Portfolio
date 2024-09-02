@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed top-0 left-0 w-full h-[560px]">
+    <div class="fixed top-0 left-0 w-full sm:h-[560px] h-[480px]">
       <div class="relative w-full h-full">
         <!-- bg -->
         <img
@@ -8,7 +8,7 @@
         />
         <!-- title -->
         <h1
-          class="absolute bottom-0 z-10 mb-5 text-5xl font-semibold text-white transform -translate-x-1/2 left-1/2"
+          class="absolute bottom-0 z-10 mb-5 text-2xl font-semibold text-white transform -translate-x-1/2 lg:text-5xl left-1/2 xs:text-4xl"
         >
           {{ title }}
         </h1>
