@@ -23,19 +23,19 @@
   </button>
 </template>
 
-<script setup>
-import { ref, defineProps, defineEmits } from 'vue';
-
-const props = defineProps({
-  isPlus: {
-    type: Boolean,
-    required: true,
+<script>
+export default {
+  props: {
+    isPlus: {
+      type: Boolean,
+      required: true,
+    },
   },
-});
-
-const emit = defineEmits(['toggle']);
-
-const toggleIcon = () => {
-  emit('toggle');
+  emits: ['toggle'],
+  methods: {
+    toggleIcon() {
+      this.$emit('toggle');
+    },
+  },
 };
 </script>

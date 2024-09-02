@@ -19,23 +19,31 @@
     </div>
   </template>
   
-  <script setup>
-  import { ref } from 'vue';
-  import PlusButton from './PlusButton.vue'; // Adjust the path as needed
-  
-  const props = defineProps({
+  <script>
+import { ref } from 'vue';
+
+export default {
+  props: {
     title: {
       type: String,
       required: true,
     },
-  });
-  
-  const isOpen = ref(false);
-  
-  const toggle = () => {
-    isOpen.value = !isOpen.value;
-  };
-  </script>
+  },
+  setup(props) {
+    const isOpen = ref(false);
+
+    const toggle = () => {
+      isOpen.value = !isOpen.value;
+    };
+
+    return {
+      props,
+      isOpen,
+      toggle,
+    };
+  },
+};
+</script>
   
   <style scoped>
   /* Assuming TransitionFade is a defined transition */
