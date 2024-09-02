@@ -4,7 +4,7 @@
     <template #content>
       <div class="space-y-5 sm:space-y-8">
         <!-- Hero 區塊 -->
-        <div class="grid grid-flow-row-dense grid-cols-4 gap-2.5 sm:gap-4 ">
+        <div class="grid grid-flow-row-dense grid-cols-4 gap-2.5 sm:gap-4 cursor-default">
           <!-- 第一格 -->
           <div class="inline-flex flex-col justify-between col-span-4 gap-6 p-5 bg-white xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white rounded-2xl">
             <div class="flex items-center gap-6 text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
@@ -47,7 +47,7 @@
               <div class="absolute bottom-0 z-10 ">
                 <ArrowButton link-to="/" />
               </div>
-              <p class="absolute w-fit h-fit inset-0 z-0 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
+              <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
               style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
               >
               {{ $t('hero.item9') }}
