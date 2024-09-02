@@ -1,13 +1,14 @@
 <template>
   <div :class="[
-      'fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10 transition-transform duration-300 h-full',
-      isVisible ? 'translate-y-0' : '-translate-y-full'
+      'fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10 transition-transform duration-300',
+      isVisible ? 'translate-y-0' : '-translate-y-full',
+      showMenu ? 'h-full ' : 'h-fit',
     ]" >
     <!-- Navbar -->
     <div 
     :class="[
         showMenu ? 'bg-stone-900 text-white dark:bg-white dark:text-stone-900' : 'bg-white/20 dark:bg-stone-500/30 backdrop-blur-md',
-        showMenu ? 'rounded-3xl' : 'rounded-full',
+        showMenu ? 'rounded-3xl ' : 'rounded-full',
         'shadow-md',
         'bg-blur-lg',
         'transition-colors ease-in-out duration-500'  // Add transition classes here
