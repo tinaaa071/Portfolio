@@ -1,122 +1,127 @@
 <template>
-  <div class="w-full px-6 py-8 xs:p-10 bg-Quaternary text-stone-900 fixed left-0 sm:top-[560px] top-[480px]">
-    <!-- Tag -->
-    <div class="flex gap-2 sm:gap-3">
-        <Tag 
-        :text="tagText1"
-        v-if="tagVisible[0]" aria-hidden="true"
-         />
-        <Tag 
-        :text="tagText2"
-        v-if="tagVisible[1]" aria-hidden="true"
-         />
-        <Tag 
-        :text="tagText3"
-        v-if="tagVisible[2]" aria-hidden="true"
-         />
-        <Tag 
-        :text="tagText4"
-        v-if="tagVisible[3]" aria-hidden="true"
-         />
-        <Tag 
-        :text="tagText5"
-        v-if="tagVisible[4]" aria-hidden="true"
-         />
-    </div>
-    <!-- Title -->
-     <h2 class="text-5xl font-bold">
-        {{ title }}
-     </h2>
-     <!-- Info -->
-      <div class="grid grid-cols-4 gap-12">
-        <!-- 專案期間 -->
-        <div>
-            <p>
-                {{ $t('nav.item5') }}
-            </p>
-            <p>
-                {{ info1 }}
-            </p>
+    <div class="">
+      <!-- title -->
+      <div class="relative z-10 mb-5 sm:mb-8">
+        <h1 class="text-2xl font-semibold text-center text-white lg:text-5xl sm:text-4xl">
+          {{ title }}
+        </h1>
+        <!-- tools -->
+        <IconGroup 
+          :iconsVisible="iconsVisible" 
+          class="absolute bottom-0 text-right right-5" 
+        />
+      </div>
+      <!-- Info -->
+      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 xs:p-10 bg-Quaternary text-stone-900 sm:gap-8 xl:px-28 md:px-10">
+        <!-- Tag + BTN -->
+        <div class="flex items-center justify-between">
+          <!-- Tag -->
+          <div class="flex gap-2 sm:gap-3">
+            <Tag :text="tagText1" v-if="tagVisible[0]" aria-hidden="true" />
+            <Tag :text="tagText2" v-if="tagVisible[1]" aria-hidden="true" />
+            <Tag :text="tagText3" v-if="tagVisible[2]" aria-hidden="true" />
+            <Tag :text="tagText4" v-if="tagVisible[3]" aria-hidden="true" />
+            <Tag :text="tagText5" v-if="tagVisible[4]" aria-hidden="true" />
+          </div>
+          <!-- Pass the icon directly to the MagneticButton -->
+          <MagneticButton 
+            :to="linkTo" 
+            :icon="icon" 
+            :text="$t('work.item5')"
+            />
         </div>
-        <!-- 主要負責項目 -->
-        <div>
-            <p>
-                {{ $t('nav.item5') }}
-            </p>
-            <p>
-                {{ info2 }}
-            </p>
-        </div>
-        <!-- 專案成果 -->
-        <div>
-            <p>
-                {{ $t('nav.item5') }}
-            </p>
-            <p>
-                {{ info3 }}
-            </p>
-        </div>
-        <!-- 服務公司 -->
-        <div>
-            <p>
-                {{ $t('nav.item5') }}
-            </p>
-            <p>
-                {{ info4 }}
-            </p>
+        <!-- Title -->
+        <h2 class="text-5xl font-bold">
+          {{ title }}
+        </h2>
+        <!-- Info Sections -->
+        <div class="grid grid-cols-1 gap-8 lg:gap-12 lg:grid-cols-4">
+          <div>
+            <p>{{ $t('nav.item5') }}</p>
+            <p>{{ info1 }}</p>
+          </div>
+          <div>
+            <p>{{ $t('nav.item5') }}</p>
+            <p>{{ info2 }}</p>
+          </div>
+          <div>
+            <p>{{ $t('nav.item5') }}</p>
+            <p>{{ info3 }}</p>
+          </div>
+          <div>
+            <p>{{ $t('nav.item5') }}</p>
+            <p>{{ info4 }}</p>
+          </div>
         </div>
       </div>
-  </div>
-</template>
-
-<script>
-export default {
-props: {
-    title: {
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    props: {
+      title: {
         type: String,
         required: true,
-    },
-    info1: {
+      },
+      info1: {
         type: String,
         required: true,
-    },
-    info2: {
+      },
+      info2: {
         type: String,
         required: true,
-    },
-    info3: {
+      },
+      info3: {
         type: String,
         required: true,
-    },
-    info4: {
+      },
+      info4: {
         type: String,
         required: true,
-    },
-    tagText1: { 
-      type: String,
-      required: true,
-    },
-    tagText2: { 
-      type: String,
-      required: true,
-    },
-    tagText3: { 
-      type: String,
-      required: true,
-    },
-    tagText4: { 
-      type: String,
-      required: true,
-    },
-    tagText5: { 
-      type: String,
-      required: true,
-    },
-    tagVisible: {
+      },
+      tagText1: {
+        type: String,
+        required: true,
+      },
+      tagText2: {
+        type: String,
+        required: true,
+      },
+      tagText3: {
+        type: String,
+        required: true,
+      },
+      tagText4: {
+        type: String,
+        required: true,
+      },
+      tagText5: {
+        type: String,
+        required: true,
+      },
+      tagVisible: {
         type: Array,
-        default: () => [false, false, false, false, false], // Default to all hidden
+        default: () => [false, false, false, false, false],
         validator: (value) => value.length === 5 && value.every((item) => typeof item === 'boolean'),
       },
-}
-};
-</script>
+      iconsVisible: {
+        type: Array,
+        default: () => [false, false, false, false, false],
+      },
+      linkTo: {
+        type: String,
+        required: true,
+      },
+      icon: {
+        type: [Object, Function],
+        required: true,
+        },
+      text: {
+        type: String,
+        required: true,
+      }
+    },
+  };
+  </script>
+  
