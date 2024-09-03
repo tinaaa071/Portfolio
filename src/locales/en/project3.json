@@ -1,4 +1,7 @@
 {
-    "title": "Locus Cell",
-    "desc": "Display Chiayi City Government resources and information"
+    "core":{
+        "title": "Locus Cell",
+        "desc": "Display Chiayi City Government resources and information"
+    }
+    
 }

@@ -6,14 +6,14 @@
       @mouseleave="onMouseLeave"
     >
       <button
-        class="relative flex items-center justify-center text-sm font-bold px-6 py-3.5 overflow-hidden text-white rounded-full magnetic-button bg-stone-900 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white w-full h-fit border-2 border-stone-900 sm:w-fit"
+        class="relative flex items-center justify-center text-sm font-bold px-6 py-3.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit"
         :style="buttonStyle"
-        :class="{ sway: isSwaying, 'hover-effect ': isHovering }"
+        :class="{ sway: isSwaying, 'hover-effect text-black dark:text-white': isHovering }"
         @mouseenter="onMouseEnter"
       >
         <!-- Icon slot controlled by props -->
         <div v-if="showIcon" class="mr-2" :style="textStyle">
-          <component :is="rawIcon" />
+          <component :is="icon" />
         </div>
         <span class="inline-block transition-transform duration-200 ease-out" :style="textStyle">
           {{ text }}
@@ -132,9 +132,6 @@ export default {
   transform: translate(-50%, 0%);
 }
 
-.magnetic-button.hover-effect {
-  color: #1c1917;
-}
 
 .magnetic-button.sway {
   animation: sway 1s ease-out;

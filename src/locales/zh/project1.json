@@ -1,4 +1,18 @@
 {
-    "title": "海外醫事人員培訓平台",
-    "desc": "提供世界各地醫護人員來台培訓課程"
+    "core":{
+        "title": "海外醫事人員培訓平台",
+        "desc": "提供世界各地醫護人員來台培訓課程"
+    },
+    "info":{
+        "title": "Health Academy",
+        "desc": "Taiwan International Medical Education"
+    },
+    "brief":{
+        "item1": "服務對象",
+        "item2": "需求服務",
+        "item3": "角色",
+        "item4": "團隊成員",
+        "item5": "View Site"
+    }
+    
 }

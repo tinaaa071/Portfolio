@@ -1,4 +1,7 @@
 {
-    "title": "Shopping",
-    "desc": "Display Chiayi City Government resources and information"
+    "core":{
+        "title": "Shopping",
+        "desc": "Display Chiayi City Government resources and information"
+    }
+    
 }

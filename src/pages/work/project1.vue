@@ -12,7 +12,7 @@
           <div class="absolute left-0 sm:top-[480px] top-[400px] w-full">
             <!-- Info -->
             <Info 
-            :title="$t('project1.title')"
+            :title="$t('project1.core.title')"
             :info1="$t('work.item3')"
             :info2="$t('work.item3')"
             :info3="$t('work.item3')"
@@ -32,21 +32,24 @@
             <div>
               <ScrollSpy :sections="sections" />
               <!-- Section1 -->
+              <SectionInfo
+              id="section1"
+              :info2="['Service 1', 'Service 2', 'Service 3']"
+              :info4="[
+                { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Designer', name: 'John Doe' },
+                { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Developer', name: 'Jane Smith' }
+              ]"
+              />
               <Section
-      id="section1"
-      title="Section 1"
-      content="Content for Section 1"
-    />
-    <Section
-      id="section2"
-      title="Section 2"
-      content="Content for Section 2"
-    />
-    <Section
-      id="section3"
-      title="Section 3"
-      content="Content for Section 3"
-    />
+                id="section2"
+                title="Section 2"
+                content="Content for Section 2"
+              />
+              <Section
+                id="section3"
+                title="Section 3"
+                content="Content for Section 3"
+              />
             </div>
             <Footer />
           </div>

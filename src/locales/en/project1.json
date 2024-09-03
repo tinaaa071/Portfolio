@@ -1,4 +1,18 @@
 {
-    "title": "Health Academy",
-    "desc": "Taiwan International Medical Education"
+    "core":{
+        "title": "Health Academy",
+        "desc": "Taiwan International Medical Education"
+    },
+    "info":{
+        "title": "Health Academy",
+        "desc": "Taiwan International Medical Education"
+    },
+    "brief":{
+        "item1": "Service Client",
+        "item2": "Demand Services",
+        "item3": "Role",
+        "item4": "Team",
+        "item5": "View Site"
+    }
+    
 }

@@ -2,7 +2,7 @@
     <div class="cursor-default">
       <!-- title -->
       <div class="relative z-10 mb-5 sm:mb-8">
-        <h1 class="text-2xl font-semibold text-center text-white lg:text-5xl sm:text-4xl ">
+        <h1 class="text-2xl font-semibold text-center text-white dark:text-stone-900 lg:text-5xl sm:text-4xl ">
           {{ title }}
         </h1>
         <!-- tools -->
@@ -12,7 +12,7 @@
         />
       </div>
       <!-- Info -->
-      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10  bg-Quaternary text-stone-900 sm:gap-8 xl:px-28 md:p-10 xl:py-14">
+      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10  bg-Quaternary dark:bg-stone-900 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14  dark:text-white">
         <!-- Tag + BTN -->
         <div class="flex items-center justify-between">
           <!-- Tag -->

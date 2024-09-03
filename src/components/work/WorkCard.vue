@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white rounded-2xl">
+  <div class="grid grid-cols-1 overflow-hidden bg-white lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white rounded-2xl cursor-default">
     <!-- Left Section -->
-    <div class="p-5 sm:p-8">
+    <div class="p-5 sm:p-8 bg-white">
       <p class="tracking-[.25em] sm:mb-10 mb-4 xs:mb-6 text-xs xs:text-base sm:text-lg font-bold">
         {{ $t('work.item1') }}
       </p>
@@ -19,7 +19,7 @@
           @click="selectTab(tab)"
         >
           <p class="whitespace-nowrap">{{ `0${tab} -` }}&nbsp;</p>
-          {{ $t(`project${tab}.title`) }}
+          {{ $t(`project${tab}.core.title`) }}
         </button>
       </div>
     </div>
@@ -35,8 +35,8 @@
           :activeTab="activeTab"
           @selectTab="selectTab"
           year="2024"
-          :title="$t('project1.title')"
-          :desc="$t('project1.desc')"
+          :title="$t('project1.core.title')"
+          :desc="$t('project1.core.desc')"
           linkTo="/work/project1"
           backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
@@ -53,8 +53,8 @@
           :activeTab="activeTab"
           @selectTab="selectTab"
           year="2024"
-          :title="$t('project2.title')"
-          :desc="$t('project2.desc')"
+          :title="$t('project2.core.title')"
+          :desc="$t('project2.core.desc')"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1724271366205-62a20f7cb4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
@@ -71,8 +71,8 @@
           :activeTab="activeTab"
           @selectTab="selectTab"
           year="1111"
-          :title="$t('project3.title')"
-          :desc="$t('project3.desc')"
+          :title="$t('project3.core.title')"
+          :desc="$t('project3.core.desc')"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1723904186792-2db5de01a347?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
@@ -89,8 +89,8 @@
           :activeTab="activeTab"
           @selectTab="selectTab"
           year="1111"
-          :title="$t('project4.title')"
-          :desc="$t('project4.desc')"
+          :title="$t('project4.core.title')"
+          :desc="$t('project4.core.desc')"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >

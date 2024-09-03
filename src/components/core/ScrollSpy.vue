@@ -1,19 +1,21 @@
 <template>
-    <nav class="sticky top-0 left-0 p-5 text-gray-500">
-      <ul class="list-none p-0">
+    <nav class="sticky top-0 left-0">
+      <div class="absolute w-fit ml-6 md:ml-10 xl:ml-28 py-5 text-sm">
+        <ul class="list-none p-0">
         <li
           v-for="section in sections"
           :key="section.id"
-          :class="['my-2', activeSection === section.id ? 'text-blue-500 font-bold' : 'text-gray-500']"
+          :class="['my-3', activeSection === section.id ? 'text-stone-500 font-bold' : 'text-stone-300']"
         >
           <a
             :href="'#' + section.id"
-            class="no-underline transition-colors hover:text-blue-400"
+            class="no-underline transition-colors hover:text-stone-400"
           >
             {{ section.name }}
           </a>
         </li>
       </ul>
+      </div>
     </nav>
   </template>
   

@@ -1,4 +1,7 @@
 {
-    "title": "Chiayi City Resource Platform",
-    "desc": "Display Chiayi City Government resources and information"
+    "core":{
+        "title": "Chiayi City Resource Platform",
+        "desc": "Display Chiayi City Government resources and information"
+    }
+    
 }

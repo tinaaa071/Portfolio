@@ -1,10 +1,9 @@
 <template>
     <section
       :id="id"
-      class="min-h-screen flex items-center justify-center border-b"
+      class="xl:px-48 xl:py-16 flex items-center justify-center bg-white md:p-10 px-6 py-8"
     >
-      <h2 class="text-2xl font-bold">{{ title }}</h2>
-      <p>{{ content }}</p>
+      <slot></slot>
     </section>
   </template>
   
