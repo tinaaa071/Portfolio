@@ -48,7 +48,7 @@
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
                     class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
-                    :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-stone-900'">
+                    :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-stone-900 dark:hover:text-white'">
                     {{ $t(item.text) }}
                   </RouterLink>
                 </li>
@@ -60,7 +60,7 @@
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item5')"
-                   class="border-stone-900 dark:border-white hover:bg-Tertiary/80 dark:hover:bg-stone-800/50 dark:text-white"
+                   class="border-stone-900 dark:border-white hover:bg-Tertiary/80 dark:hover:bg-stone-600/50 dark:text-white"
                   />
                 </li>
                 <!-- Language -->
