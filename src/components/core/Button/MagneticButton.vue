@@ -12,9 +12,8 @@
         @mouseenter="onMouseEnter"
       >
         <!-- Icon slot controlled by props -->
-        <div v-if="showIcon" class="mr-2 "
-        :style="textStyle">
-          <component :is="icon" />
+        <div v-if="showIcon" class="mr-2" :style="textStyle">
+          <component :is="rawIcon" />
         </div>
         <span class="inline-block transition-transform duration-200 ease-out" :style="textStyle">
           {{ text }}
@@ -24,8 +23,9 @@
   </RouterLink>
 </template>
 
-<script>
 
+<script>
+import { markRaw } from 'vue';
 
 export default {
   props: {
@@ -44,7 +44,7 @@ export default {
     text: {
       type: String,
       required: true,
-    }
+    },
   },
   data() {
     return {
@@ -53,6 +53,7 @@ export default {
       textOffset: { x: 0, y: 0 },
       isSwaying: false,
       isHovering: false,
+      rawIcon: markRaw(this.icon), // Ensure icon is marked raw here
     };
   },
   computed: {

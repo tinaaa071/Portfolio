@@ -10,6 +10,7 @@
           />
           <!-- Content -->
           <div class="absolute left-0 sm:top-[480px] top-[400px] w-full">
+            <!-- Info -->
             <Info 
             :title="$t('project1.title')"
             :info1="$t('work.item3')"
@@ -27,9 +28,28 @@
             :icon="icon" 
             :text="$t('work.item5')" 
             />
+            <!-- Main Content -->
+            <div>
+              <ScrollSpy :sections="sections" />
+              <!-- Section1 -->
+              <Section
+      id="section1"
+      title="Section 1"
+      content="Content for Section 1"
+    />
+    <Section
+      id="section2"
+      title="Section 2"
+      content="Content for Section 2"
+    />
+    <Section
+      id="section3"
+      title="Section 3"
+      content="Content for Section 3"
+    />
+            </div>
             <Footer />
           </div>
-
     </div>
   </template>
   
@@ -43,7 +63,12 @@
   data() {
     return {
       icon: MingcuteEarth3Fill, 
-
+      sections: [
+        { id: 'section1', name: 'Section 1' },
+        { id: 'section2', name: 'Section 2' },
+        { id: 'section3', name: 'Section 3' },
+        // Add more sections as needed
+      ],
     };
   },
 }

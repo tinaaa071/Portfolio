@@ -3,14 +3,14 @@
   </template>
   
   <script>
-  import Prism from 'prismjs';
-  import 'prismjs/themes/prism-tomorrow.css';
-  import 'prismjs/components/prism-javascript';
-  
-  export default {
-    data() {
-      return {
-        fullText: `const [model, modifiers] = defineModel({
+import Prism from 'prismjs';
+import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/components/prism-javascript';
+
+export default {
+  data() {
+    return {
+      fullText: `const [model, modifiers] = defineModel({
     set(value) {
       if (modifiers.capitalize) {
         return value.charAt(0).toUpperCase() + value.slice(1)
@@ -26,58 +26,59 @@
       return value
     }
   })`,
-        displayedText: '',
-        currentIndex: 0,
-        fontSize: '16px'
-      };
-    },
-    mounted() {
-      this.typeText();
-    },
-    methods: {
-      typeText() {
-        if (this.currentIndex < this.fullText.length) {
-          this.displayedText += this.fullText[this.currentIndex];
-          this.currentIndex++;
-          this.$nextTick(() => {
+      displayedText: '',
+      currentIndex: 0,
+      fontSize: '16px',
+    };
+  },
+  mounted() {
+    this.typeText();
+  },
+  methods: {
+    typeText() {
+      if (this.currentIndex < this.fullText.length) {
+        this.displayedText += this.fullText[this.currentIndex];
+        this.currentIndex++;
+        this.$nextTick(() => {
+          // Ensure the code element exists before calling Prism
+          if (this.$refs.code) {
             Prism.highlightElement(this.$refs.code);
             this.scrollToBottom(); // Scroll to the bottom after updating
-          });
-          setTimeout(this.typeText, 20); // Adjust speed here
-        } else {
-          setTimeout(() => {
-            this.resetAnimation();
-            this.typeText();
-          }, 500); // Pause before restarting
-        }
-      },
-      scrollToBottom() {
-        const container = this.$refs.codeContainer;
-        container.scrollTop = container.scrollHeight;
-      },
-      resetAnimation() {
-        this.displayedText = '';
-        this.currentIndex = 0;
-      },
+          }
+        });
+        setTimeout(this.typeText, 20); // Adjust speed here
+      } else {
+        setTimeout(() => {
+          this.resetAnimation();
+          this.typeText();
+        }, 500); // Pause before restarting
+      }
     },
-  };
-  </script>
-  
-  <style>
-  
-  /* Hide scrollbars for WebKit browsers (e.g., Chrome, Safari) */
-  pre::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-  }
-  
-  /* Hide scrollbars for Firefox */
-  pre {
-    scrollbar-width: none; /* Hide scrollbar */
-  }
-  
-  /* Hide scrollbars for Edge and IE */
-  pre {
-    -ms-overflow-style: none; /* Hide scrollbar */
-  }
-  </style>
-  
+    scrollToBottom() {
+      const container = this.$refs.codeContainer;
+      container.scrollTop = container.scrollHeight;
+    },
+    resetAnimation() {
+      this.displayedText = '';
+      this.currentIndex = 0;
+    },
+  },
+};
+</script>
+
+<style>
+/* Hide scrollbars for WebKit browsers (e.g., Chrome, Safari) */
+pre::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbars for Firefox */
+pre {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbars for Edge and IE */
+pre {
+  -ms-overflow-style: none; /* Hide scrollbar */
+}
+</style>

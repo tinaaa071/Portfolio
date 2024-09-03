@@ -12,7 +12,7 @@
         />
       </div>
       <!-- Info -->
-      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 xs:p-10 bg-Quaternary text-stone-900 sm:gap-8 xl:px-28 md:px-10">
+      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10  bg-Quaternary text-stone-900 sm:gap-8 xl:px-28 md:p-10 xl:py-14">
         <!-- Tag + BTN -->
         <div class="flex items-center justify-between">
           <!-- Tag -->
@@ -32,26 +32,26 @@
             />
         </div>
         <!-- Title -->
-        <h2 class="text-5xl font-bold">
+        <h2 class="lg:text-5xl text-2xl sm:text-4xl font-bold">
           {{ title }}
         </h2>
         <!-- Info Sections -->
-        <div class="grid grid-cols-1 gap-8 lg:gap-12 lg:grid-cols-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 lg:grid-cols-4">
           <div>
-            <p>{{ $t('nav.item5') }}</p>
-            <p>{{ info1 }}</p>
+            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="font-light">{{ info1 }}</p>
           </div>
           <div>
-            <p>{{ $t('nav.item5') }}</p>
-            <p>{{ info2 }}</p>
+            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="font-light">{{ info2 }}</p>
           </div>
           <div>
-            <p>{{ $t('nav.item5') }}</p>
-            <p>{{ info3 }}</p>
+            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="font-light">{{ info3 }}</p>
           </div>
           <div>
-            <p>{{ $t('nav.item5') }}</p>
-            <p>{{ info4 }}</p>
+            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="font-light">{{ info4 }}</p>
           </div>
         </div>
         <!-- BTN -->
@@ -130,7 +130,7 @@
         type: Boolean,
         default: true,
        },
-    },
+    }
   };
   </script>
   

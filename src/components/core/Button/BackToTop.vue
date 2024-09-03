@@ -3,7 +3,7 @@
       <button
         v-if="showButton"
         @click="scrollToTop"
-        class="fixed inline-flex items-center justify-center gap-1.5 p-2.5 text-white transition-all duration-300 ease-in-out border-2 border-white rounded-full shadow-md sm:py-4 sm:px-3 sm:flex-col bg-stone-500/20 backdrop-blur-md bottom-6 right-6 sm:bottom-8 sm:right-8 xl:bottom-12 xl:right-12 hover:bg-stone-50/20 mix-blend-difference group dark:hover:bg-stone-400/20"
+        class="fixed inline-flex items-center justify-center gap-1.5 p-2.5 text-white transition-all duration-300 ease-in-out border-2 border-white rounded-full shadow-md sm:py-4 sm:px-3 sm:flex-col bg-stone-400/20 dark:bg-stone-50/20 backdrop-blur-md bottom-6 right-6 sm:bottom-8 sm:right-8 xl:bottom-12 xl:right-12 hover:bg-stone-50/20 mix-blend-difference group dark:hover:bg-stone-400/20"
       >
         <pajamas-arrow-up class="text-sm transition-transform transform group-hover:-translate-y-1 sm:text-md" />
         <p class="text-xs font-semibold tracking-widest">

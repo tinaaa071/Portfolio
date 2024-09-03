@@ -29,12 +29,8 @@
   
   <script>
   import { ref } from 'vue';
-  import PlusButton from './PlusButton.vue'; // Adjust the path as needed
   
   export default {
-    components: {
-      PlusButton,
-    },
     props: {
       title: {
         type: String,
@@ -77,4 +73,3 @@
     transform: translateY(-10px);
   }
   </style>
-  
