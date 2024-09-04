@@ -72,6 +72,13 @@
                   </div>
                 </template>
               </Section3>
+              <SectionNext 
+              :title="$t('project2.core.title')"
+              :linkTo="'/'"
+              :icon="icon" 
+              :showIcon="false"
+              :text="$t('work.core.item5')" 
+              />
             </div>
             <Footer />
           </div>

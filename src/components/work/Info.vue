@@ -125,7 +125,6 @@
         type: [Object, Function],
         required: true,
         },
-      
       showIcon: {
         type: Boolean,
         default: true,
