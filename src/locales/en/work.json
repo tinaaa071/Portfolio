@@ -7,11 +7,12 @@
         "item5": "View Site"
     },
     "title":{
-        "item1": "Project Overview",
-        "item2": "Demand Services",
-        "item3": "Role",
-        "item4": "Team",
-        "item5": "View Site"
+        "item1": "Info",
+        "item2": "Overview",
+        "item3": "Background",
+        "item4": "Role",
+        "item5": "Team",
+        "item6": "View Site"
     },
     "info":{
         "item1": "Duration",

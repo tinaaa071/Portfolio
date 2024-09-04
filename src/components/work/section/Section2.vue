@@ -2,7 +2,7 @@
     <Section class="flex flex-col gap-4 text-center md:gap-8">
       <!-- Title -->
       <p class="text-2xl font-bold md:text-3xl">
-        {{ $t('work.title.item1') }}
+        {{ $t('work.title.item2') }}
       </p>
       <!-- Brief -->
       <div class="grid gap-4 text-left md:grid-cols-2">

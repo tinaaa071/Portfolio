@@ -32,7 +32,7 @@
             <div>
               <ScrollSpy :sections="sections" />
               <!-- Section1 -->
-              <SectionInfo
+              <Section1
               id="section1"
               :info1="$t('project1.infoContent.item1')"
               :info2="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
@@ -45,7 +45,7 @@
               bannerSrc="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
               <!-- Section2 -->
-              <SectionBrief
+              <Section2
                 id="section2"
                 title="Section 2"
                 content1="Content for Section 2"
@@ -56,11 +56,22 @@
                 { title: $t('work.briefCard.item4'), content: $t('project1.briefCard.item4') }
               ]"
               />
-              <Section
+              <Section3
                 id="section3"
-                title="Section 3"
-                content="Content for Section 3"
-              />
+                :title="$t('work.title.item3')"
+              >
+                <template #content>
+                  <div>
+                    <p class="mb-6 font-normal">
+                      {{ $t('project1.briefCard.item1') }}
+                    </p>
+                    <img 
+                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl"
+                    >
+                  </div>
+                </template>
+              </Section3>
             </div>
             <Footer />
           </div>
@@ -79,9 +90,9 @@
     return {
       icon: MingcuteEarth3Fill, 
       sections: [
-        { id: 'section1', name: 'work.core.item1' },
-        { id: 'section2', name: 'work.core.item2' },
-        { id: 'section3', name: 'work.core.item3' },
+        { id: 'section1', name: 'work.title.item1' },
+        { id: 'section2', name: 'work.title.item2' },
+        { id: 'section3', name: 'work.title.item3' },
       ],
     };
   },

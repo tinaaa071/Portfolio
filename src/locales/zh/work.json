@@ -5,11 +5,12 @@
         "item5": "前往網站"
     },
     "title":{
-        "item1": "專案概覽",
-        "item2": "Demand Services",
-        "item3": "Role",
-        "item4": "Team",
-        "item5": "View Site"
+        "item1": "專案資訊",
+        "item2": "專案概覽",
+        "item3": "專案背景",
+        "item4": "Role",
+        "item5": "Team",
+        "item6": "View Site"
     },
     "info":{
         "item1": "專案期間",
