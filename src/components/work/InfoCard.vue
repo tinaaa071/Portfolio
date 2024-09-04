@@ -1,13 +1,19 @@
 <template>
-    <div class="p-6 bg-Quaternary text-stone-800 grid grid-cols-1 gap-6 xl:gap-10 rounded-2xl md:rounded-3xl border border-Secondary">
+    <div class="grid grid-cols-1 gap-6 p-6 border bg-Quaternary text-stone-800 xl:gap-8 rounded-2xl md:rounded-3xl border-Secondary">
       <!-- Client -->
       <div>
-        <p class="mb-2">{{ $t('project1.brief.item1') }}</p>
-        <p class="font-light">{{ info1 }}</p>
+        <p class="mb-2">
+          {{ $t('project1.brief.item1') }}
+        </p>
+        <p class="font-light">
+          {{ info1 }}
+        </p>
       </div>
       <!-- Service -->
       <div>
-        <p class="mb-2">{{ $t('project1.brief.item2') }}</p>
+        <p class="mb-2">
+          {{ $t('project1.brief.item2') }}
+        </p>
         <ul class="font-light">
           <li v-for="(service, index) in info2" :key="index">
             {{ service }}
@@ -16,24 +22,34 @@
       </div>
       <!-- Role -->
       <div>
-        <p class="mb-2">{{ $t('project1.brief.item3') }}</p>
-        <p class="font-light">{{ info3 }}</p>
+        <p class="mb-2">
+          {{ $t('project1.brief.item3') }}
+        </p>
+        <p class="font-light">
+          {{ info3 }}
+        </p>
       </div>
       <!-- Team -->
       <div>
-        <p class="mb-2">{{ $t('project1.brief.item4') }}</p>
+        <p class="mb-2">
+          {{ $t('project1.brief.item4') }}
+        </p>
         <!-- Members -->
         <div v-for="(member, index) in info4" :key="index" class="flex items-center mb-4">
           <!-- Avatar -->
           <img
             :src="member.avatarSrc"
             alt="Avatar"
-            class="object-cover w-10 h-10 rounded-full mr-4"
+            class="object-cover w-10 h-10 mr-4 rounded-full"
           />
           <!-- Member Info -->
           <div>
-            <p class="font-medium">{{ member.job }}</p>
-            <p class="font-light">{{ member.name }}</p>
+            <p class="font-medium">
+              {{ member.job }}
+            </p>
+            <p class="font-light">
+              {{ member.name }}
+            </p>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <template>
     <nav class="sticky top-0 left-0">
-      <div class="absolute w-fit ml-6 md:ml-10 xl:ml-28 py-5 text-sm">
-        <ul class="list-none p-0">
+      <div class="absolute pt-5 ml-6 text-sm w-fit md:ml-10 xl:ml-28">
+        <ul class="p-0 list-none">
         <li
           v-for="section in sections"
           :key="section.id"
@@ -11,7 +11,7 @@
             :href="'#' + section.id"
             class="no-underline transition-colors hover:text-stone-400"
           >
-            {{ section.name }}
+          {{ $t(section.name) }}
           </a>
         </li>
       </ul>
@@ -78,8 +78,5 @@
     };
   }
   </script>
-  
-  <style scoped>
-  /* Removed all CSS since Tailwind CSS classes are now used */
-  </style>
+ 
   

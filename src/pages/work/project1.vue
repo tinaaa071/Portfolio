@@ -34,12 +34,17 @@
               <!-- Section1 -->
               <SectionInfo
               id="section1"
-              :info2="['Service 1', 'Service 2', 'Service 3']"
+              :info1="$t('work.item5')"
+              :info2="[$t('work.item5'), 'Service 2', 'Service 3']"
+              :info3="$t('work.item5')"
               :info4="[
                 { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Designer', name: 'John Doe' },
                 { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Developer', name: 'Jane Smith' }
               ]"
+              :brief="$t('work.item5')"
+              bannerSrc="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
+              <!-- Section2 -->
               <Section
                 id="section2"
                 title="Section 2"
@@ -58,6 +63,7 @@
   
   <script>
   import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
+  
   export default {
   components: {
     MingcuteEarth3Fill,
@@ -67,13 +73,14 @@
     return {
       icon: MingcuteEarth3Fill, 
       sections: [
-        { id: 'section1', name: 'Section 1' },
-        { id: 'section2', name: 'Section 2' },
-        { id: 'section3', name: 'Section 3' },
+        { id: 'section1', name: 'work.item1' },
+        { id: 'section2', name: 'work.item2' },
+        { id: 'section3', name: 'work.item3' },
         // Add more sections as needed
       ],
     };
   },
+  
 }
 
   </script>

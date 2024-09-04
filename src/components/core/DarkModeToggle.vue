@@ -3,8 +3,8 @@
     @click="toggleDarkMode"
     class="p-2 transition-all duration-300 ease-in-out rounded-full text-stone-900 bg-Tertiary dark:bg-stone-900 dark:text-stone-100 hover:bg-stone-300 dark:hover:bg-stone-700"
   >
-    <WiDaySunny v-if="!isDarkMode" class="text-2xl" />
-    <WiNightClear v-else class="text-2xl" />
+    <WiNightClear v-if="!isDarkMode" class="text-2xl" />
+    <WiDaySunny v-else class="text-2xl" />
   </button>
 </template>
 
