@@ -5,7 +5,7 @@
         :class="['text-white z-10 relative transition-colors ease-in-out duration-300 group-hover:text-stone-900', { 'hovered': isHovered }]"
         class="text-sm font-bold px-6 py-3.5 inline-flex items-center"
         >
-            {{ $t('work.item2') }}
+            {{ $t('work.core.item2') }}
             <mingcute-arrow-right-line class="ml-2 text-lg" />
         </div>
         <div 

@@ -3,7 +3,7 @@
     <!-- Left Section -->
     <div class="p-5 sm:p-8 bg-white dark:bg-transparent">
       <p class="tracking-[.25em] sm:mb-10 mb-4 xs:mb-6 text-xs xs:text-base sm:text-lg font-bold ">
-        {{ $t('work.item1') }}
+        {{ $t('work.core.item1') }}
       </p>
       <div class="space-y-3 text-xl font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl lg:sm:text-4xl text-stone-400 dark:text-stone-400">
         <!-- Project Buttons -->
@@ -41,9 +41,9 @@
           backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <template #tag>
-            <Tag :text="$t('work.item3')" />
-            <Tag :text="$t('work.item4')" />
-            <Tag :text="$t('work.item3')" />
+            <Tag :text="$t('work.core.item3')" />
+            <Tag :text="$t('work.core.item4')" />
+            <Tag :text="$t('work.core.item3')" />
           </template>
         </WorkDetail>
         <!-- Project 2 -->
@@ -59,9 +59,9 @@
           backgroundImage="https://images.unsplash.com/photo-1724271366205-62a20f7cb4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <template #tag>
-            <Tag :text="$t('work.item3')" />
-            <Tag :text="$t('work.item4')" />
-            <Tag :text="$t('work.item3')" />
+            <Tag :text="$t('work.core.item3')" />
+            <Tag :text="$t('work.core.item4')" />
+            <Tag :text="$t('work.core.item3')" />
           </template>
         </WorkDetail>
         <!-- Project 3 -->
@@ -77,9 +77,9 @@
           backgroundImage="https://images.unsplash.com/photo-1723904186792-2db5de01a347?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <template #tag>
-            <Tag :text="$t('work.item3')" />
-            <Tag :text="$t('work.item4')" />
-            <Tag :text="$t('work.item3')" />
+            <Tag :text="$t('work.core.item3')" />
+            <Tag :text="$t('work.core.item4')" />
+            <Tag :text="$t('work.core.item3')" />
           </template>
         </WorkDetail>
         <!-- Project 4 -->
@@ -95,9 +95,9 @@
           backgroundImage="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <template #tag>
-            <Tag :text="$t('work.item3')" />
-            <Tag :text="$t('work.item4')" />
-            <Tag :text="$t('work.item3')" />
+            <Tag :text="$t('work.core.item3')" />
+            <Tag :text="$t('work.core.item4')" />
+            <Tag :text="$t('work.core.item3')" />
           </template>
         </WorkDetail>
       </TabTransition>

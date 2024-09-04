@@ -1,19 +1,19 @@
 <!-- componentB.vue -->
 <template>
     <Section>
-      <div class="grid grid-cols-10 gap-6 md:gap-10">
+      <div class="grid gap-6 xl:grid-cols-10 xl:gap-10 sm:grid-cols-8">
         <!-- Left -->
         <InfoCard
-          class="col-span-3"
+          class="sm:col-span-3"
           :info1="info1"
           :info2="info2"
           :info3="info3"
           :info4="info4"
         />
         <!-- Right -->
-        <div class="col-span-7">
-          <p class="mb-6 font-medium">
-            {{ brief }}
+        <div class="xl:col-span-7 sm:col-span-5">
+          <p class="mb-6 font-normal">
+            {{ content }}
           </p>
           <img 
             :src="bannerSrc"
@@ -44,7 +44,7 @@
         type: Array,
         required: true,
       },
-      brief: {
+      content: {
         type: String,
         required: true,
       },

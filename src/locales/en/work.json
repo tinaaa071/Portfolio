@@ -1,7 +1,34 @@
 {
-    "item1": "WORKS",
-    "item2": "View Project",
-    "item3": "UI/UX",
-    "item4": "Coding",
-    "item5": "View Site"
+    "core":{
+        "item1": "WORKS",
+        "item2": "View Project",
+        "item3": "UI/UX",
+        "item4": "Coding",
+        "item5": "View Site"
+    },
+    "title":{
+        "item1": "Project Overview",
+        "item2": "Demand Services",
+        "item3": "Role",
+        "item4": "Team",
+        "item5": "View Site"
+    },
+    "info":{
+        "item1": "Duration",
+        "item2": "My Role",
+        "item3": "Responsibility",
+        "item4": "Company"
+    },
+    "infoCard":{
+        "item1": "Service Client",
+        "item2": "Demand Services",
+        "item3": "Role",
+        "item4": "Team"
+    },
+    "briefCard":{
+        "item1": "Objective",
+        "item2": "Role & Deliverables",
+        "item3": "Challenges",
+        "item4": "Outcome & Impact"
+    }
 }

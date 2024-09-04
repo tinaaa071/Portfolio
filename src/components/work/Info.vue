@@ -12,7 +12,7 @@
         />
       </div>
       <!-- Info -->
-      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10  bg-Quaternary dark:bg-stone-900 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14  dark:text-white">
+      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 bg-Quaternary dark:bg-stone-900 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14 dark:text-white">
         <!-- Tag + BTN -->
         <div class="flex items-center justify-between">
           <!-- Tag -->
@@ -27,30 +27,30 @@
           <MagneticButton 
             :linkTo="linkTo" 
             :icon="icon" 
-            :text="$t('work.item5')"
+            :text="$t('work.core.item5')"
             class="hidden sm:block"
             />
         </div>
         <!-- Title -->
-        <h2 class="lg:text-5xl text-2xl sm:text-4xl font-bold">
+        <h2 class="text-2xl font-bold lg:text-5xl sm:text-4xl">
           {{ title }}
         </h2>
         <!-- Info Sections -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-12 lg:grid-cols-4">
           <div>
-            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="mb-2">{{ $t('work.info.item1') }}</p>
             <p class="font-light">{{ info1 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="mb-2">{{ $t('work.info.item2') }}</p>
             <p class="font-light">{{ info2 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="mb-2">{{ $t('work.info.item3') }}</p>
             <p class="font-light">{{ info3 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('nav.item5') }}</p>
+            <p class="mb-2">{{ $t('work.info.item4') }}</p>
             <p class="font-light">{{ info4 }}</p>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <MagneticButton 
             :linkTo="linkTo" 
             :icon="icon" 
-            :text="$t('work.item5')"
+            :text="$t('work.core.item5')"
             class="sm:hidden"
             />
       </div>

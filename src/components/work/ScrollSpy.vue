@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky top-0 left-0">
+    <nav class="sticky top-0 left-0 hidden xl:block">
       <div class="absolute pt-5 ml-6 text-sm w-fit md:ml-10 xl:ml-28">
         <ul class="p-0 list-none">
         <li

@@ -1,5 +1,32 @@
 {
-    "item1": "專案項目",
-    "item2": "了解專案細節",
-    "item5": "前往網站"
+    "core":{
+        "item1": "專案項目",
+        "item2": "了解專案細節",
+        "item5": "前往網站"
+    },
+    "title":{
+        "item1": "專案概覽",
+        "item2": "Demand Services",
+        "item3": "Role",
+        "item4": "Team",
+        "item5": "View Site"
+    },
+    "info":{
+        "item1": "專案期間",
+        "item2": "主要負責項目",
+        "item3": "專案成果",
+        "item4": "服務公司"
+    },
+    "infoCard":{
+        "item1": "服務對象",
+        "item2": "需求服務",
+        "item3": "角色",
+        "item4": "團隊成員"
+    },
+    "briefCard":{
+        "item1": "團隊目標",
+        "item2": "角色與產出",
+        "item3": "專案挑戰",
+        "item4": "專案成果與影響"
+    }
 }

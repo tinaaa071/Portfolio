@@ -3,7 +3,7 @@
       <!-- Client -->
       <div>
         <p class="mb-2">
-          {{ $t('project1.brief.item1') }}
+          {{ $t('work.infoCard.item1') }}
         </p>
         <p class="font-light">
           {{ info1 }}
@@ -12,7 +12,7 @@
       <!-- Service -->
       <div>
         <p class="mb-2">
-          {{ $t('project1.brief.item2') }}
+          {{ $t('work.infoCard.item2') }}
         </p>
         <ul class="font-light">
           <li v-for="(service, index) in info2" :key="index">
@@ -23,19 +23,21 @@
       <!-- Role -->
       <div>
         <p class="mb-2">
-          {{ $t('project1.brief.item3') }}
+          {{ $t('work.infoCard.item3') }}
         </p>
-        <p class="font-light">
-          {{ info3 }}
-        </p>
+        <ul class="font-light">
+          <li v-for="(role, index) in info3" :key="index">
+            {{ role }}
+          </li>
+        </ul>
       </div>
       <!-- Team -->
       <div>
         <p class="mb-2">
-          {{ $t('project1.brief.item4') }}
+          {{ $t('work.infoCard.item4') }}
         </p>
         <!-- Members -->
-        <div v-for="(member, index) in info4" :key="index" class="flex items-center mb-4">
+        <div v-for="(member, index) in info4" :key="index" class="flex items-center space-y-4">
           <!-- Avatar -->
           <img
             :src="member.avatarSrc"
@@ -74,27 +76,7 @@
       info4: {
         type: Array,
         required: true,
-      },
-      tagText1: {
-        type: String,
-        required: true,
-      },
-      tagText2: {
-        type: String,
-        required: true,
-      },
-      tagText3: {
-        type: String,
-        required: true,
-      },
-      tagText4: {
-        type: String,
-        required: true,
-      },
-      tagText5: {
-        type: String,
-        required: true,
-      },
+      }
     },
   };
   </script>
