@@ -54,55 +54,7 @@
                 { title: $t('work.briefCard.item4'), content: $t('project1.briefCard.item4') }
               ]"
               />
-              <Section3
-                id="section3"
-                :title="$t('work.title.item3')"
-              >
-                <template #content>
-                  <div>
-                    <p class="mb-6 font-normal">
-                      {{ $t('project1.briefCard.item1') }}
-                    </p>
-                    <CardTilt>
-                      <img 
-                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
-                    >
-                    </CardTilt>
-                  </div>
-                </template>
-              </Section3>
-              <Section3
-                id="section4"
-                :title="$t('work.title.item4')"
-              >
-                <template #content>
-                  <div class="grid grid-cols-1 gap-4">
-                    <!-- Color -->
-                    <Accordion
-                    :title="$t('work.designSystem.item1')"
-                    >
-                      <CardTilt>
-                        <img 
-                        src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
-                      >
-                      </CardTilt>
-                    </Accordion>
-                    <!-- Typography -->
-                    <Accordion
-                    :title="$t('work.designSystem.item2')"
-                    >
-                      <CardTilt>
-                        <img 
-                        src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
-                      >
-                      </CardTilt>
-                    </Accordion>
-                  </div>
-                </template>  
-              </Section3>
+              
               <SectionNext 
               :title="$t('project2.core.title')"
               :linkTo="'/'"

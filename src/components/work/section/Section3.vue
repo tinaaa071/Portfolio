@@ -1,7 +1,7 @@
 <template>
   <Section 
-  class="grid w-full grid-cols-1 gap-6 px-6 md:grid-cols-10"
-  :class="isSticky ? 'px-0' : ''"
+  class="grid w-full grid-cols-1 gap-6 md:grid-cols-10"
+  :class="isSticky ? 'px-0' : 'px-6'"
   >
     <!-- Title -->
     <div
@@ -16,7 +16,7 @@
       {{ title }}
     </div>
     <!-- Content -->
-    <div class="col-span-1 md:col-span-8" :class="isSticky ? 'px-6' : ''" >
+    <div class="col-span-1 md:col-span-8" :class="isSticky ? 'px-6' : 'px-0'" >
       <slot name="content"></slot>
     </div>
   </Section>
