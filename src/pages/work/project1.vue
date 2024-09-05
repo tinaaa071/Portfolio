@@ -1,5 +1,5 @@
 <template> 
-     <div class="relative pb-6 text-xs sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900 sm:text-base">
+     <div class="relative pb-6 text-xs sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-800 xs:text-sm sm:text-base dark:text-white">
       <Navbar />
       <ProgressBar />
       <BackToTop class="z-20" />
@@ -47,8 +47,6 @@
               <!-- Section2 -->
               <Section2
                 id="section2"
-                title="Section 2"
-                content1="Content for Section 2"
                 :briefs="[
                 { title: $t('work.briefCard.item1'), content: $t('project1.briefCard.item1') },
                 { title: $t('work.briefCard.item2'), content: $t('project1.briefCard.item2') },
@@ -65,12 +63,45 @@
                     <p class="mb-6 font-normal">
                       {{ $t('project1.briefCard.item1') }}
                     </p>
-                    <img 
+                    <CardTilt>
+                      <img 
                       src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl"
+                      class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
                     >
+                    </CardTilt>
                   </div>
                 </template>
+              </Section3>
+              <Section3
+                id="section4"
+                :title="$t('work.title.item4')"
+              >
+                <template #content>
+                  <div class="grid grid-cols-1 gap-4">
+                    <!-- Color -->
+                    <Accordion
+                    :title="$t('work.designSystem.item1')"
+                    >
+                      <CardTilt>
+                        <img 
+                        src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
+                      >
+                      </CardTilt>
+                    </Accordion>
+                    <!-- Typography -->
+                    <Accordion
+                    :title="$t('work.designSystem.item2')"
+                    >
+                      <CardTilt>
+                        <img 
+                        src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
+                      >
+                      </CardTilt>
+                    </Accordion>
+                  </div>
+                </template>  
               </Section3>
               <SectionNext 
               :title="$t('project2.core.title')"
@@ -91,7 +122,6 @@
   export default {
   components: {
     MingcuteEarth3Fill,
-
   },
   data() {
     return {
@@ -100,6 +130,7 @@
         { id: 'section1', name: 'work.title.item1' },
         { id: 'section2', name: 'work.title.item2' },
         { id: 'section3', name: 'work.title.item3' },
+        { id: 'section4', name: 'work.title.item4' },
       ],
     };
   },

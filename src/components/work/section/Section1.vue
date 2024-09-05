@@ -15,11 +15,14 @@
           <p class="mb-6 font-normal">
             {{ content }}
           </p>
-          <img 
+          <CardTilt>
+            <img 
             :src="bannerSrc"
             alt="Avatar"
-            class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl"
+            class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
           >
+          </CardTilt>
+          
         </div>
       </div>
     </Section>

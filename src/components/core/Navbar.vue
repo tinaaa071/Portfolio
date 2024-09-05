@@ -22,7 +22,7 @@
             <RouterLink to="/" class="">
               <!-- Your SVG Logo -->
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
-                <div class="transition-colors duration-300 md:block group-hover:text-stone-400 flex items-center">
+                <div class="flex items-center transition-colors duration-300 md:block group-hover:text-stone-400">
                   <svg 
                   class="h-9 sm:h-11" 
                   xmlns="http://www.w3.org/2000/svg"  fill="currentColor" 
@@ -96,7 +96,7 @@
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item5')"
-                   class="bg-stone-50 border-white dark:border-stone-900 text-stone-800 hover:bg-Tertiary/80 dark:hover:bg-stone-800/50 dark:hover:text-white w-full"
+                   class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-Tertiary/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
                   />
               <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />

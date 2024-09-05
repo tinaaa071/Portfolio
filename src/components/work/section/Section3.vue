@@ -1,17 +1,20 @@
 <template>
-  <Section class="grid gap-6 md:grid-cols-10">
+  <Section 
+  class="grid w-full grid-cols-1 gap-6 px-6 md:grid-cols-10"
+  :class="isSticky ? 'px-0' : ''"
+  >
     <!-- Title -->
     <div
       ref="stickyTitle"
       :class="[
-        'sticky top-0 text-sm font-semibold md:top-5 md:col-span-2 text-Primary h-fit transition duration-300', // Transition classes added here
-        isSticky ? 'from-stone-300/50 text-stone-400 text-center py-4 backdrop-blur bg-gradient-to-b mix-blend-difference' : '', // Add background color when sticky
+        'sticky top-0 text-sm font-semibold md:top-5 md:col-span-2 text-Primary dark:text-white h-fit transition duration-300 z-10',
+        isSticky ? 'w-screen from-stone-300/60 text-Primary dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b' : '',
       ]"
     >
       {{ title }}
     </div>
     <!-- Content -->
-    <div class="md:col-span-8">
+    <div class="col-span-1 md:col-span-8" :class="isSticky ? 'px-6' : ''" >
       <slot name="content"></slot>
     </div>
   </Section>

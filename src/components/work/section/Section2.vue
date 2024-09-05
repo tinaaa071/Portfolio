@@ -17,7 +17,7 @@
                 {{ $t(brief.title) }}
             </span>
           </p>
-          <p class="font-normal text-stone-700">
+          <p class="font-normal text-stone-700 dark:text-stone-300">
             {{ $t(brief.content) }}
           </p>
         </div>

@@ -31,8 +31,8 @@
         gsap.to(this.card, {
           duration: 0.3,
           ease: 'power2.out',
-          rotationX: ((this.mousePosition.y / this.cardSize.height) * -(this.SCALE_Y * 2) + this.SCALE_Y) + 'deg',
-          rotationY: ((this.mousePosition.x / this.cardSize.width) * (this.SCALE_X * 2) - this.SCALE_X) + 'deg',
+          rotationX: ((this.mousePosition.y / this.cardSize.height) * -(this.SCALE_Y * 3) + this.SCALE_Y) + 'deg',
+          rotationY: ((this.mousePosition.x / this.cardSize.width) * (this.SCALE_X * 3) - this.SCALE_X) + 'deg',
           z: 10,
         });
       },

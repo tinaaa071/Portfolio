@@ -10,13 +10,14 @@
       <p
         :class="[
           'mb-6 text-xl sm:text-2xl font-semibold md:text-4xl lg:text-5xl md:mb-12 transition-colors duration-300 ease-in-out',
-          isHovered ? 'text-stone-300' : 'text-stone-500'
+          isHovered ? 'text-stone-300 blur-sm' : 'text-stone-500'
         ]"
       >
         {{ title }}
       </p>
       <!-- Project -->
       <div class="relative flex justify-center w-full h-44 sm:h-72 xl:h-96">
+        <CursorDot />
         <!-- Img -->
         <RouterLink
           to="/"
@@ -32,7 +33,7 @@
         </RouterLink>
         <!-- Mask -->
         <div
-          class="absolute bottom-0 left-0 z-10 w-full h-20 bg-white border-t border-Secondary md:h-32"
+          class="absolute bottom-0 left-0 z-10 w-full h-20 bg-white border-t dark:bg-stone-900 border-Secondary/70 md:h-32"
         ></div>
         <!-- Button -->
       <MagneticButton
@@ -43,7 +44,6 @@
         class="absolute bottom-0 z-10"
       />
       </div>
-      
     </Section>
   </template>
   

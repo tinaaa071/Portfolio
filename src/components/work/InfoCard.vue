@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 gap-4 p-6 border sm:gap-6 bg-Quaternary text-stone-800 rounded-2xl md:rounded-3xl border-Secondary">
+    <div class="grid grid-cols-1 gap-4 p-6 border sm:gap-6 bg-Quaternary rounded-2xl md:rounded-3xl border-Secondary dark:bg-transparent">
       <!-- Client -->
       <div>
         <p class="mb-2">
@@ -70,7 +70,7 @@
         required: true,
       },
       info3: {
-        type: String,
+        type: Array,
         required: true,
       },
       info4: {
