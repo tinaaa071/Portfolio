@@ -5,11 +5,11 @@
         {{ $t('work.title.item2') }}
       </p>
       <!-- Brief -->
-      <div class="grid gap-4 text-left md:grid-cols-2">
+      <div class="grid gap-3 text-left sm:gap-4 sm:grid-cols-2">
         <div
           v-for="(brief, index) in briefs"
           :key="index"
-          class="p-6 text-justify border rounded-lg border-stone-200"
+          class="p-4 text-justify border rounded-lg sm:p-6 border-stone-200"
         >
           <p class="mb-2 font-semibold">
             {{ `${(index + 1).toString().padStart(2, '0')} ` }}&ensp;|&ensp;

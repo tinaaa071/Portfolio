@@ -28,7 +28,7 @@
             :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.core.item5')"
-            class="hidden sm:block"
+            class="hidden xs:block"
             />
         </div>
         <!-- Title -->
@@ -36,7 +36,7 @@
           {{ title }}
         </h2>
         <!-- Info Sections -->
-        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:gap-12 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 lg:grid-cols-4 ">
           <div>
             <p class="mb-2">{{ $t('work.info.item1') }}</p>
             <p class="font-light">{{ info1 }}</p>
@@ -59,7 +59,7 @@
             :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.core.item5')"
-            class="sm:hidden"
+            class="xs:hidden"
             />
       </div>
     </div>

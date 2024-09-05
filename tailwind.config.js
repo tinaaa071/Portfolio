@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         sans: ['Noto Sans TC', ...fontFamily.sans],
       },
+      fontSize: {
+        xxs: ['10px', '12px']
+      },
       colors: {
         'Primary': '#A2866D',
         'Secondary': '#E0DCCA',
@@ -18,7 +21,7 @@ export default {
         'Quaternary': '#F8F7F2'
       },
       screens: {
-        xs: '375px'
+        xs: '512px'
       },
     },
   },

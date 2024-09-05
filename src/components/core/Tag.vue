@@ -1,5 +1,5 @@
 <template>
-    <div class="px-4 py-2 text-xs font-normal text-center bg-white rounded-full cursor-default sm:text-sm w-fit text-stone-900">
+    <div class="px-3 py-2 font-normal text-center bg-white rounded-full cursor-default text-xxs md:text-xs w-fit text-stone-500 xl:text-sm">
         {{ text }}
     </div>
 </template>

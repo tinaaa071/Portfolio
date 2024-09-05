@@ -1,17 +1,17 @@
 <!-- componentB.vue -->
 <template>
     <Section>
-      <div class="grid gap-6 xl:grid-cols-10 xl:gap-10 sm:grid-cols-8">
+      <div class="grid gap-6 xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">
         <!-- Left -->
         <InfoCard
-          class="sm:col-span-3"
+          class="xs:col-span-3"
           :info1="info1"
           :info2="info2"
           :info3="info3"
           :info4="info4"
         />
         <!-- Right -->
-        <div class="xl:col-span-7 sm:col-span-5">
+        <div class="xl:col-span-7 xs:col-span-5">
           <p class="mb-6 font-normal">
             {{ content }}
           </p>

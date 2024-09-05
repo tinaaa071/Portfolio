@@ -1,12 +1,12 @@
 <template>
     <div  class="relative w-full h-full ">
       <div class="absolute top-0 left-0 flex flex-col justify-between w-full h-full p-5 text-white transition-all duration-300 ease-in-out lg:opacity-0 sm:p-8 bg-stone-900/20 lg:hover:opacity-100 backdrop-blur-lg">
-        <div class="space-y-6 cursor-default">
+        <div class="space-y-5 cursor-default">
           <div class="space-y-3">
-            <p class="font-medium">
+            <p class="text-sm font-medium xl:text-base">
             {{ year }}
             </p>
-            <p class="text-2xl font-bold">
+            <p class="text-xl font-bold xs:text-2xl">
               {{ title }}
             </p>
             <p class="hidden text-xl font-light md:block">
