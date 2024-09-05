@@ -4,7 +4,7 @@
     :class="{
       'bg-Secondary dark:bg-stone-600': !isPlus,
       'bg-Tertiary dark:bg-stone-700': isPlus,
-      'w-10 h-10 rounded-full flex items-center justify-center': true,
+      'sm:w-10 sm:h-10 w-9 h-9 rounded-full flex items-center justify-center': true,
       'transition-colors duration-300 ease-in-out': true
     }"
   >

@@ -7,7 +7,7 @@
         'bg-Quaternary text-Primary dark:bg-stone-800 dark:border-b dark:border-white dark:text-white': isOpen,
         'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
       }"
-      class="flex items-center justify-between w-full px-6 py-4 overflow-hidden text-left transition-colors duration-300 ease-in-out hover:bg-Quaternary "
+      class="flex items-center justify-between w-full p-4 overflow-hidden text-left transition-colors duration-300 ease-in-out sm:p-6 hover:bg-Quaternary "
     >
       <div class="flex items-center gap-4 font-medium ">
         <img

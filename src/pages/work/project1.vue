@@ -77,7 +77,7 @@
                 :title="$t('work.title.item4')"
               >
                 <template #content>
-                  <div class="grid grid-cols-1 gap-4">
+                  <div class="grid grid-cols-1 gap-3 sm:gap-4">
                     <!-- Color -->
                     <Accordion
                     :title="$t('work.designSystem.item1')"
