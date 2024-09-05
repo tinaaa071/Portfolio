@@ -1,5 +1,5 @@
 <template> 
-     <div class="relative pb-6 text-xs sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-800 xs:text-sm sm:text-base dark:text-white">
+     <div class="relative pb-6 text-sm sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-800 xs:text-base dark:text-white">
       <Navbar />
       <ProgressBar />
       <BackToTop class="z-20" />
