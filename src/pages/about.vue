@@ -28,11 +28,10 @@
     </div>
      </div>
     <!-- Value 區塊 -->
-    <aboutSection class="bg-B4">
-      <!-- Title -->
-      <p class="mb-8 text-xl font-semibold">
-        {{ $t('about.value.T1') }}
-      </p>
+    <aboutSection 
+    :title="$t('about.value.T1')"
+    class="bg-B4 dark:border-y dark:border-white/20"
+    >
       <div class="flex flex-col">
       <!-- List Items -->
       <div class="flex flex-col">
@@ -44,9 +43,11 @@
             { title: 'about.value.S3', content: 'about.value.V3' }
           ]"
           :key="index"
-          class="flex gap-6 p-8 text-xl font-semibold transition-colors duration-300 ease-in-out hover:bg-white sm:rounded-3xl rounded-2xl "
+          class="flex gap-6 p-8 text-xl font-semibold transition-colors duration-300 ease-in-out hover:bg-white sm:rounded-3xl rounded-2xl dark:hover:bg-stone-800"
         >
-          <span>{{ index + 1 }}.</span>
+          <span>
+            {{ index + 1 }}.
+          </span>
           <div>
             <!-- Title -->
             <p class="mb-2">
@@ -60,6 +61,44 @@
         </div>
       </div>
     </div>
+    </aboutSection>
+    <!-- Skills 區塊 -->
+    <aboutSection
+    :title="$t('about.skill.T1')"
+    >
+      <div class="flex gap-2 sm:gap-3">
+        <Tag
+        :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3')]" 
+        class="bg-B4"
+        />
+      </div>
+    </aboutSection>
+    <!-- Language 區塊 -->
+    <aboutSection
+    :title="$t('about.language.T1')"
+    >
+    <div class="flex gap-6">
+        <!-- List Items -->
+        <div
+          v-for="(item, index) in [
+            { title: 'about.language.S1', content: 'about.language.L1' },
+            { title: 'about.language.S2', content: 'about.language.L2' }
+          ]"
+          :key="index"
+          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow sm:rounded-3xl rounded-2xl border-B4"
+        >
+          <div>
+            <!-- Title -->
+            <p class="mb-2">
+              {{ $t(item.title) }}
+            </p>
+            <!-- Content -->
+            <p class="text-sm font-medium text-stone-700 dark:text-stone-300">
+              {{ $t(item.content) }}
+            </p>
+          </div>
+        </div>
+      </div>
     </aboutSection>
   </div>
 </template>

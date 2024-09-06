@@ -17,16 +17,11 @@
         :info2="$t('work.core.item3')"
         :info3="$t('work.core.item3')"
         :info4="$t('work.core.item3')"
-        :tagText1="$t('work.core.item1')"
-        :tagText2="$t('work.core.item2')"
-        :tagText3="$t('work.core.item3')"
-        :tagText4="$t('work.core.item4')"
-        :tagText5="$t('work.core.item5')"
-        :tagVisible="[true, false, true, true, false]"
+        :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]" 
         :iconsVisible="[true, false, true, true, false]"
         :linkTo="'/'"
         :icon="icon" 
-        :text="$t('work.core.item5')" 
+        
         />
         <!-- Main Content -->
         <div>

@@ -37,25 +37,10 @@
           year="2024"
           :title="$t('project1.core.title')"
           :desc="$t('project1.core.desc')"
+          :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
           linkTo="/work/project1"
           backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        >
-          <template #tag>
-            <!-- Passing custom classes to the child component -->
-            <Tag
-              :text="$t('work.core.item3')"
-              class="dark:text-zinc-500 dark:bg-white "
-            />
-            <Tag
-              :text="$t('work.core.item4')"
-              class="dark:text-zinc-500 dark:bg-white"
-            />
-            <Tag
-              :text="$t('work.core.item3')"
-              class="dark:text-zinc-500 dark:bg-white"
-            />
-          </template>
-        </WorkDetail>
+        />
         <!-- Project 2 -->
         <WorkDetail
           v-if="activeTab === 2"
@@ -65,15 +50,10 @@
           year="2024"
           :title="$t('project2.core.title')"
           :desc="$t('project2.core.desc')"
+          :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1724271366205-62a20f7cb4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        >
-          <template #tag>
-            <Tag :text="$t('work.core.item3')" />
-            <Tag :text="$t('work.core.item4')" />
-            <Tag :text="$t('work.core.item3')" />
-          </template>
-        </WorkDetail>
+        />
         <!-- Project 3 -->
         <WorkDetail
           v-if="activeTab === 3"
@@ -83,15 +63,10 @@
           year="1111"
           :title="$t('project3.core.title')"
           :desc="$t('project3.core.desc')"
+          :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1723904186792-2db5de01a347?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        >
-          <template #tag>
-            <Tag :text="$t('work.core.item3')" />
-            <Tag :text="$t('work.core.item4')" />
-            <Tag :text="$t('work.core.item3')" />
-          </template>
-        </WorkDetail>
+        />
         <!-- Project 4 -->
         <WorkDetail
           v-if="activeTab === 4"
@@ -101,15 +76,10 @@
           year="1111"
           :title="$t('project4.core.title')"
           :desc="$t('project4.core.desc')"
+          :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
           linkTo="/list_1"
           backgroundImage="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        >
-          <template #tag>
-            <Tag :text="$t('work.core.item3')" />
-            <Tag :text="$t('work.core.item4')" />
-            <Tag :text="$t('work.core.item3')" />
-          </template>
-        </WorkDetail>
+        />
       </TabTransition>
     </div>
   </div>

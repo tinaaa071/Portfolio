@@ -17,11 +17,7 @@
         <div class="flex items-center justify-between">
           <!-- Tag -->
           <div class="flex gap-2 sm:gap-3">
-            <Tag :text="tagText1" v-if="tagVisible[0]" aria-hidden="true" />
-            <Tag :text="tagText2" v-if="tagVisible[1]" aria-hidden="true" />
-            <Tag :text="tagText3" v-if="tagVisible[2]" aria-hidden="true" />
-            <Tag :text="tagText4" v-if="tagVisible[3]" aria-hidden="true" />
-            <Tag :text="tagText5" v-if="tagVisible[4]" aria-hidden="true" />
+            <Tag :tag="tag" />
           </div>
           <!-- BTN -->
           <MagneticButton 
@@ -88,30 +84,9 @@
         type: String,
         required: true,
       },
-      tagText1: {
-        type: String,
-        required: true,
-      },
-      tagText2: {
-        type: String,
-        required: true,
-      },
-      tagText3: {
-        type: String,
-        required: true,
-      },
-      tagText4: {
-        type: String,
-        required: true,
-      },
-      tagText5: {
-        type: String,
-        required: true,
-      },
-      tagVisible: {
+      tag: {
         type: Array,
-        default: () => [false, false, false, false, false],
-        validator: (value) => value.length === 5 && value.every((item) => typeof item === 'boolean'),
+        required: true,
       },
       iconsVisible: {
         type: Array,

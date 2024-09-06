@@ -14,5 +14,18 @@
         "V1": "Coding",
         "V2": "View Site",
         "V3": "View Site"
+    },
+    "skill":{
+        "T1": "I specialize in",
+        "S1": "Interaction Design",
+        "S2": "Visual Design",
+        "S3": "User Research"
+    },
+    "language":{
+        "T1": "I speak",
+        "S1": "Chinese (Mandarin)",
+        "S2": "English",
+        "L1": "Native Speaker",
+        "L2": "Full Working Proficiency"
     }
 }

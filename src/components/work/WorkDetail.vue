@@ -14,7 +14,10 @@
             </p>
           </div>
           <div class="flex gap-2 sm:gap-3">
-            <slot name="tag"></slot>
+            <Tag 
+            :tag="tag"
+            class="dark:bg-white dark:text-stone-800" 
+            />
           </div>
         </div>
         <WaveButton :linkTo="linkTo" />
@@ -51,7 +54,11 @@
       linkTo: {
       type: String,
       required: true,
-    },
+      },
+      tag: {
+        type: Array,
+        required: true,
+      },
     }
   };
 </script>
