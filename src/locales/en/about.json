@@ -23,9 +23,36 @@
     },
     "language":{
         "T1": "I speak",
-        "S1": "Chinese (Mandarin)",
-        "S2": "English",
+        "S1": "🇹🇼 Chinese (Mandarin)",
+        "S2": "🇺🇸 English",
         "L1": "Native Speaker",
         "L2": "Full Working Proficiency"
+    },
+    "education":{
+        "T1": "Education",
+        "S1": "TUniversity",
+        "L1": "Native Speaker",
+        "L2": "Native Speaker"
+    },
+    "certificate":{
+        "T1": "Self-Learning",
+        "S1": "TUniversity",
+        "S2": "TUniversity",
+        "S3": "TUniversity",
+        "S4": "TUniversity",
+        "S5": "TUniversity",
+        "S6": "TUniversity",
+        "L1": "Native Speaker",
+        "L2": "Native Speaker",
+        "L3": "Native Speaker",
+        "L4": "Native Speaker",
+        "L5": "Native Speaker",
+        "L6": "Native Speaker"
+    },
+    "tool":{
+        "T1": "Tools"
+    },
+    "work":{
+        "T1": "Working Experience"
     }
 }

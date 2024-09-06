@@ -13,7 +13,7 @@
     inheritAttrs: false,
     props: {
       tag: {
-        type: Array,
+        type: String,
         required: true,
       },
     },

@@ -30,7 +30,7 @@
     <!-- Value 區塊 -->
     <aboutSection 
     :title="$t('about.value.T1')"
-    class="bg-B4 dark:border-y dark:border-white/20"
+    class="bg-B4 dark:border-y dark:border-white/20 md:py-8"
     >
       <div class="flex flex-col">
       <!-- List Items -->
@@ -65,6 +65,7 @@
     <!-- Skills 區塊 -->
     <aboutSection
     :title="$t('about.skill.T1')"
+    class="md:py-8"
     >
       <div class="flex gap-2 sm:gap-3">
         <Tag
@@ -76,8 +77,9 @@
     <!-- Language 區塊 -->
     <aboutSection
     :title="$t('about.language.T1')"
+    class="md:py-8"
     >
-    <div class="flex gap-6">
+    <div class="grid grid-cols-2 gap-6">
         <!-- List Items -->
         <div
           v-for="(item, index) in [
@@ -93,12 +95,80 @@
               {{ $t(item.title) }}
             </p>
             <!-- Content -->
-            <p class="text-sm font-medium text-stone-700 dark:text-stone-300">
+            <p class="text-sm font-medium text-stone-500 dark:text-stone-300">
               {{ $t(item.content) }}
             </p>
           </div>
         </div>
       </div>
+    </aboutSection>
+    <!-- Education 區塊 -->
+    <aboutSection
+    :title="$t('about.education.T1')"
+    class="md:py-8"
+    >
+    <div class="grid grid-cols-2 gap-6">
+        <!-- List Items -->
+        <div
+          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow sm:rounded-3xl rounded-2xl border-B4"
+        >
+          <div>
+            <!-- Title -->
+            <p class="mb-2">
+              {{ $t('about.education.S1') }}
+            </p>
+            <!-- Content -->
+            <p class="text-sm font-medium text-stone-500 dark:text-stone-300">
+              {{ $t('about.education.L1') }}
+              <br />
+              {{ $t('about.education.L2') }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </aboutSection>
+    <!-- Certificate 區塊 -->
+    <aboutSection
+    :title="$t('about.certificate.T1')"
+    class="md:py-8"
+    >
+    <div class="grid grid-cols-3 gap-6">
+        <!-- List Items -->
+        <LearnCard
+        v-for="(card, index) in [
+        { title: $t('about.certificate.S1'), info: $t('about.certificate.L1'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+        { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+        { title: $t('about.certificate.S3'), info: $t('about.certificate.L3'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+        // Add more cards as needed
+      ]"
+      :key="index"
+      :title="card.title"
+      :info="card.info"
+      :cardSrc="card.cardSrc"
+    />
+      </div>
+    </aboutSection>
+    <!-- Tools 區塊 -->
+    <aboutSection
+    :title="$t('about.tool.T1')"
+    class="md:py-8 bg-B1"
+    >
+      <ToolMarquee />
+    </aboutSection>
+    <!-- Work 區塊 -->
+    <aboutSection
+    :title="$t('about.tool.T1')"
+    class="md:py-8 "
+    >
+      <WorkAccordion
+      title="Accordion Title"
+      info="123"
+      desc="sfsf"
+      :showLogo="true"
+      logoSrc="https://images.unsplash.com/photo-1688298094518-eb16cfbda0bc?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+      >
+        <p>Accordion content goes here.</p>
+      </WorkAccordion>
     </aboutSection>
   </div>
 </template>

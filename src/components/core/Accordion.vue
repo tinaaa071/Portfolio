@@ -16,7 +16,10 @@
           alt="Avatar"
           class="object-cover w-10 h-10 rounded-full"
         />
-        <span>{{ title }}</span>
+        <!-- Title -->
+        <p>
+          {{ title }}
+        </p>
       </div>
       <PlusButton :isPlus="!isOpen" @toggle="toggle" />
     </button>
