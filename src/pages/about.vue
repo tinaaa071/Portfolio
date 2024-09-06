@@ -157,7 +157,7 @@
     </aboutSection>
     <!-- Work 區塊 -->
     <aboutSection
-    :title="$t('about.tool.T1')"
+    :title="$t('about.work.T1')"
     class="md:py-8 "
     >
       <WorkAccordion
