@@ -1,16 +1,16 @@
 <template>
     <Section
-      class="flex flex-col items-center py-8 text-center border-t xl:py-20 md:py-10 border-stone-300"
+      class="flex flex-col items-center py-8 text-center border-t xl:py-20 md:py-10 border-stone-300 dark:border-white/20"
     >
-      <!-- Prompt -->
-      <p class="mb-6 font-semibold md:text-xl text-stone-500 md:mb-12">
+      <!-- Title -->
+      <p class="mb-6 font-semibold md:text-xl text-stone-500 md:mb-12 dark:text-white">
         {{ $t('work.title.item2') }}
       </p>
-      <!-- Title -->
+      <!-- Project -->
       <p
         :class="[
           'mb-6 text-xl sm:text-2xl font-semibold md:text-4xl lg:text-5xl md:mb-12 transition-colors duration-300 ease-in-out',
-          isHovered ? 'text-stone-300 blur-sm' : 'text-stone-500'
+          isHovered ? 'text-stone-300 dark:text-stone-500 blur-sm' : 'text-stone-500 dark:text-stone-300'
         ]"
       >
         {{ title }}

@@ -81,7 +81,7 @@
                     <!-- Color -->
                     <Accordion
                     :title="$t('work.designSystem.item1')"
-                    class="dark:border-b dark:border-white"
+                    class="border-b dark:border-b dark:border-white border-b-Secondary"
                     >
                       <CardTilt>
                         <img 

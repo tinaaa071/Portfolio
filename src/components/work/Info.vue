@@ -1,7 +1,7 @@
 <template>
     <div class="cursor-default">
       <!-- title -->
-      <div class="relative z-10 mb-5 sm:mb-8">
+      <div class="relative z-10 mb-4 sm:mb-6">
         <h1 class="text-2xl font-semibold text-center text-white dark:text-stone-900 lg:text-5xl sm:text-4xl ">
           {{ title }}
         </h1>
