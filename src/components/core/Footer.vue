@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-between gap-6 px-6 py-8 sm:py-10 sm:flex-row sm:px-10 xl:px-28 bg-stone-900 dark:bg-Tertiary">
+  <div class="flex flex-col items-center justify-between gap-6 px-6 py-8 sm:py-10 sm:flex-row sm:px-10 xl:px-28 bg-stone-900 dark:bg-B3">
     <!-- Icon Group -->
     <ul class="flex">
         <li v-for="item in menuItems" :key="item.to">

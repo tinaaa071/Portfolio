@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 gap-4 p-6 border sm:gap-6 bg-Quaternary rounded-2xl md:rounded-3xl border-Secondary dark:bg-transparent">
+    <div class="grid grid-cols-1 gap-4 p-6 border sm:gap-6 bg-B4 rounded-2xl md:rounded-3xl border-B2 dark:bg-transparent">
       <!-- Client -->
       <div>
         <p class="mb-2">

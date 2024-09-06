@@ -15,10 +15,10 @@ export default {
         xxs: ['10px', '12px']
       },
       colors: {
-        'Primary': '#A2866D',
-        'Secondary': '#E0DCCA',
-        'Tertiary': '#EFECE5',
-        'Quaternary': '#F8F7F2'
+        'B1': '#A2866D',
+        'B2': '#E0DCCA',
+        'B3': '#EFECE5',
+        'B4': '#F8F7F2'
       },
       screens: {
         xs: '512px'

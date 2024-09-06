@@ -1,0 +1,18 @@
+{
+    "info":{
+        "item1": "Hello! Nice to meet you. 👋🏻",
+        "item2": "View Project",
+        "item3": "UI/UX",
+        "item4": "Coding",
+        "item5": "View Site"
+    },
+    "value":{
+        "T1": "My Values",
+        "S1": "Empathize others",
+        "S2": "Keep learning & sharing",
+        "S3": "Create values",
+        "V1": "Coding",
+        "V2": "View Site",
+        "V3": "View Site"
+    }
+}

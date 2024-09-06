@@ -1,108 +1,70 @@
 <template>
-  <Layout title="肌肉骨骼症狀調查表">
-    <template #content>
-      <div class="flex flex-col gap-6 md:gap-10 dark:bg-black">
-        <!-- 問題 -->
-        <div class="flex flex-col gap-6">
-            <div v-for="(question, index) in question" :key="index" >
-              <p class="mb-2 md:text-lg">
-                {{ question.id }}.{{ question.title }}
-              </p>
-              <RadioButtonGroup :options="question.dataset"  class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-4 md:gap-x-12 h-fit" />
+  <div class="pb-6 text-sm bg-white sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
+    <Navbar />
+    <ProgressBar />
+    <BackToTop class="z-20" />
+    <!-- Profile 區塊 -->
+     <div class="px-6 pt-24 pb-6 mx-auto sm:pt-28 sm:px-10 xl:px-28 md:pt-32">
+      <div class="flex justify-center w-10/12 pt-12 pb-16 mx-auto bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800 ">
+            <div class="grid items-center justify-center grid-cols-10 gap-10">
+              <!-- Img -->
+              <div class="relative h-64 col-span-3">
+                <div class="absolute z-10 w-52 -top-12 -left-4">
+                  <chatBubble />
+                </div>
+                <CardTilt class="shadow bg-center bg-cover w-full h-full rounded-[64px] aspect-square bg-[url('https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]" />
+              </div>
+              <!-- Content -->
+               <div class="col-span-7">
+                <p class="mb-6 text-2xl font-semibold">
+                  {{ $t('project1.core.title') }}
+                </p>
+                <p class="font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eaque vero expedita quam explicabo beatae porro, saepe accusamus non minus, quaerat repellat voluptates! Exercitationem quod non commodi enim corporis quibusdam doloribus obcaecati, ducimus aut facere, cupiditate optio libero! Rerum quo consequuntur aperiam earum sunt sequi excepturi tempore aspernatur itaque ab.
+                </p>
+               </div>
             </div>
+            
+    </div>
+     </div>
+    <!-- Value 區塊 -->
+    <aboutSection class="bg-B4">
+      <!-- Title -->
+      <p class="mb-8 text-xl font-semibold">
+        {{ $t('about.value.T1') }}
+      </p>
+      <div class="flex flex-col">
+      <!-- List Items -->
+      <div class="flex flex-col">
+        <!-- List Items -->
+        <div
+          v-for="(item, index) in [
+            { title: 'about.value.S1', content: 'about.value.V1' },
+            { title: 'about.value.S2', content: 'about.value.V2' },
+            { title: 'about.value.S3', content: 'about.value.V3' }
+          ]"
+          :key="index"
+          class="flex gap-6 p-8 text-xl font-semibold transition-colors duration-300 ease-in-out hover:bg-white sm:rounded-3xl rounded-2xl "
+        >
+          <span>{{ index + 1 }}.</span>
+          <div>
+            <!-- Title -->
+            <p class="mb-2">
+              {{ $t(item.title) }}
+            </p>
+            <!-- Content -->
+            <p class="text-base font-medium text-stone-700 dark:text-stone-300">
+              {{ $t(item.content) }}
+            </p>
           </div>
-        <!-- 說明 -->
-        <div class="flex flex-col items-start p-4 bg-gray-100 lg:flex-row md:px-8 rounded-xl">
-          <h3 class="mb-2 mr-4 md:text-lg">填寫說明</h3>
-          <div class="flex flex-col">
-            <p 
-            v-for="(item, index) in info" :key="index"
-            class="mb-2 md:text-lg"
-            >
-            {{ item.id }}，
-            <span class="font-light">
-              {{ item.label }}
-            </span>
-          </p>
-          </div>
-        </div>
-
-        <!-- 症狀圖表 -->
-        <div>
-          <img src="@/assets/body.png" alt="" class="mx-auto mb-8 h-[32rem] aspect-auto">
-          <Table :columns="columns" :data="data" />
-        </div>
-
-        <!-- 確認 -->
-        <Confirm />
-
-        <!-- 按鈕 -->
-        <div class="flex items-center justify-center gap-4">
-          <SecondaryButton label="取消" />
-          <PrimaryButton label="送出" />
         </div>
       </div>
-    </template>
-  </Layout>
+    </div>
+    </aboutSection>
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue';
-
 export default {
-  setup() {
-    const question = ref([
-      { 
-        id: 1,
-        name: 'question 1',
-        title: ' 您平常使用電腦、滑鼠慣用手為?', 
-        dataset: ['左手', '右手'] 
-      },
-      { 
-        id: 2,
-        name: 'question 2',
-        title: ' 您在過去的 1 年內，身體是否有長達 2 星期以上的疲勞、酸痛、發麻、刺痛等不舒服，或關節活動受到限制?', 
-        dataset: ['否', '是']
-      },
-      { 
-        id: 3,
-        name: 'question 3',
-        title: ' 下表的身體部位酸痛、不適或影響關節活動之情形持續多久時間?', 
-        dataset: ['1 個月', '3 個月', '6 個月', '1 年', '3 年', '3 年以上']
-      },
-    ])
-
-    const info = ref([
-      { 
-        id: '0 : 不痛', 
-        label: '關節可以自由活動。' 
-      },
-      { 
-        id: '1 : 微痛', 
-        label: '關節活動到極限會酸痛，可以忽略。' 
-      },
-      { 
-        id: '2 : 中等疼痛', 
-        label: '關節活動超過一半會酸痛，但是可以完成全部活動範圍，可能影響工作。' 
-      },
-      { 
-        id: '3 : 劇痛', 
-        label: '關節活動只有正常人的一半，會影響工作。' 
-      },
-      { 
-        id: '4 : 非常劇痛', 
-        label: '關節活動只有正常人的 1/4，影響自主活動能力。' 
-      },
-      { 
-        id: '5 : 極度劇痛', 
-        label: '身體完全無法自主活動。' 
-      },
-    ]);
-
-    return {
-      question,
-      info
-    };
-  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div ref="card" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" @mouseenter="handleMouseEnter">
+    <div ref="card" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" @mouseenter="handleMouseEnter" class="drop-shadow-xl">
         <slot></slot>
     </div>
   </template>

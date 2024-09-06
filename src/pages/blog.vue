@@ -161,8 +161,8 @@
 
         <!-- 按鈕 -->
         <div class="flex items-center justify-center gap-4 mt-8">
-          <SecondaryButton label="取消" />
-          <PrimaryButton label="送出" />
+          <B2Button label="取消" />
+          <B1Button label="送出" />
         </div>
       </template>
     </Layout>

@@ -60,7 +60,7 @@
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item5')"
-                   class="border-stone-900 dark:border-white hover:bg-Tertiary/80 dark:hover:bg-stone-600/50 dark:text-white"
+                   class="border-stone-900 dark:border-white hover:bg-B3/80 dark:hover:bg-stone-600/50 dark:text-white"
                   />
                 </li>
                 <!-- Language -->
@@ -96,7 +96,7 @@
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item5')"
-                   class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-Tertiary/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
+                   class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-B3/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
                   />
               <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />

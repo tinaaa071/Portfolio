@@ -19,7 +19,7 @@
             <img 
             :src="bannerSrc"
             alt="Avatar"
-            class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl drop-shadow-xl"
+            class="object-cover w-full xl:rounded-3xl aspect-video rounded-2xl "
           >
           </CardTilt>
           

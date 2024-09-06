@@ -5,7 +5,7 @@
         <li
           v-for="section in sections"
           :key="section.id"
-          :class="['my-3', activeSection === section.id ? 'text-Primary font-bold dark:text-white' : 'text-stone-300 dark:text-stone-400']"
+          :class="['my-3', activeSection === section.id ? 'text-B1 font-bold dark:text-white' : 'text-stone-300 dark:text-stone-400']"
         >
           <a
             :href="'#' + section.id"

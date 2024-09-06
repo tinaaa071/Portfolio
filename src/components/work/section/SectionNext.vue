@@ -1,6 +1,6 @@
 <template>
     <Section
-      class="flex flex-col items-center py-8 text-center border-t xl:py-20 md:py-10 border-stone-300 dark:border-white/20"
+      class="flex flex-col items-center w-full py-8 text-center xl:py-20 md:py-10 "
     >
       <!-- Title -->
       <p class="mb-6 font-semibold md:text-xl text-stone-500 md:mb-12 dark:text-white">
@@ -33,7 +33,7 @@
         </RouterLink>
         <!-- Mask -->
         <div
-          class="absolute bottom-0 left-0 z-10 w-full h-20 bg-white border-t dark:bg-stone-900 border-Secondary/70 md:h-32"
+          class="absolute bottom-0 left-0 z-10 w-full h-20 bg-white border-t dark:bg-stone-900 border-B2/70 md:h-32"
         ></div>
         <!-- Button -->
       <MagneticButton

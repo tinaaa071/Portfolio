@@ -1,15 +1,15 @@
 <template>
   <Section 
-  class="grid w-full grid-cols-1 gap-6 md:grid-cols-10 "
+  class="grid grid-cols-1 gap-6 md:grid-cols-10"
   :class="isSticky ? 'px-0' : 'px-6'"
   >
     <!-- Title -->
     <div
       ref="stickyTitle"
       :class="[
-        'sticky top-0 text-sm font-semibold md:top-5 md:col-span-2 text-Primary dark:text-white h-fit transition duration-300 z-10 text-center md:text-left',
+        'sticky top-0 text-sm font-semibold md:top-5 md:col-span-2 text-B1 dark:text-white h-fit transition duration-300 z-10 text-center md:text-left ',
         isSticky
-          ? 'w-full flex justify-center from-stone-300/60 text-Primary dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b '
+          ? 'w-full flex justify-center from-stone-300/60 text-B1 dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b '
           : '',
       ]"
     >

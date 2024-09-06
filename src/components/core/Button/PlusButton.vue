@@ -2,8 +2,8 @@
   <button
     @click="toggleIcon"
     :class="{
-      'bg-Secondary/80 dark:bg-stone-600': !isPlus,
-      'bg-Tertiary dark:bg-stone-700': isPlus,
+      'bg-B2/80 dark:bg-stone-600': !isPlus,
+      'bg-B3 dark:bg-stone-700': isPlus,
       'sm:w-10 sm:h-10 w-9 h-9 rounded-full flex items-center justify-center': true,
       'transition-colors duration-300 ease-in-out': true
     }"

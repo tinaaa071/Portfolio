@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-6 sm:pb-10 bg-Quaternary dark:bg-stone-900 text-stone-900">
+  <div class="sm:pb-10 bg-B4 dark:bg-stone-900 text-stone-900">
     <Layout :showProgress="true">
     <template #content>
       <div class="space-y-5 sm:space-y-8">

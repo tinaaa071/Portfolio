@@ -12,7 +12,7 @@
         />
       </div>
       <!-- Info -->
-      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 bg-Quaternary dark:bg-stone-800 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14 dark:text-white dark:border-white/20 dark:border-b">
+      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 bg-B4 dark:bg-stone-800 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14 dark:text-white dark:border-white/20 dark:border-b">
         <!-- Tag + BTN -->
         <div class="flex items-center justify-between">
           <!-- Tag -->
