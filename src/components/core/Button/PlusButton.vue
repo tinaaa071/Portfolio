@@ -12,11 +12,11 @@
       class="relative inline-flex items-center justify-center w-6 h-6"
     >
       <div
-        class="absolute w-4 h-1 transition-transform duration-300 ease-in-out bg-white"
+        class="absolute w-4 h-0.5 transition-transform duration-300 ease-in-out bg-white rounded-full"
         :class="{ 'rotate-90': isPlus }"
       ></div>
       <div
-        class="absolute w-4 h-1 transition-transform duration-300 ease-in-out bg-white"
+        class="absolute w-4 h-0.5 transition-transform duration-300 ease-in-out bg-white rounded-full"
         :class="{ 'rotate-0': isPlus }"
       ></div>
     </div>

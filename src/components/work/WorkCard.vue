@@ -27,7 +27,7 @@
     <!-- Right Section -->
     <div class="h-72 sm:h-96 lg:h-auto">
       <SkeletonLoader v-if="loading" size="full" />
-      <TabTransition v-else >
+      <TabTransition v-else>
         <!-- Project 1 -->
         <WorkDetail
           v-if="activeTab === 1"
@@ -41,9 +41,19 @@
           backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <template #tag>
-            <Tag :text="$t('work.core.item3')" class="dark:bg-white dark:text-stone-500" />
-            <Tag :text="$t('work.core.item4')" class="dark:bg-white dark:text-stone-500" />
-            <Tag :text="$t('work.core.item3')" class="dark:bg-white dark:text-stone-500" />
+            <!-- Passing custom classes to the child component -->
+            <Tag
+              :text="$t('work.core.item3')"
+              class="dark:text-zinc-500 dark:bg-white "
+            />
+            <Tag
+              :text="$t('work.core.item4')"
+              class="dark:text-zinc-500 dark:bg-white"
+            />
+            <Tag
+              :text="$t('work.core.item3')"
+              class="dark:text-zinc-500 dark:bg-white"
+            />
           </template>
         </WorkDetail>
         <!-- Project 2 -->
@@ -104,34 +114,34 @@
     </div>
   </div>
 </template>
-  
+
 <script>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 
 export default {
   setup() {
-    const loading = ref(true)
-    const data = ref(null)
-    const activeTab = ref(1)
+    const loading = ref(true);
+    const data = ref(null);
+    const activeTab = ref(1);
 
     const selectTab = (tab) => {
-      activeTab.value = tab
-    }
+      activeTab.value = tab;
+    };
 
     onMounted(async () => {
       // Simulate a delay for loading data
       setTimeout(async () => {
-        data.value = 'Loaded content here'
-        loading.value = false
-      }, 2000)
-    })
+        data.value = 'Loaded content here';
+        loading.value = false;
+      }, 2000);
+    });
 
     return {
       activeTab,
       selectTab,
       loading,
-      data
-    }
-  }
-}
-  </script>
+      data,
+    };
+  },
+};
+</script>

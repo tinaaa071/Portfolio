@@ -77,10 +77,11 @@
                 :title="$t('work.title.item4')"
               >
                 <template #content>
-                  <div class="grid grid-cols-1 gap-3 sm:gap-4">
+                  <div class="grid grid-cols-1 overflow-hidden drop-shadow rounded-2xl xl:rounded-3xl dark:border dark:border-white">
                     <!-- Color -->
                     <Accordion
                     :title="$t('work.designSystem.item1')"
+                    class="dark:border-b dark:border-white"
                     >
                       <CardTilt>
                         <img 

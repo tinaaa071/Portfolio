@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden drop-shadow rounded-2xl xl:rounded-3xl dark:border dark:border-white">
+  <div>
     <!-- Title -->
     <button
       @click="toggle"
@@ -7,7 +7,7 @@
         'bg-Quaternary text-Primary dark:bg-stone-800 dark:border-b dark:border-white dark:text-white': isOpen,
         'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
       }"
-      class="flex items-center justify-between w-full p-4 overflow-hidden text-left transition-colors duration-300 ease-in-out sm:p-6 hover:bg-Quaternary "
+      class="flex items-center justify-between w-full px-4 py-3 overflow-hidden text-left transition-colors duration-300 ease-in-out sm:px-5 sm:py-4 hover:bg-Quaternary "
     >
       <div class="flex items-center gap-4 font-medium ">
         <img

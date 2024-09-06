@@ -1,5 +1,5 @@
 <template>
-    <Section class="flex flex-col gap-4 text-center md:gap-8">
+    <Section class="flex flex-col gap-4 px-6 text-center md:gap-8">
       <!-- Title -->
       <p class="text-2xl font-bold md:text-3xl">
         {{ $t('work.title.item2') }}
