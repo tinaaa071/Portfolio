@@ -4,53 +4,66 @@
       <template #content>
         <Tabs
           :currentCategory="currentCategory"
-          :categories="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
+          :categories="[
+            $t('project1.infoContent.item1') ,
+            $t('project1.infoContent.item2'),
+            $t('project1.infoContent.item3'),
+            $t('project1.infoContent.item4'),
+          ]"
           @category-changed="filterByCategory"
         />
 
-        <PostList :posts="paginatedPosts" />
+        <!-- Display "No data" message if no posts are available -->
+        <div v-if="filteredPosts.length === 0" class="p-4 text-center">
+          No data
+        </div>
 
-        <Paginator
-          :totalItems="filteredPosts.length"
-          :itemsPerPage="itemsPerPage"
-          @page-changed="handlePageChange"
-        />
-        <p>Current Page: {{ currentPage }}</p>
+        <!-- Display PostList and Paginator only if there are posts -->
+        <div v-else>
+          <PostList :posts="paginatedPosts" />
+
+          <Paginator
+            :totalItems="filteredPosts.length"
+            :itemsPerPage="itemsPerPage"
+            @page-changed="handlePageChange"
+          />
+          <p>Current Page: {{ currentPage }}</p>
+        </div>
       </template>
     </Layout>
     <Footer />
   </div>
 </template>
 
+
 <script>
 export default {
   data() {
     return {
       posts: [
-      {
+        {
           id: 1,
           title: "Post 1",
-          category: "Category A",
+          category: this.$t('project1.infoContent.item2'),
           image: "https://picsum.photos/id/230/200/200",
-          date: new Date().toLocaleDateString(), // Add the current date
+          date: new Date().toLocaleDateString(),
         },
         {
           id: 2,
           title: "Post 2",
-          category: "Category A",
+          category: this.$t('project1.infoContent.item3'),
           image: "https://picsum.photos/id/231/200/200",
-          date: new Date().toLocaleDateString(), // Add the current date
+          date: new Date().toLocaleDateString(),
         },
       ],
       currentPage: 1,
       itemsPerPage: 6,
-      currentCategory: this.$t('project1.infoContent.item2'), // Set the default current category
+      currentCategory: this.$t('project1.infoContent.item1'), // Set the default current category to "All"
     };
   },
   computed: {
     filteredPosts() {
-      // Adjust the filtering logic to compare with localized category values
-      if (this.currentCategory === this.$t('project1.infoContent.item2')) {
+      if (this.currentCategory === this.$t('project1.infoContent.item1')) {
         return this.posts;
       }
       return this.posts.filter(
