@@ -27,28 +27,20 @@ export default {
   data() {
     return {
       posts: [
-        {
+      {
           id: 1,
           title: "Post 1",
-          content: "Content 1",
-          category: this.$t('project1.infoContent.item2'), // Update to match localized category
+          category: "Category A",
           image: "https://picsum.photos/id/230/200/200",
+          date: new Date().toLocaleDateString(), // Add the current date
         },
         {
           id: 2,
           title: "Post 2",
-          content: "Content 2",
-          category: this.$t('project1.infoContent.item3'), // Update to match localized category
+          category: "Category A",
           image: "https://picsum.photos/id/231/200/200",
+          date: new Date().toLocaleDateString(), // Add the current date
         },
-        {
-          id: 3,
-          title: "Post 3",
-          content: "Content 3",
-          category: this.$t('project1.infoContent.item4'), // Update to match localized category
-          image: "https://picsum.photos/id/232/200/200",
-        },
-        // Add more posts as needed
       ],
       currentPage: 1,
       itemsPerPage: 6,

@@ -1,10 +1,10 @@
 <template>
-    <div class="posts">
-      <div v-for="post in posts" :key="post.id" class="post">
-        <img :src="post.image" :alt="post.title" class="post-image" />
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.content }}</p>
-      </div>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3 xl:grid-cols-4 md:gap-x-6 md:gap-y-10 xl:gap-x-10 xl:gap-y-16">
+      <PostCard 
+      v-for="post in posts" 
+      :key="post.id" 
+      :post="post" 
+      />
     </div>
   </template>
   
@@ -19,25 +19,4 @@
     },
   };
   </script>
-  
-  <style scoped>
-  .posts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .post {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 80%;
-  }
-  
-  .post-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  </style>
   
