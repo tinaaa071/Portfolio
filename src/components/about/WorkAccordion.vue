@@ -7,15 +7,15 @@
           'bg-B4 text-B1 dark:bg-stone-800 dark:border-b dark:border-white dark:text-white ': isOpen,
           'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
         }"
-        class="flex items-center justify-between w-full px-4 py-3 overflow-hidden text-left transition-colors duration-300 ease-in-out sm:px-5 sm:py-4 hover:bg-B4 "
+        class="relative flex items-center justify-center w-full px-4 py-3 overflow-hidden text-center transition-colors duration-300 ease-in-out xs:text-left xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
       >
-        <div class="flex gap-4 font-medium ">
+        <div class="flex flex-col items-center gap-4 font-medium xs:flex-row">
           <!-- Logo -->
           <img
             v-if="showLogo"
             :src="logoSrc"
             alt="logo"
-            class="object-cover w-16 h-16 border rounded-2xl border-stone-100"
+            class="object-cover w-16 h-16 border border-white rounded-2xl"
           />
           <!-- Company -->
           <div class="flex flex-col gap-2 font-medium">
@@ -33,18 +33,20 @@
             </p>
           </div>
         </div>
-        <PlusButton :isPlus="!isOpen" @toggle="toggle" />
+        <PlusButton :isPlus="!isOpen" @toggle="toggle" 
+        class="absolute z-10 right-4 top-4 xs:static"
+        />
       </button>
       <!-- Content -->
       <TransitionFade>
-        <div v-show="isOpen" class="p-6 space-y-6 bg-white dark:bg-transparent">
+        <div v-show="isOpen" class="p-6 space-y-6 bg-white dark:bg-transparent ">
         <!-- Inner -->
         <div class="flex">
           <div v-for="(section, index) in sections" :key="index" class="grow">
-            <p class="mb-2 text-stone-800">
+            <p class="mb-2 text-stone-800 dark:text-white">
               {{ section.listTitle }}
             </p>
-            <ul class="font-normal list-disc list-inside text-stone-500">
+            <ul class="font-normal list-disc list-inside text-stone-500 dark:text-stone-400">
               <li v-for="(item, index) in section.listItems" :key="index">
                 {{ item }}
               </li>
@@ -54,7 +56,7 @@
         <!-- Attachment -->
         <div 
         v-if="showAtt"
-        class="grid grid-cols-4 gap-4"
+        class="grid grid-cols-2 gap-2 md:gap-4 md:grid-cols-4"
         >
           <Attachment
             v-for="item in items"

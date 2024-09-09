@@ -4,7 +4,7 @@
       <Tag
         v-if="showModalBtn"
         :tag="[$t('work.core.item5')]"
-        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 group-hover:block"
+        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 group-hover:block dark:backdrop-blur"
         @click.stop="openModal"
       />
       <!-- Link Button -->
@@ -13,7 +13,7 @@
         :href="linkTo"
         target="_blank"
         rel="noopener noreferrer"
-        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 group-hover:block"
+        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 group-hover:block dark:backdrop-blur"
       >
         <Tag 
         :tag="[$t('work.core.item5')]" 
@@ -22,7 +22,7 @@
       </a>
       <!-- Image -->
       <img
-        class="object-cover transition-all duration-300 ease-in-out rounded-2xl group-hover:brightness-75"
+        class="object-cover transition-all duration-300 ease-in-out rounded-lg md:rounded-2xl group-hover:brightness-75"
         :src="imgSrc"
         alt=""
       />

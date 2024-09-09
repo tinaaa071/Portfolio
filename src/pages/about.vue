@@ -4,11 +4,11 @@
     <ProgressBar />
     <BackToTop class="z-20" />
     <!-- Profile 區塊 -->
-     <div class="px-6 pt-24 pb-6 mx-auto sm:pt-28 sm:px-10 xl:px-28 md:pt-32">
-      <div class="w-10/12 pt-12 pb-16 mx-auto bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800 ">
+     <div class="pt-40 pb-8 mx-auto md:pb-16 md:px-10 xl:px-28 md:pt-44">
+      <div class="w-10/12 mx-auto bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800 ">
             <div class="flex flex-col items-center w-full gap-6 md:gap-10 md:flex-row">
               <!-- Img -->
-              <div class="relative w-full h-64 sm:w-1/2 md:w-1/3 aspect-square">
+              <div class="relative w-full h-64 xs:w-1/2 md:w-1/3 aspect-square">
                 <div class="absolute z-10 w-52 -top-12 -left-4">
                   <ChatBubble />
                 </div>
@@ -16,10 +16,10 @@
               </div>
               <!-- Content -->
                <div class="w-full md:w-2/3">
-                <p class="mb-6 text-2xl font-semibold">
+                <p class="mb-4 text-xl font-semibold md:mb-6 md:text-2xl">
                   {{ $t('project1.core.title') }}
                 </p>
-                <p class="font-medium">
+                <p class="font-medium text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eaque vero expedita quam explicabo beatae porro, saepe accusamus non minus, quaerat repellat voluptates! Exercitationem quod non commodi enim corporis quibusdam doloribus obcaecati, ducimus aut facere, cupiditate optio libero! Rerum quo consequuntur aperiam earum sunt sequi excepturi tempore aspernatur itaque ab.
                 </p>
                </div>
@@ -34,7 +34,7 @@
     >
       <div class="flex flex-col">
       <!-- List Items -->
-      <div class="flex flex-col">
+      <div class="flex flex-col overflow-hidden divide-y sm:rounded-3xl rounded-2xl dark:border dark:border-white">
         <!-- List Items -->
         <div
           v-for="(item, index) in [
@@ -43,7 +43,7 @@
             { title: 'about.value.S3', content: 'about.value.V3' }
           ]"
           :key="index"
-          class="flex gap-6 p-8 text-xl font-semibold transition-colors duration-300 ease-in-out hover:bg-white sm:rounded-3xl rounded-2xl dark:hover:bg-stone-800"
+          class="flex gap-6 p-6 text-xl font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800 "
         >
           <span>
             {{ index + 1 }}.
@@ -79,7 +79,7 @@
     :title="$t('about.language.T1')"
     class="md:py-8"
     >
-    <div class="grid grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-4 xs:gap-6 xs:grid-cols-2">
         <!-- List Items -->
         <div
           v-for="(item, index) in [
@@ -107,7 +107,7 @@
     :title="$t('about.education.T1')"
     class="md:py-8"
     >
-    <div class="grid grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-4 xs:gap-6 xs:grid-cols-2">
         <!-- List Items -->
         <div
           class="flex w-full gap-6 px-6 py-5 font-semibold border shadow sm:rounded-3xl rounded-2xl border-B4"
@@ -149,7 +149,7 @@
       </div>
     </aboutSection>
     <!-- Tools 區塊 -->
-    <div class="mx-auto md:py-8 bg-B3 dark:bg-stone-900">
+    <div class="mx-auto md:py-8 bg-B3 dark:bg-stone-800">
       <p class="px-6 mb-8 text-xl font-semibold sm:px-10 xl:px-28">
         {{ $t('about.tool.T1') }}
       </p>

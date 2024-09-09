@@ -1,9 +1,11 @@
 <template>
-  <div class="w-full overflow-hidden dark:bg-transparent dark:border dark:border-stone-50">
-    <div class="flex items-center p-1 sm:py-2 whitespace-nowrap marquee-content w-[200%] gap-8">
-      <ToolIcon 
-        v-for="(iconSrc, index) in repeatedIconSources" 
-        :key="index" 
+  <div class="w-full overflow-hidden dark:bg-transparent">
+    <div
+      class="flex items-center p-1 sm:py-2 whitespace-nowrap marquee-content w-[200%] gap-6 md:gap-8"
+    >
+      <ToolIcon
+        v-for="(iconSrc, index) in repeatedIconSources"
+        :key="index"
         :iconSrc="iconSrc"
         class="tool-icon"
       />
@@ -12,12 +14,7 @@
 </template>
 
 <script>
-import ToolIcon from './ToolIcon.vue';
-
 export default {
-  components: {
-    ToolIcon,
-  },
   data() {
     return {
       iconSources: [
@@ -30,7 +27,6 @@ export default {
   computed: {
     repeatedIconSources() {
       return Array.from({ length: 10 }, () => this.iconSources).flat();
-      
     },
   },
 };
@@ -40,6 +36,10 @@ export default {
 .marquee-content {
   animation: marquee-slide 20s linear infinite;
   animation-timing-function: linear;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
 }
 
 @keyframes marquee-slide {
