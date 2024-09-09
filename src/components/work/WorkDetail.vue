@@ -16,7 +16,7 @@
           <div class="flex gap-2 sm:gap-3">
             <Tag 
             :tag="tag"
-            class="dark:bg-white dark:text-neutral-900" 
+            class="dark:bg-white dark:text-zinc-900" 
             />
           </div>
         </div>
