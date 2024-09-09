@@ -1,11 +1,11 @@
 <template>
-    <div class="flex justify-center gap-4 py-3 text-xs font-bold">
+    <div class="flex justify-center gap-4 py-3 mb-6 overflow-x-auto text-xs font-bold scrollbar-hidden xl:mb-8">
       <button
         v-for="category in categories"
         :key="category"
         @click="selectCategory(category)"
         :class="[
-          'px-4 py-3 cursor-pointer bg-stone-50  rounded-full transition-colors duration-300 border border-stone-300 text-stone-900',
+          'px-4 py-3 cursor-pointer bg-stone-50 rounded-full transition-colors duration-300 border border-stone-300 text-stone-900 whitespace-nowrap',
           currentCategory === category ? 'bg-stone-900 text-white' : 'hover:bg-stone-200'
         ]"
       >
@@ -13,6 +13,17 @@
       </button>
     </div>
   </template>
+  
+  <style>
+  .scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  </style>
   
   <script>
   export default {
@@ -34,3 +45,4 @@
     },
   };
   </script>
+  
