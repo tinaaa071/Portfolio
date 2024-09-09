@@ -1,27 +1,30 @@
 <template>
   <div 
-  class="relative w-full h-56 overflow-hidden font-semibold border shadow rounded-2xl sm:rounded-3xl aspect-5/4 group border-B4"
+  class="relative w-full overflow-hidden font-semibold border shadow h-44 rounded-2xl sm:rounded-3xl aspect-video group border-B4 text-stone-800"
   >
-    <div class="absolute p-6">
-    <p class="mb-2 text-xl text-white group-hover:hidden">
+    <div class="absolute p-4">
+    <!-- Title -->
+    <p class="mb-2 text-white group-hover:hidden">
         {{ title }}
     </p>
-        </div>
-        <div class="absolute w-full p-6 transition-all duration-300 ease-in-out bg-white -top-32 group-hover:top-0">
-        <p class="mb-2 text-xl">
-            {{ title }}
-        </p>
-        <p>
-            {{ info }}
-        </p>
-        </div>
-        <div class="mt-0 transition-all duration-300 ease-in-out group-hover:mt-20">
-        <img 
-        class="object-cover"
-        :src="cardSrc" 
-        alt="">
-        </div>
+    <!-- Hidden 區塊 -->
     </div>
+    <div class="absolute w-full p-4 transition-all duration-300 ease-in-out bg-white -top-32 group-hover:top-0">
+    <p class="mb-1">
+        {{ title }}
+    </p>
+    <p class="text-sm text-stone-400">
+        {{ info }}
+    </p>
+    </div>
+    <!-- Img -->
+    <div class="h-full mt-0 transition-all duration-300 ease-in-out group-hover:mt-20">
+      <img 
+      class="object-cover w-full h-full"
+      :src="cardSrc" 
+      alt="">
+    </div>
+  </div>
 </template>
 
 <script>

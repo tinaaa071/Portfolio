@@ -6,7 +6,7 @@
         @click="handleOverlayClick"
       >
         <div
-          class="relative w-full shadow-lg sm:max-w-5xl"
+          class="relative w-full mx-auto sm:max-w-5xl"
           @click.stop
         >
         <button
