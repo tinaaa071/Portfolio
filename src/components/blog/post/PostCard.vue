@@ -1,7 +1,7 @@
 <template>
     <RouterLink :to="linkTo" >
       <div class="group">
-        <div class="relative w-full overflow-hidden rounded-lg aspect-video ">
+        <div class="relative w-full overflow-hidden rounded-lg aspect-video dark:border dark:border-white/20">
         <div class="absolute bottom-4 right-4 z-10 px-1.5 py-1 rounded  bg-stone-50  text-stone-600 whitespace-nowrap text-xs font-normal',">
           {{ post.category }}
         </div>
@@ -12,10 +12,10 @@
         />
       </div>
       
-      <p class="px-2 py-3 mb-3 text-xs font-normal tracking-widest border-b md:py-3 xl:px-4 border-stone-200 text-stone-500">
+      <p class="px-2 py-3 mb-3 text-xs font-normal tracking-widest border-b md:py-3 xl:px-4 border-stone-200 dark:border-stone-500 text-stone-500 dark:text-stone-400">
         {{ post.date }}
       </p>
-      <p class="px-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3 ">
+      <p class="px-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3 dark:text-white">
         {{ post.title }}
       </p>
       </div>

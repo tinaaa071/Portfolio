@@ -6,7 +6,7 @@
     tabindex="0"
     class="cursor-pointer group"
   >
-    <div class="relative w-full overflow-hidden rounded-lg aspect-video">
+    <div class="relative w-full overflow-hidden rounded-lg aspect-video dark:border dark:border-white/20">
       <div class="absolute bottom-4 right-4 z-10 px-1.5 py-1 rounded bg-stone-50 text-stone-600 whitespace-nowrap text-xs font-normal">
         {{ modal.category }}
       </div>
@@ -17,7 +17,7 @@
       />
     </div>
     
-    <p class="px-2 py-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3">
+    <p class="px-2 py-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3 dark:text-white">
       {{ modal.title }}
     </p>
   </div>

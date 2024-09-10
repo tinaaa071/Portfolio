@@ -11,7 +11,7 @@
         </CardTilt>
         <p 
           v-if="showCredit"
-          class="text-sm font-normal text-center text-stone-300">
+          class="text-sm font-normal text-center text-stone-300 dark:text-stone-500">
           {{ post.credit }}
         </p>
       </div>
@@ -22,8 +22,8 @@
           <p class="text-B1">
             {{ post.category }}
           </p>
-          <span class="w-0.5 h-6 bg-stone-200"></span>
-          <p class="text-stone-400">
+          <span class="w-0.5 h-6 bg-stone-200 dark:bg-stone-500"></span>
+          <p class="text-stone-400 dark:text-stone-500">
             {{ post.date }}
           </p>
         </div>
@@ -32,7 +32,7 @@
           <h1 class="mb-4 text-3xl font-bold">
             {{ post.title }}
           </h1>
-          <p class="text-lg font-normal text-stone-500">
+          <p class="text-lg font-normal text-stone-500 dark:text-stone-400">
             {{ post.desc }}
           </p>
         </div>

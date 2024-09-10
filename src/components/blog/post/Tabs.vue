@@ -6,8 +6,8 @@
         :key="category"
         @click="selectCategory(category)"
         :class="[
-          'px-4 py-3 cursor-pointer bg-stone-50 rounded-full transition-colors duration-300 border border-stone-300 text-stone-900 whitespace-nowrap',
-          currentCategory === category ? 'bg-stone-900 text-white' : 'hover:bg-stone-200'
+          'px-4 py-3 cursor-pointer bg-stone-50 rounded-full transition-colors duration-300 border border-stone-300 text-stone-900 whitespace-nowrap dark:bg-transparent dark:text-stone-300',
+          currentCategory === category ? 'bg-stone-900 text-white dark:text-stone-900 dark:bg-white' : 'hover:bg-stone-200 dark:hover:bg-stone-700'
         ]"
       >
         {{ category }}

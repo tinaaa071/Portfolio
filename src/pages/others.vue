@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-white sm:pb-10 dark:bg-stone-900 text-stone-900">
+    <div class="bg-white sm:pb-10 dark:bg-stone-900 text-stone-900 ">
       <Navbar />
       <ProgressBar />
       <BackToTop class="z-20" />
-      <div class="pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
+      <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
         <Tabs
           :currentCategory="currentCategory"
           :categories="[
@@ -34,7 +34,6 @@
           </div>
         </div>
       </div>
-      <Footer />
   
       <Modal
         v-if="currentModalId !== null"
@@ -43,11 +42,12 @@
         :modal="getModalById(currentModalId)"
       >
       <img 
-        class="w-full aspect-video rounded-3xl h-[500px]"
+        class="w-full aspect-video rounded-3xl h-[500px] object-cover object-center"
         :src="getModalById(currentModalId)?.image"
         alt="Modal Image">
       </Modal>
     </div>
+    <Footer />
   </template>
   
   <script>
@@ -76,7 +76,7 @@
         {
             id: 4,
             title: "Post 1",
-            category: this.$t('other.item14'),
+            category: this.$t('other.item4'),
             image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ],

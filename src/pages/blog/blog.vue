@@ -3,7 +3,7 @@
     <Navbar />
     <ProgressBar />
     <BackToTop class="z-20" />
-    <div class="pt-24 pb-6 mx-auto sm:pt-28 md:pt-32 ">
+    <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
       <Tabs
       :currentCategory="currentCategory"
       :categories="[
@@ -34,8 +34,8 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
+  <Footer />
 </template>
 
 

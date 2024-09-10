@@ -1,5 +1,5 @@
 <template>
-  <div class="text-sm font-light bg-white sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
+  <div class="text-sm font-light bg-white cursor-default sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
     <Layout :showProgress="true">
       <template #content>
         <div class="flex flex-col gap-6">

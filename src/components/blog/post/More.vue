@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-6 py-8 md:px-10 xl:px-72 xl:py-16 bg-B3 md:py-10" 
+    <div class="flex flex-col gap-6 py-8 md:px-10 xl:px-72 xl:py-16 bg-B3 md:py-10 dark:bg-stone-800 dark:border-t dark:border-white/20" 
     v-if="showMore"
     >
       <div class="grid grid-cols-1 gap-8 xs:grid-cols-3 lg:grid-cols-4 xs:gap-x-6 xs:gap-y-10 lg:gap-x-10 lg:gap-y-16">

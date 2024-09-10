@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center text-center text-stone-900">
+  <div class="flex items-center justify-center text-center text-stone-900 dark:text-white">
     <!-- <button
       @click="goToPage(1)"
       :disabled="currentPage === 1"
@@ -12,7 +12,7 @@
     <button
       @click="goToPage(currentPage - 1)"
       :disabled="currentPage === 1"
-      class="inline-block p-2 text-lg align-middle rounded-lg hover:bg-B3 disabled:cursor-not-allowed disabled:opacity-50"
+      class="inline-block p-2 text-lg align-middle rounded-lg hover:bg-B3 disabled:cursor-not-allowed disabled:opacity-50 dark:hover:bg-stone-600"
     >
       <OcticonChevronLeft24 />
     </button>
@@ -23,8 +23,8 @@
       :key="index"
       class="rounded-lg cursor-pointer py-1.5 px-3.5 inline-block align-middle"
       :class="{
-        ' bg-B3 text-B1': currentPage === page,
-        ' hover:bg-B3': currentPage !== page,
+        ' bg-B3 text-B1 dark:bg-stone-600 dark:text-white': currentPage === page,
+        ' hover:bg-B3 dark:hover:bg-stone-700': currentPage !== page,
       }"
       @click="page !== 'more' && goToPage(page)"
     >
@@ -40,7 +40,7 @@
     <button
       @click="goToPage(currentPage + 1)"
       :disabled="currentPage === totalPages"
-      class="inline-block p-2 text-lg align-middle rounded-lg hover:bg-B3 disabled:cursor-not-allowed disabled:opacity-50"
+      class="inline-block p-2 text-lg align-middle rounded-lg hover:bg-B3 disabled:cursor-not-allowed disabled:opacity-50 dark:hover:bg-stone-600"
     >
       <OcticonChevronRight24 />
     </button>
