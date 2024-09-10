@@ -18,7 +18,8 @@ const loadMessages = () => {
     }
 
     const localePath = parts[2]; // Extract language code from the path
-    const fileName = parts[3].replace('.json', '');
+    const nestedPath = parts.slice(3, -1).join('/'); // Join all parts after locale (e.g., 'common', 'featureA')
+    const fileName = parts[parts.length - 1].replace('.json', ''); // Extract file name without extension (e.g., 'index')
 
     if (!messages[localePath]) {
       messages[localePath] = {};
