@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-3 xl:grid-cols-4 md:gap-x-6 md:gap-y-10 xl:gap-x-10 xl:gap-y-16">
+    <div class="grid grid-cols-1 gap-8 xs:grid-cols-3 lg:grid-cols-4 xs:gap-x-6 xs:gap-y-10 lg:gap-x-10 lg:gap-y-16">
       <PostCard 
       v-for="post in posts" 
       :key="post.id" 
