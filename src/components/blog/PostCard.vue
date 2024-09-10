@@ -8,7 +8,7 @@
         <img 
         :src="post.image" 
         :alt="post.title" 
-        class="object-cover object-center w-full h-full transition-all duration-300 ease-in-out group-hover:scale-125"
+        class="object-cover object-center w-full h-full transition-all duration-300 ease-in-out group-hover:scale-110"
         />
       </div>
       

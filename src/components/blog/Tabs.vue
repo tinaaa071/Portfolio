@@ -1,6 +1,7 @@
 <template>
-    <div class="flex justify-center gap-4 py-3 mb-6 overflow-x-auto text-xs font-bold scrollbar-hidden xl:mb-8">
-      <button
+    <div class="flex justify-start py-3 mb-6 overflow-x-auto text-xs font-bold scrollbar-hidden xl:mb-8">
+      <div class="flex justify-center gap-4 mx-auto">
+        <button
         v-for="category in categories"
         :key="category"
         @click="selectCategory(category)"
@@ -11,6 +12,7 @@
       >
         {{ category }}
       </button>
+      </div>
     </div>
   </template>
   

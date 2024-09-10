@@ -3,7 +3,7 @@
     <Navbar />
     <ProgressBar />
     <BackToTop class="z-20" />
-    <div class="pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
+    <div class="pt-24 pb-6 mx-auto sm:pt-28 md:pt-32 ">
       <Tabs
       :currentCategory="currentCategory"
       :categories="[
@@ -79,9 +79,30 @@ export default {
           image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           date: new Date().toLocaleDateString(),
         },
+        {
+          id: 2,
+          title: "Post 2",
+          category: this.$t('blog.item2'),
+          image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        },
+        {
+          id: 2,
+          title: "Post 2",
+          category: this.$t('blog.item2'),
+          image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        },
+        {
+          id: 2,
+          title: "Post 2",
+          category: this.$t('blog.item2'),
+          image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        },
       ],
       currentPage: 1,
-      itemsPerPage: 6,
+      itemsPerPage: 12,
       currentCategory: this.$t('blog.item1'), // Set the default current category to "All"
     };
   },
