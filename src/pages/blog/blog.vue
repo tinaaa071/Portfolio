@@ -23,7 +23,7 @@
 
         <!-- Display PostList and Paginator only if there are posts -->
         <div v-else>
-          <PostList :posts="paginatedPosts" />
+          <PostList :posts="paginatedPosts" :linkTo="/posts/" />
 
           <Paginator
             :totalItems="filteredPosts.length"
