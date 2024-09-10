@@ -15,7 +15,7 @@
       <p class="px-2 py-3 mb-3 text-xs font-normal tracking-widest border-b md:py-3 xl:px-4 border-stone-200 text-stone-500">
         {{ post.date }}
       </p>
-      <p class="px-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3">
+      <p class="px-2 text-base font-medium text-justify md:text-sm xl:text-base xl:px-4 line-clamp-3 ">
         {{ post.title }}
       </p>
       </div>
