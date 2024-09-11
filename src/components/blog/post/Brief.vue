@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-6 md:px-10 xl:px-72">
+    <div class="flex flex-col gap-6 xs:px-10 md:px-24 lg:px-48 xl:px-72">
       <!-- Banner -->
       <div>
         <CardTilt>
@@ -37,7 +37,7 @@
           </p>
         </div>
         <!-- Brief -->
-        <div class="px-32 py-5 text-lg text-center rounded-lg bg-B4 dark:bg-stone-700">
+        <div class="p-6 text-lg text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
           <slot name="brief"></slot>
         </div>
       </div>
