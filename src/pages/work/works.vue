@@ -7,10 +7,10 @@
       <Tabs
         :currentCategory="currentCategory"
         :categories="[
-          $t('blog.item1'),
-          $t('blog.item2'),
-          $t('blog.item3'),
-          $t('blog.item4'),
+          $t('tag.item1'),
+          $t('tag.item2'),
+          $t('tag.item3'),
+          $t('tag.item4'),
         ]"
         @category-changed="filterByCategory"
       />
@@ -44,8 +44,8 @@ export default {
       posts: [
         {
           id: 1,
-          title: 'Post 1',
-          category: this.$t('blog.item1'),
+          title: this.$t('project1.core.title'),
+          category: this.$t('tag.item1'),
           image: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: '2024．09．02',
           link: '/work/project1',
@@ -53,7 +53,7 @@ export default {
         {
           id: 2,
           title: 'Post 2',
-          category: this.$t('blog.item2'),
+          category: this.$t('tag.item2'),
           image: 'https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: new Date().toLocaleDateString(),
           link: '/work/project1',
@@ -61,7 +61,7 @@ export default {
         {
           id: 3, // Ensure unique ID
           title: 'Post 3',
-          category: this.$t('blog.item3'),
+          category: this.$t('tag.item3'),
           image: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: new Date().toLocaleDateString(),
           link: '/work/project1',
@@ -69,7 +69,7 @@ export default {
         {
           id: 4, // Ensure unique ID
           title: 'Post 4',
-          category: this.$t('blog.item4'),
+          category: this.$t('tag.item4'),
           image: 'https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: new Date().toLocaleDateString(),
           link: '/work/project1',
@@ -77,7 +77,7 @@ export default {
         {
           id: 5, // Ensure unique ID
           title: 'Post 5',
-          category: this.$t('blog.item2'),
+          category: this.$t('tag.item2'),
           image: 'https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: new Date().toLocaleDateString(),
           link: '/work/project1',
@@ -85,12 +85,12 @@ export default {
       ],
       currentPage: 1,
       itemsPerPage: 12,
-      currentCategory: this.$t('blog.item1'), // Set the default current category
+      currentCategory: this.$t('tag.item1'), // Set the default current category
     };
   },
   computed: {
     filteredPosts() {
-      if (this.currentCategory === this.$t('blog.item1')) {
+      if (this.currentCategory === this.$t('tag.item1')) {
         return this.posts;
       }
       return this.posts.filter((post) => post.category === this.currentCategory);

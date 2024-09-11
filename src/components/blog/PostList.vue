@@ -4,6 +4,8 @@
       v-for="post in posts" 
       :key="post.id" 
       :post="post" 
+      :showTag="true"
+      :showDate="true"
       :linkTo="`/blog/post/${post.id}`"
       />
     </div>

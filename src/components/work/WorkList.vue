@@ -4,6 +4,8 @@
       v-for="post in posts" 
       :key="post.id" 
       :post="post" 
+      :showTag="false"
+      :showDate="false"
       :linkTo="post.link"
       />
     </div>
