@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-start py-3 pl-6 mb-6 overflow-x-auto text-xs font-bold xs:pl-0 scrollbar-hidden xl:mb-8">
-      <div class="flex justify-center gap-4 mx-auto">
+      <div class="flex justify-center gap-2 mx-auto xs:gap-4">
         <button
         v-for="category in categories"
         :key="category"
