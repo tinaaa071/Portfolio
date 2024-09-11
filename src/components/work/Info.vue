@@ -17,7 +17,7 @@
         <div class="flex items-center justify-between">
           <!-- Tag -->
           <div class="flex gap-2 sm:gap-3">
-            <Tag :tag="tag" />
+            <Tag :tag="tag" class="bg-white " />
           </div>
           <!-- BTN -->
           <MagneticButton 

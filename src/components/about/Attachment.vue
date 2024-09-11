@@ -4,7 +4,7 @@
       <Tag
         v-if="showModalBtn"
         :tag="[$t('work.core.item5')]"
-        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 group-hover:block dark:backdrop-blur"
+        class="absolute z-10 hidden transition-all duration-300 ease-in-out -translate-x-1/2 -translate-y-1/2 bg-white cursor-pointer top-1/2 left-1/2 group-hover:block dark:backdrop-blur"
         @click.stop="openModal"
       />
       <!-- Link Button -->
@@ -17,7 +17,7 @@
       >
         <Tag 
         :tag="[$t('work.core.item5')]" 
-        class="cursor-pointer"
+        class="bg-white cursor-pointer "
         />
       </a>
       <!-- Image -->

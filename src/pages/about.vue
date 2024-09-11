@@ -70,7 +70,7 @@
       <div class="flex gap-2 sm:gap-3">
         <Tag
         :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3')]" 
-        :class="'bg-B1/20'"
+        class="bg-B1/20"
         />
       </div>
     </aboutSection>
