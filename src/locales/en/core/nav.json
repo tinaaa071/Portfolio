@@ -1,7 +1,8 @@
 {
-    "item1": "Works",
-    "item2": "About Me",
+    "item1": "Home",
+    "item2": "Works",
     "item3": "Blog",
     "item4": "Others",
-    "item5": "Resume"
+    "item5": "About Me",
+    "item6": "Resume"
 }

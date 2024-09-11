@@ -7,9 +7,9 @@
           'bg-B4 text-B1 dark:bg-stone-800 dark:border-b dark:border-white dark:text-white ': isOpen,
           'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
         }"
-        class="relative flex items-center justify-center w-full px-4 py-3 overflow-hidden text-center transition-colors duration-300 ease-in-out xs:text-left xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
+        class="relative flex items-center w-full px-4 py-3 overflow-hidden text-left transition-colors duration-300 ease-in-out xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
       >
-        <div class="flex flex-col items-center gap-4 font-medium xs:flex-row">
+        <div class="flex items-center gap-4 font-medium ">
           <!-- Logo -->
           <img
             v-if="showLogo"
@@ -56,7 +56,7 @@
         <!-- Attachment -->
         <div 
         v-if="showAtt"
-        class="grid grid-cols-2 gap-2 md:gap-4 md:grid-cols-4"
+        class="grid grid-cols-2 gap-2 md:gap-4 sm:grid-cols-4"
         >
           <Attachment
             v-for="item in items"

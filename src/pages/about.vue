@@ -70,7 +70,7 @@
       <div class="flex gap-2 sm:gap-3">
         <Tag
         :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3')]" 
-        class="bg-B1/20"
+        class="bg-B1/30"
         />
       </div>
     </aboutSection>
@@ -149,7 +149,7 @@
       </div>
     </aboutSection>
     <!-- Tools 區塊 -->
-    <div class="mx-auto md:py-8 bg-B3 dark:bg-stone-800">
+    <div class="py-8 mx-auto md:py-10 bg-B3 dark:bg-stone-800 xl:py-16">
       <p class="px-6 mb-8 text-xl font-semibold sm:px-10 xl:px-28">
         {{ $t('about.tool.T1') }}
       </p>

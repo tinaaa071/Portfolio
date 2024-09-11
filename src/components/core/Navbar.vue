@@ -59,7 +59,7 @@
                    :showLeftIcon="false"
                    :showRightIcon="true"
                    :icon="icon"
-                   :text="$t('nav.item5')"
+                   :text="$t('nav.item6')"
                    class="border-stone-900 dark:border-white hover:bg-B3/80 dark:hover:bg-stone-600/50 dark:text-white"
                   />
                 </li>
@@ -95,7 +95,7 @@
                    :showLeftIcon="false"
                    :showRightIcon="true"
                    :icon="icon"
-                   :text="$t('nav.item5')"
+                   :text="$t('nav.item6')"
                    class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-B3/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
                   />
               <!-- Language -->
@@ -134,9 +134,10 @@ export default {
     // Update main menu items based on your pages structure
     const menuItems = [
       { to: '/', text: 'nav.item1' },             // Home page
-      { to: '/about', text: 'nav.item2' },        // About page
+      { to: '/work/works', text: 'nav.item2' },             // work page
       { to: '/blog/blog', text: 'nav.item3' },         // Blog listing page
       { to: '/others', text: 'nav.item4' },       // Others page
+      { to: '/about', text: 'nav.item5' },        // About page
     ];
 
     // Check if a menu item should be active based on the current route
@@ -144,8 +145,8 @@ export default {
   if (path === '/blog/blog') {
     return route.path.startsWith('/blog')
   }
-  if (path === '/') {
-    return route.path === '/' || route.path.startsWith('/work')
+  if (path === '/work/works') {
+    return route.path.startsWith('/work')
   }
   return route.path === path
 }

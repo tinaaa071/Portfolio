@@ -23,8 +23,8 @@
     },
     "language":{
         "T1": "I speak",
-        "S1": "🇹🇼 Chinese (Mandarin)",
-        "S2": "🇺🇸 English",
+        "S1": "🇹🇼\u00A0\u00A0Chinese (Mandarin)",
+        "S2": "🇺🇸\u00A0\u00A0English",
         "L1": "Native Speaker",
         "L2": "Full Working Proficiency"
     },
